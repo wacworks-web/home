@@ -7,7 +7,9 @@
     "input": {
       "duration": 30,
       "resolution": "720p",
-      "aspect_ratio": "9:16"
+      "aspect_ratio": "9:16",
+      "generate_audio": true,
+      "watermark": false
     }
   },
   "shots": [
