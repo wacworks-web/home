@@ -47,10 +47,13 @@ ring, calm gentle demeanor, fictional face not resembling any real person
 - 外見定義（英語・共通挿入文）:
 
 ```
-SHOTA: a Japanese man in his late 30s, short neat black hair, clean-shaven,
-well-fitted navy suit with no tie, white shirt, calm composed expression,
-quiet confidence, fictional face not resembling any real person
+SHOTA: a strikingly handsome young Japanese man with a fresh youthful face,
+sharp jawline, stylish softly textured black hair, clean-shaven, slim modern
+navy suit over a white shirt with no tie, calm and quietly confident like a
+young successful startup CEO, fictional face not resembling any real person
 ```
+（2026-08-22 更新: ユーザー指定で「若手イケメン経営者」ビジュアルに変更。
+設定上の年齢38歳は「若見えの社長」として維持。全話この定義で統一する）
 
 ### 年収800万の男性（EP.4）
 - 気さくで感じが良い。カジュアルなジャケット。
