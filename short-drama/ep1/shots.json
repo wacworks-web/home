@@ -1,0 +1,81 @@
+{
+  "episode": 1,
+  "title": "年収5,000万円以下は無理",
+  "defaults": {
+    "aspect_ratio": "9:16",
+    "resolution": "1080p",
+    "output_dir": "renders"
+  },
+  "shots": [
+    {
+      "id": "ep1_cut01",
+      "timeline": "0:00-0:03",
+      "duration": 5,
+      "prompt": "Two Japanese women sitting across from each other at a white marble table by a large window in an upscale quiet Tokyo cafe, soft afternoon light. a beautiful Japanese woman in her early 30s, long dark-brown softly waved hair, flawless polished makeup, elegant beige silk blouse and small gold earrings, confident poised posture, fictional face not resembling any real person on the right speaks casually with a confident smile. a Japanese woman in her early 30s, black shoulder-length bob hair, natural minimal makeup, soft gray cardigan over a white top, simple wedding ring, calm gentle demeanor, fictional face not resembling any real person on the left is lifting her coffee cup toward her mouth and suddenly freezes mid-sip, eyes widening slightly. Medium two-shot, eye level. vertical 9:16 cinematic live-action Japanese drama, modern Tokyo, photorealistic, natural skin texture, soft realistic lighting, shallow depth of field, muted cinematic color grade, handheld subtle camera movement, no text, no captions, no logos",
+      "first_frame_image": null
+    },
+    {
+      "id": "ep1_cut02",
+      "timeline": "0:03-0:08",
+      "duration": 5,
+      "prompt": "Close-up of a Japanese woman in her early 30s, black shoulder-length bob hair, natural minimal makeup, soft gray cardigan over a white top, simple wedding ring, calm gentle demeanor, fictional face not resembling any real person in an upscale Tokyo cafe by a window, holding a coffee cup frozen in mid-air, stunned expression, blinking slowly, then slowly lowering the cup to the marble table while staring at the person across from her in disbelief. vertical 9:16 cinematic live-action Japanese drama, modern Tokyo, photorealistic, natural skin texture, soft realistic lighting, shallow depth of field, muted cinematic color grade, handheld subtle camera movement, no text, no captions, no logos",
+      "first_frame_image": null
+    },
+    {
+      "id": "ep1_cut03",
+      "timeline": "0:08-0:15",
+      "duration": 10,
+      "prompt": "Medium shot over the shoulder of a woman with bob hair, focusing on a beautiful Japanese woman in her early 30s, long dark-brown softly waved hair, flawless polished makeup, elegant beige silk blouse and small gold earrings, confident poised posture, fictional face not resembling any real person sitting at a marble cafe table, talking earnestly and confidently, elegantly counting points on her fingers, natural conversational gestures, sincere unapologetic expression, upscale Tokyo cafe window light behind her. vertical 9:16 cinematic live-action Japanese drama, modern Tokyo, photorealistic, natural skin texture, soft realistic lighting, shallow depth of field, muted cinematic color grade, handheld subtle camera movement, no text, no captions, no logos",
+      "first_frame_image": null
+    },
+    {
+      "id": "ep1_cut04",
+      "timeline": "0:15-0:22",
+      "duration": 10,
+      "prompt": "Medium close-up of a Japanese woman in her early 30s, black shoulder-length bob hair, natural minimal makeup, soft gray cardigan over a white top, simple wedding ring, calm gentle demeanor, fictional face not resembling any real person at a marble cafe table, speaking hesitantly with a faint awkward smile, briefly glancing down at the simple wedding ring on her hand and touching it, then looking back up quietly, upscale Tokyo cafe, soft window light. vertical 9:16 cinematic live-action Japanese drama, modern Tokyo, photorealistic, natural skin texture, soft realistic lighting, shallow depth of field, muted cinematic color grade, handheld subtle camera movement, no text, no captions, no logos",
+      "first_frame_image": null
+    },
+    {
+      "id": "ep1_cut05",
+      "timeline": "0:22-0:30",
+      "duration": 10,
+      "prompt": "Medium shot of a beautiful Japanese woman in her early 30s, long dark-brown softly waved hair, flawless polished makeup, elegant beige silk blouse and small gold earrings, confident poised posture, fictional face not resembling any real person at a marble cafe table, giving a slightly condescending but friendly smile, tilting her head with confidence, then elegantly sipping her coffee, poised and self-assured, upscale Tokyo cafe with soft afternoon window light. vertical 9:16 cinematic live-action Japanese drama, modern Tokyo, photorealistic, natural skin texture, soft realistic lighting, shallow depth of field, muted cinematic color grade, handheld subtle camera movement, no text, no captions, no logos",
+      "first_frame_image": null
+    },
+    {
+      "id": "ep1_cut06",
+      "timeline": "0:30-0:37",
+      "duration": 10,
+      "prompt": "Two-shot of a beautiful Japanese woman in her early 30s, long dark-brown softly waved hair, flawless polished makeup, elegant beige silk blouse and small gold earrings, confident poised posture, fictional face not resembling any real person and a Japanese woman in her early 30s, black shoulder-length bob hair, natural minimal makeup, soft gray cardigan over a white top, simple wedding ring, calm gentle demeanor, fictional face not resembling any real person facing each other at a marble cafe table, an awkward pause in the conversation, a beautiful Japanese woman in her early 30s, long dark-brown softly waved hair, flawless polished makeup, elegant beige silk blouse and small gold earrings, confident poised posture, fictional face not resembling any real person breaks eye contact and looks away toward the window, discomfort flickering across her face, then answers quietly with slightly pursed lips, a Japanese woman in her early 30s, black shoulder-length bob hair, natural minimal makeup, soft gray cardigan over a white top, simple wedding ring, calm gentle demeanor, fictional face not resembling any real person watches her calmly. Upscale Tokyo cafe. vertical 9:16 cinematic live-action Japanese drama, modern Tokyo, photorealistic, natural skin texture, soft realistic lighting, shallow depth of field, muted cinematic color grade, handheld subtle camera movement, no text, no captions, no logos",
+      "first_frame_image": null
+    },
+    {
+      "id": "ep1_cut07",
+      "timeline": "0:37-0:45",
+      "duration": 10,
+      "prompt": "Medium shot of a beautiful Japanese woman in her early 30s, long dark-brown softly waved hair, flawless polished makeup, elegant beige silk blouse and small gold earrings, confident poised posture, fictional face not resembling any real person at a marble cafe table regaining her confidence, lightly flipping her long dark-brown hair over her shoulder, speaking with defiant self-assurance, while a Japanese woman in her early 30s, black shoulder-length bob hair, natural minimal makeup, soft gray cardigan over a white top, simple wedding ring, calm gentle demeanor, fictional face not resembling any real person partially visible in the foreground stays silent and slowly lowers her gaze to her coffee cup, subtle tension. Upscale Tokyo cafe. vertical 9:16 cinematic live-action Japanese drama, modern Tokyo, photorealistic, natural skin texture, soft realistic lighting, shallow depth of field, muted cinematic color grade, handheld subtle camera movement, no text, no captions, no logos",
+      "first_frame_image": null
+    },
+    {
+      "id": "ep1_cut08",
+      "timeline": "0:45-0:50",
+      "duration": 5,
+      "prompt": "Insert close-up shot of a smartphone lying face-up on a white marble cafe table next to a coffee cup, the screen lights up brightly with a glowing notification and the phone vibrates slightly, then a woman's elegant hand with polished nails reaches in and picks up the phone, screen content is a soft glowing blur. Upscale Tokyo cafe. vertical 9:16 cinematic live-action Japanese drama, modern Tokyo, photorealistic, natural skin texture, soft realistic lighting, shallow depth of field, muted cinematic color grade, handheld subtle camera movement, no text, no captions, no logos",
+      "first_frame_image": null
+    },
+    {
+      "id": "ep1_cut09",
+      "timeline": "0:50-0:56",
+      "duration": 5,
+      "prompt": "Close-up of a beautiful Japanese woman in her early 30s, long dark-brown softly waved hair, flawless polished makeup, elegant beige silk blouse and small gold earrings, confident poised posture, fictional face not resembling any real person's face softly lit by the glow of the smartphone she is holding, in an upscale Tokyo cafe, her surprised expression slowly transforming into a delighted triumphant smile, eyes sparkling as she reads the screen. vertical 9:16 cinematic live-action Japanese drama, modern Tokyo, photorealistic, natural skin texture, soft realistic lighting, shallow depth of field, muted cinematic color grade, handheld subtle camera movement, no text, no captions, no logos",
+      "first_frame_image": null
+    },
+    {
+      "id": "ep1_cut10",
+      "timeline": "0:56-1:00",
+      "duration": 5,
+      "prompt": "Two-shot at a marble cafe table, a beautiful Japanese woman in her early 30s, long dark-brown softly waved hair, flawless polished makeup, elegant beige silk blouse and small gold earrings, confident poised posture, fictional face not resembling any real person holds up her smartphone and turns the screen toward a Japanese woman in her early 30s, black shoulder-length bob hair, natural minimal makeup, soft gray cardigan over a white top, simple wedding ring, calm gentle demeanor, fictional face not resembling any real person with a proud triumphant smile, leaning forward slightly, while a Japanese woman in her early 30s, black shoulder-length bob hair, natural minimal makeup, soft gray cardigan over a white top, simple wedding ring, calm gentle demeanor, fictional face not resembling any real person looks at the phone with an ambiguous unreadable expression, upscale Tokyo cafe, soft afternoon window light. vertical 9:16 cinematic live-action Japanese drama, modern Tokyo, photorealistic, natural skin texture, soft realistic lighting, shallow depth of field, muted cinematic color grade, handheld subtle camera movement, no text, no captions, no logos",
+      "first_frame_image": null
+    }
+  ]
+}
