@@ -22,10 +22,14 @@ Seedance は話をまたぐとキャラがブレるため、**下記の英語定
 - 外見定義（英語・共通挿入文）:
 
 ```
-MISAKI: a beautiful Japanese woman in her early 30s, long dark-brown softly
-waved hair, flawless polished makeup, elegant beige silk blouse and small gold
-earrings, confident poised posture, fictional face not resembling any real person
+MISAKI: a beautiful Japanese woman in her early 30s with the polished look of
+a popular travel influencer: long dark-brown loosely waved hair, soft glamorous
+makeup with a subtle sun-kissed glow, a chic white off-shoulder resort-style
+blouse, layered thin gold necklaces and small hoop earrings, a designer mini
+handbag and the latest smartphone beside her, photogenic camera-ready gestures,
+confident and used to being looked at, fictional face not resembling any real person
 ```
+（2026-08-22 更新: ユーザー指定で「旅系インフルエンサー」寄りのスタイリングに変更。全話この定義で統一する）
 
 ### 奈々（32）友人・既婚
 - 設定: 夫の年収800万。現実的で穏やか。美咲を否定はしないが静かに事実を返す。
