@@ -1,7 +1,10 @@
 # 『年収5,000万円の男じゃなきゃ無理』制作プロジェクト
 
 TikTok 縦型 AI ショートドラマ / 全5話 / 各約60秒
-映像生成: **Seedance 1.0**（ByteDance）+ 編集: CapCut など
+映像生成: **Seedance 2.5**（Replicate・セリフ音声付き）+ 編集: CapCut など
+
+> **推奨ワークフローは `ep1/seedance25.md`**（DRAMA_HANDOFF.md 準拠・2×30秒の音声付き生成）。
+> 以下の 10カット無音+TTS方式（Seedance 1.0）はフォールバックとして残置。
 
 > 本作品は、SNS等で話題になった婚活・年収に関する議論から着想を得た完全フィクションです。
 > 実在の人物・団体とは関係ありません。
@@ -14,12 +17,16 @@ short-drama/
 ├── series-bible.md        ← シリーズ設定資料（キャラ・トーン統一ルール／全話共通）
 ├── assembly-guide.md      ← 編集・仕上げガイド（CapCut / 字幕 / TikTok書き出し）
 ├── ep1/
+│   ├── seedance25.md      ← ★推奨: Seedance 2.5 手順（音声付き2×30s・QC・予算メモ）
+│   ├── prompts/           ← ★part1.txt / part2.txt（Macでそのまま cat して使う）
+│   ├── shots25.json       ← ★generate_seedance25.py 用の定義
 │   ├── script.md          ← EP.1 決定稿（タイムコード付き脚本）
-│   ├── shots.md           ← EP.1 カット割り + Seedance プロンプト（人間が読む用）
-│   ├── shots.json         ← 同カット割り（生成スクリプトが読む用）
-│   └── subtitles.srt      ← EP.1 字幕ファイル（60秒 / CapCut・TikTok読み込み用）
+│   ├── shots.md           ← （旧）10カット割り + Seedance 1.0 プロンプト
+│   ├── shots.json         ← （旧）同カット割り
+│   └── subtitles.srt      ← EP.1 字幕の文言マスター（時刻は実尺に再同期して使う）
 └── tools/
-    ├── generate_seedance.py  ← Seedance API 一括生成スクリプト
+    ├── generate_seedance25.py ← ★Replicate seedance-2.5 生成（Mac以外の環境用）
+    ├── generate_seedance.py   ← （旧）Seedance 1.0 一括生成
     └── requirements.txt
 ```
 

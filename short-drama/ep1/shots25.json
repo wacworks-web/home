@@ -1,0 +1,27 @@
+{
+  "episode": 1,
+  "title": "年収5,000万円以下は無理",
+  "pipeline": "seedance-2.5 dialogue audio (see seedance25.md)",
+  "defaults": {
+    "output_dir": "renders",
+    "input": {
+      "duration": 30,
+      "resolution": "720p",
+      "aspect_ratio": "9:16"
+    }
+  },
+  "shots": [
+    {
+      "id": "ep1_part1",
+      "timeline": "0:00-0:30",
+      "prompt": "",
+      "prompt_file": "prompts/part1.txt"
+    },
+    {
+      "id": "ep1_part2",
+      "timeline": "0:30-1:00",
+      "prompt": "",
+      "prompt_file": "prompts/part2.txt"
+    }
+  ]
+}
