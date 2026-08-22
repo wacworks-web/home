@@ -1,5 +1,9 @@
 # お金のウラガワ投稿手順（婚活ドラマ全5話・Macで実行）
 
+> **2026-08-22 決定事項（ユーザー承認済み）:**
+> 本日は婚活ドラマ5話を最優先で公開。**本日予約済みの他ショートはすべて明日以降に延期**。
+> アップロードは今すぐ開始（EP.1 の 19:30 公開に間に合わない場合は全体を30分後ろ倒し）。
+
 このリモート環境には YouTube トークン（`~/.youtube_token.json`）が無いため、
 **Macの ~/okane-uragawa 環境で実行**する。動画・素材はすべて本リポジトリにある。
 
@@ -80,8 +84,8 @@ python channel/upload_youtube.py $D/ep5/renders/ep5_full_v2.mp4 \
 {"date":"2026-08-22","name":"konkatsu_ep1","type":"minidrama_seedance_dialogue","style":"konkatsu_series","pub":"19:30","video_id":"<upload後に記入>","view_pct":null}
 ```
 （ep2〜ep5 も同様に pub 20:15 / 21:00 / 21:45 / 22:30 で）
-2. **今日の他の予約分は延期**: 公開枠は1日ショート8本まで。既存予約を Data API で確認し、
-   今日分の他ショートの publishAt を明日以降へ変更（またはドラマ枠と被らない時間へ）
+2. **今日の他の予約分はすべて明日以降へ延期**（ユーザー決定・被り回避）:
+   Data API で本日 publishAt の予約を列挙し、全件 publishAt を明日以降に変更する
 3. 22:04 の夜間cronは ab_test.json を読んで重複を避ける仕様。上記追記を
    **22:04より前に**済ませること
 
