@@ -1,0 +1,29 @@
+{
+  "episode": 5,
+  "title": "選んでいたつもりだった",
+  "pipeline": "seedance-2.5 dialogue audio",
+  "defaults": {
+    "output_dir": "renders",
+    "input": {
+      "duration": 30,
+      "resolution": "720p",
+      "aspect_ratio": "9:16",
+      "generate_audio": true,
+      "watermark": false
+    }
+  },
+  "shots": [
+    {
+      "id": "ep5_part1",
+      "timeline": "0:00-0:30",
+      "prompt": "",
+      "prompt_file": "prompts/part1.txt"
+    },
+    {
+      "id": "ep5_part2",
+      "timeline": "0:30-1:00",
+      "prompt": "",
+      "prompt_file": "prompts/part2.txt"
+    }
+  ]
+}
