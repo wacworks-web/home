@@ -442,79 +442,97 @@ productSlide({
 /* ---------------- AD-1. 広告パフォーマンス ---------------- */
 {
   const s = pres.addSlide();
-  head(s, "広告パフォーマンス ─ AD アナリティクス（8/1〜9）", "出典：Qoo10 広告管理レポート");
+  head(s, "広告パフォーマンス ─ AD アナリティクス（8/1〜9）", "出典：Qoo10 広告レポート");
   const cw=(CW-4*0.16)/5;
-  [["インプレッション","17,504","9日間合計（全607KW）",INK],
-   ["クリック（PV）","321","CTR 1.83%",INK],
-   ["カート数","63","カートCVR 19.63%",INK],
-   ["購入数","24件","広告CVR 7.48%",UP],
-   ["全体注文への寄与","18.8%","128件中24件が広告経由",UP]
+  [["広告費","13,200","Qcash / 9日間合計",INK],
+   ["広告売上","¥91,450","メガポ期間合計",INK],
+   ["ROAS","693%","広告費の約7倍を回収",UP],
+   ["広告経由 購入","24件","広告CVR 7.48%",INK],
+   ["全体売上への寄与","20.4%","¥447,380中 ¥91,450",UP]
   ].forEach((c,i)=> stat(s, M+i*(cw+0.16), 1.15, cw, 1.30, c[0], c[1], c[2], c[3]));
-  const rows=[hrow(["日付","インプレッション","クリック","CTR","カート","購入","CVR"])];
-  A.daily.forEach((r,i)=> rows.push(i===A.daily.length-1?totalRow(r):r));
-  tbl(s, rows, {x:M, y:2.60, w:7.30, colW:[1.00,1.45,1.00,0.95,0.95,0.95,1.00], rowH:0.31});
-  const ix=M+7.60, iw=CW-7.60;
-  [["★ 広告経由の購入24件＝全体の18.8%","全体注文128件のうち24件が広告経由。広告クリック321は総PV1,714の18.7%にあたり、流入・売上の約2割を広告が支えている。",UP],
-   ["★ カートCVR 19.63%は良好","クリック321→カート63と、広告流入の約5件に1件がカート投入。商品ページの訴求力は十分に機能している。",UP],
-   ["▼ カート→購入は38.1%","カート63件に対し購入24件。残り39件が広告経由の取りこぼしで、リマインド施策の対象になる。",DOWN],
-   ["▼ 最終日8/9に露出が消失","imp 68のみ（前日2,508）。同日は売上第2位（¥64,755）・CVR37.50%で、配信継続していれば上積み余地が大きかった。",DOWN]
+  const rows=[hrow(["日付","広告費","広告売上","ROAS","クリック","購入"])];
+  A.daily.forEach((r,i)=>{
+    const base=[r[0], r[1], r[2], r[3], r[4], r[6]];
+    rows.push(i===A.daily.length-1 ? totalRow(base) : base);
+  });
+  tbl(s, rows, {x:M, y:2.60, w:6.55, colW:[1.05,1.05,1.30,1.10,1.00,1.05], rowH:0.30});
+  const ix=M+6.85, iw=CW-6.85;
+  s.addText("■ 広告メニュー別", {x:ix, y:2.60, w:iw, h:0.26, isTextBox:true, margin:0,
+    fontFace:F, fontSize:10.5, bold:true, color:AMBER, valign:"middle"});
+  const mr=[hrow(["メニュー","広告費","広告売上","ROAS","CTR"])];
+  A.menu.forEach((r,i)=>{
+    const base=[{text:r[0], options:{align:"left"}}, r[1], r[2], r[3], r[6]];
+    mr.push(i===A.menu.length-1 ? base.map(c=>{
+      const o=typeof c==="string"?{text:c}:c;
+      return {text:o.text, options:{...(o.options||{}), bold:true, color:INK, fill:{color:AMBER_SOFT}}};
+    }) : base);
+  });
+  tbl(s, mr, {x:ix, y:2.92, w:iw, colW:[1.70,0.82,1.06,0.80,0.90], rowH:0.32, fontSize:9});
+  [["★ 初日2日への集中投下は非効率","8/1〜2に予算の60.6%（8,000）を投下しROAS 244%。以降の8/3〜9は5,200でROAS 1,383%と、少額×継続の方が効率が高かった。",DOWN],
+   ["▼ 最終日は予算切れ","8/9は400のみでROAS 3,389%・CVR37.50%と最高効率。売上第2位の日に投下できておらず、明確な取りこぼし。",DOWN]
   ].forEach((c,i)=>{
-    const y=2.60+i*0.87;
-    card(s, ix, y, iw, 0.80, W);
+    const y=4.30+i*0.86;
+    card(s, ix, y, iw, 0.79, W);
     s.addText(c[0], {x:ix+0.2, y:y+0.07, w:iw-0.4, h:0.26, isTextBox:true, margin:0,
       fontFace:F, fontSize:10, bold:true, color:c[2], valign:"middle"});
     s.addText(c[1], {x:ix+0.2, y:y+0.32, w:iw-0.4, h:0.44, isTextBox:true, margin:0,
       fontFace:F, fontSize:8.5, color:MUTED, valign:"top", lineSpacingMultiple:1.15});
   });
-  card(s, M, 6.18, CW, 0.68, W);
-  s.addText("★ CTRは初日3.56%→中盤0.93〜1.28%へ低下。中盤はインプレッションが2,300〜2,900/日に増えた一方でクリックは減っており、関連性の低いKWへ露出が広がったことがCTR低下の要因。露出量ではなく露出先の精度が課題。",
-    {x:M+0.28, y:6.28, w:CW-0.56, h:0.50, isTextBox:true, margin:0, fontFace:F, fontSize:9.5, color:INK2, valign:"top", lineSpacingMultiple:1.2});
+  card(s, M, 6.05, CW, 0.81, W);
+  bullets(s, M+0.28, 6.15, CW-0.56, 0.62, [
+    "★ キーワードプラスは費用の78.8%で売上の72.2%を創出。CTR 8.32%・CVR 9.14%と主力メニューとして機能している。",
+    "パワーランクアップは露出の89.4%（imp 19,904）を占めるがCTR 0.62%。低単価ゆえROAS 906%は高く、認知獲得の枠として維持しつつ商品を絞る運用が有効。"
+  ], 9);
   footer(s);
-  s.addNotes("広告は全体注文の18.8%に寄与。カート転換は良好だがカート→購入と最終日の配信停止に課題。");
+  s.addNotes("広告費13,200に対し広告売上91,450、ROAS693%。予算配分と配信期間の平準化が次の論点。");
 }
 
-/* ---------------- AD-2. 広告キーワード分析 ---------------- */
+/* ---------------- AD-2. 商品別 広告パフォーマンス ---------------- */
 {
   const s = pres.addSlide();
-  head(s, "広告キーワード分析 ─ AD アナリティクス（8/1〜9）", "クリック数上位12KW / 全607KW");
-  const rows=[hrow(["検索ワード","インプ","クリック","CTR","カート","購入","CVR"])];
-  A.kw.forEach(r=>{
-    const base=[{text:r[0], options:{align:"left"}}, r[1], r[2], r[3], r[4], r[5], r[6]];
-    if(r[7]==="total") rows.push(base.map(c=>{
-      const o = typeof c==="string"?{text:c}:c;
+  head(s, "商品別 広告パフォーマンス ─ 予算配分の検証", "8/1〜9 / 広告出稿 全4商品");
+  const rows=[hrow(["商品名","広告費","広告売上","ROAS","インプ","クリック","CTR","カート","購入","CVR"])];
+  A.prod.forEach(r=>{
+    const base=[{text:r[0], options:{align:"left"}}, r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9]];
+    if(r[10]==="total") rows.push(base.map(c=>{
+      const o=typeof c==="string"?{text:c}:c;
       return {text:o.text, options:{...(o.options||{}), bold:true, color:INK, fill:{color:AMBER_SOFT}}};
     }));
-    else rows.push(base.map((c,j)=>{
-      const o = typeof c==="string"?{text:c}:c;
-      if(j===5 && r[7]==="up") return {text:o.text, options:{...(o.options||{}), bold:true, color:UP}};
-      if(j===3 && r[7]==="down") return {text:o.text, options:{...(o.options||{}), bold:true, color:DOWN}};
-      return c;
-    }));
+    else rows.push(base.map((c,j)=> j===3
+      ? {text:r[3], options:{bold:true, color: r[10]==="up"?UP:r[10]==="down"?DOWN:INK2}} : c));
   });
-  tbl(s, rows, {x:M, y:1.15, w:7.75, colW:[2.60,0.95,0.95,0.90,0.80,0.80,0.75], rowH:0.30, fontSize:9});
-  const ix=M+8.05, iw=CW-8.05;
-  [["★ ブランドKWが広告成果の中核","「dr365」系KWがクリック204（63.6%）・購入19件（79.2%）。CTR10.54%・CVR9.46%と全KW中で突出して効率が高い。",UP],
-   ["▼「アゼライン酸」は露出過多・低CTR","imp 6,463は全体の36.9%だがクリック70・CTR1.08%。購入5件は確保するも、露出に対して取りこぼしが大きい。",DOWN],
-   ["▼ 成果ゼロKWが露出の24.2%","「日焼け止め」2,765・「導入美容液」988・「アゼライン」491は購入ゼロ。合計4,244impが成果に結びついていない。",DOWN],
-   ["★ 商品名KWはカート率が高い","「dr365 v.c.プレエッセンス」はクリック8→カート5。購入化には至らずクーポン等の後押しが有効。",UP]
-  ].forEach((c,i)=>{
-    const y=1.15+i*1.13;
-    card(s, ix, y, iw, 1.01, W);
-    s.addText(c[0], {x:ix+0.2, y:y+0.11, w:iw-0.4, h:0.3, isTextBox:true, margin:0,
-      fontFace:F, fontSize:11, bold:true, color:c[2], valign:"middle"});
-    s.addText(c[1], {x:ix+0.2, y:y+0.43, w:iw-0.4, h:0.5, isTextBox:true, margin:0,
-      fontFace:F, fontSize:9, color:MUTED, valign:"top", lineSpacingMultiple:1.15});
-  });
-  card(s, M, 5.72, CW, 1.14, W);
-  s.addText("■ 広告施策まとめ（次回メガ割に向けて）", {x:M+0.28, y:5.80, w:6, h:0.28, isTextBox:true, margin:0,
+  tbl(s, rows, {x:M, y:1.15, w:CW, colW:[3.30,1.05,1.25,1.05,1.05,1.00,0.90,0.85,0.85,0.833], rowH:0.40});
+  s.addText("■ 商品 × 広告メニュー別", {x:M, y:3.72, w:5, h:0.26, isTextBox:true, margin:0,
     fontFace:F, fontSize:10.5, bold:true, color:AMBER, valign:"middle"});
-  bullets(s, M+0.28, 6.10, CW-0.56, 0.60, [
-    "① 予算配分の組み替え：購入ゼロKW（日焼け止め・導入美容液・アゼライン）の露出24.2%を停止し、ブランドKWと成果KWへ振り替える。② 「アゼライン酸」は入札増ではなくバナー・タイトル・価格訴求の改善でCTR1.08%→3%を狙う。",
-    "③ 広告経由の残カート39件へリマインド・クーポンを投下。④ メガポ最終日まで配信を継続し、8/9のような露出消失（imp 68）を防ぐ。"
-  ], 9);
-  s.addText("※「dr365 a.z. セラムショット」等はクリック数がインプレッション数を上回る計測値のため、CTRは「—」と表記。",
-    {x:M, y:6.88, w:CW, h:0.20, isTextBox:true, margin:0, fontFace:F, fontSize:7.5, color:MUTED, valign:"middle"});
+  const pm=[hrow(["商品","メニュー","広告費","広告売上","ROAS","CTR"])];
+  A.prodMenu.forEach(r=> pm.push([{text:r[0], options:{align:"left"}}, r[1], r[2], r[3],
+    {text:r[4], options:{bold:true, color: parseFloat(r[4].replace(/[,%]/g,''))>=1000?UP:INK2}}, r[5]]));
+  tbl(s, pm, {x:M, y:4.04, w:6.55, colW:[2.00,1.45,0.72,0.93,0.80,0.65], rowH:0.30, fontSize:9});
+  const ix=M+6.85, iw=CW-6.85;
+  card(s, ix, 3.72, iw, 1.52, W);
+  s.addText("▼ 予算配分が成果と逆転している", {x:ix+0.24, y:3.82, w:iw-0.48, h:0.28, isTextBox:true, margin:0,
+    fontFace:F, fontSize:11, bold:true, color:DOWN, valign:"middle"});
+  bullets(s, ix+0.24, 4.14, iw-0.48, 1.02, [
+    "A.Z. セラムショットが広告費の63.6%（8,400）を消費し、広告売上は19.3%（¥17,686）・ROAS 211%と最低。",
+    "対してプレエッセンスNは費用12.1%で売上43.8%、ROAS 2,501%。両者のROAS差は約12倍にのぼる。",
+    "TOP2（プレエッセンス＋UV）は費用24.2%で売上の71.0%を創出している。"
+  ], 8.5);
+  card(s, ix, 5.30, iw, 1.56, W);
+  s.addText("■ 次回メガ割に向けた打ち手", {x:ix+0.24, y:5.38, w:iw-0.48, h:0.26, isTextBox:true, margin:0,
+    fontFace:F, fontSize:11, bold:true, color:AMBER, valign:"middle"});
+  ["A.Z.の広告費を段階的に縮小（8,400→4,000目安）",
+   "縮小分をプレエッセンスN・UVデイエッセンスNへ振替",
+   "予算を全日平準化し、最終日用の枠を必ず確保"
+  ].forEach((t,i)=>{
+    const y=5.68+i*0.38;
+    s.addShape(pres.ShapeType.ellipse,{x:ix+0.24, y:y+0.02, w:0.235, h:0.235, fill:{color:AMBER}, line:{width:0}});
+    s.addText(String(i+1),{x:ix+0.24, y:y+0.02, w:0.235, h:0.235, isTextBox:true, margin:0,
+      align:"center", valign:"middle", fontFace:F, fontSize:8, bold:true, color:W});
+    s.addText(t,{x:ix+0.57, y:y-0.01, w:iw-0.81, h:0.32, isTextBox:true, margin:0,
+      fontFace:F, fontSize:9.5, color:INK2, valign:"top", lineSpacingMultiple:1.12});
+  });
   footer(s);
+  s.addNotes("A.Z.に予算の6割を投下しROAS211%。ROAS2,000%帯のTOP2へ振り替えるのが最大の改善余地。");
 }
 
 /* ---------------- 16. 改善アクション ---------------- */
@@ -523,7 +541,7 @@ productSlide({
   head(s, "次回メガ割に向けた改善アクション ─ 4軸", "8月メガポ実績にもとづく優先施策");
   const qs=[
     ["① 流入チャネル改善",[
-      "「アゼライン酸」は露出十分（imp 6,463）でCTR1.08%。入札増より広告バナー・タイトル改善を優先",
+      "A.Z.セラムショットが広告費の63.6%でROAS211%。予算をプレエッセンスN・UVへ再配分",
       "自然検索の獲得：UVデイエッセンスの一般検索6PV→30PV超へタイトル最適化",
       "ショップ流入+45%を維持：ショップページのメガ割特集枠を常設化",
       "商品詳細ページ-40%の回復：関連商品レコメンド枠を全SKUに設置",
