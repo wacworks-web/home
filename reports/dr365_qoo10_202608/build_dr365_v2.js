@@ -484,52 +484,59 @@ productSlide({
   s.addNotes("A.Z.に予算の6割を投下しROAS211%。ROAS2,000%帯のTOP2へ振り替えるのが最大の改善余地。");
 }
 
-/* ---------------- 最終. 次回メガ割に向けた改善アクション（優先4施策） ---------------- */
+/* ---------------- 最終. 次回メガ割に向けた改善アクション（優先3施策） ---------------- */
 {
   const s = pres.addSlide();
-  head(s, "次回メガ割に向けた改善アクション ─ 優先4施策", "8月メガポ実績＋商品企画にもとづく");
-  const cw=(CW-0.30)/2;
+  head(s, "次回メガ割に向けた改善アクション ─ 優先3施策", "8月メガポ実績＋商品企画にもとづく");
+  const cw=(CW-2*0.30)/3;
   const acts=[
     ["V.C. プレエッセンス N のメガ割適用",
      "売上2位 ¥100,040（構成比22.4%）。客単価¥5,002は全SKU最高、広告ROASも2,501%で最高効率。にもかかわらずメガ割が適用できておらず、最大の伸びしろを取り逃している。",
-     "GWP付与等で定価を¥6,000へ引き上げ、メガ割適用後¥5,200で販売（商品企画ご提案①）。セール期間のみ単品ページを差し替え、適用金額から20%OFFを実施する。",
+     ["GWP付与等で定価を¥6,000へ引き上げ、メガ割適用後¥5,200で販売（商品企画ご提案①）",
+      "セール期間のみ単品ページを差し替え、適用金額から20%OFFを実施",
+      "適用可否をQoo10側と事前確認し、セール開始前に反映を完了させる"],
      "目標： プレエッセンスN 売上 ≧ ¥150,000"],
-    ["ビタミン美容液を軸としたセット商品の造成",
-     "Qoo10のスキンケア上位店舗は「本品＋本品」「〇〇セット」＋GWPで30〜58%OFFを訴求。dr365もTOP2（UVデイエッセンス×プレエッセンス）の併売余地が大きい。",
-     "「毛穴集中ケア フルラインセット」等をセール限定で造成し、GWPで価格を調整してメガ割適用（商品企画ご提案②）。TOP2の併売で客単価を引き上げる。",
-     "目標： 客単価 ≧ ¥4,000"],
     ["広告予算をROASの高い商品へ再配分",
      "商品別ROASはプレエッセンスN 2,501%・UVデイエッセンスN 1,554%に対し、A.Z. セラムショットは211%。広告全体ではROAS 693%・広告売上¥91,450（全体売上の20.4%）。",
-     "A.Z.の広告費を縮小し、縮小分をプレエッセンスN・UVデイエッセンスNへ振替。CTR 8.32%のキーワードプラスを主軸に、指名KW中心の運用へ寄せる。",
+     ["A.Z.の広告費を縮小し、縮小分をプレエッセンスN・UVデイエッセンスNへ振替",
+      "CTR 8.32%のキーワードプラスを主軸に、指名KW中心の運用へ寄せる",
+      "パワーランクアップは露出枠と割り切り、出稿商品をTOP2へ絞る"],
      "目標： 広告ROAS ≧ 900%"],
-    ["新規94名のリピート転換と残カート回収",
-     "新規比率75.2%（94名）と獲得は好調な一方、リピーターは31名（-18.4%）と減少。残カートは121件（カート249 − 注文128）が未回収のまま残っている。",
-     "メガ割直前に8月新規94名へクーポンを配布。残カート121件へリマインドを配信し、お気に入り371PVの基盤へ開始前の先出し告知を行う。",
-     "目標： リピーター ≧ 45名 ／ CVR ≧ 11.0%"]
+    ["メガ割向けクリエイティブの制作",
+     "ショップ流入は167→243PV（+45.5%）と伸びる一方、商品詳細ページは42→25PV（-40.5%）と減少。入口は増えているが商品間の回遊が弱く、セール文脈のクリエイティブも不足している。",
+     ["セール用の割引率・セール価格を入れたメガ割用サムネイル／バナーを全SKU分制作",
+      "商品ページ内に回遊バナーを設置し、TOP2（UVデイエッセンス×プレエッセンス）を相互送客",
+      "ショップページにメガ割特集枠を常設し、期間中のトップバナーを差し替え"],
+     "目標： 商品詳細ページ ≧ 45PV ／ CVR ≧ 11.0%"]
   ];
   acts.forEach((a,i)=>{
-    const x = M + (i%2)*(cw+0.30), y = 1.30 + Math.floor(i/2)*2.85;
-    card(s, x, y, cw, 2.70, W);
-    s.addShape(pres.ShapeType.ellipse,{x:x+0.26, y:y+0.15, w:0.36, h:0.36, fill:{color:AMBER}, line:{width:0}});
-    s.addText(String(i+1), {x:x+0.26, y:y+0.15, w:0.36, h:0.36, isTextBox:true, margin:0,
+    const x = M + i*(cw+0.30), y = 1.25;
+    card(s, x, y, cw, 5.35, W);
+    s.addShape(pres.ShapeType.ellipse,{x:x+0.26, y:y+0.16, w:0.36, h:0.36, fill:{color:AMBER}, line:{width:0}});
+    s.addText(String(i+1), {x:x+0.26, y:y+0.16, w:0.36, h:0.36, isTextBox:true, margin:0,
       align:"center", valign:"middle", fontFace:F, fontSize:11, bold:true, color:W});
-    s.addText(a[0], {x:x+0.72, y:y+0.13, w:cw-0.98, h:0.40, isTextBox:true, margin:0,
-      fontFace:F, fontSize:12, bold:true, color:INK, valign:"middle"});
-    s.addText("根 拠", {x:x+0.26, y:y+0.60, w:1.2, h:0.22, isTextBox:true, margin:0,
+    s.addText(a[0], {x:x+0.72, y:y+0.12, w:cw-0.98, h:0.64, isTextBox:true, margin:0,
+      fontFace:F, fontSize:11.5, bold:true, color:INK, valign:"middle", lineSpacingMultiple:1.12});
+    s.addText("根 拠", {x:x+0.26, y:y+0.88, w:1.2, h:0.22, isTextBox:true, margin:0,
       fontFace:F, fontSize:8.5, bold:true, color:MUTED, valign:"middle"});
-    s.addText(a[1], {x:x+0.26, y:y+0.82, w:cw-0.52, h:0.62, isTextBox:true, margin:0,
-      fontFace:F, fontSize:9, color:INK2, valign:"top", lineSpacingMultiple:1.18});
-    s.addText("打ち手", {x:x+0.26, y:y+1.48, w:1.2, h:0.22, isTextBox:true, margin:0,
+    s.addText(a[1], {x:x+0.26, y:y+1.10, w:cw-0.52, h:1.18, isTextBox:true, margin:0,
+      fontFace:F, fontSize:9, color:INK2, valign:"top", lineSpacingMultiple:1.20});
+    s.addText("打ち手", {x:x+0.26, y:y+2.32, w:1.2, h:0.22, isTextBox:true, margin:0,
       fontFace:F, fontSize:8.5, bold:true, color:MUTED, valign:"middle"});
-    s.addText(a[2], {x:x+0.26, y:y+1.70, w:cw-0.52, h:0.62, isTextBox:true, margin:0,
-      fontFace:F, fontSize:9, color:INK2, valign:"top", lineSpacingMultiple:1.18});
-    s.addShape(pres.ShapeType.roundRect,{x:x+0.26, y:y+2.32, w:cw-0.52, h:0.30,
+    let cy=y+2.56;
+    a[2].forEach(t=>{
+      s.addShape(pres.ShapeType.ellipse,{x:x+0.28, y:cy+0.075, w:0.075, h:0.075, fill:{color:AMBER}, line:{width:0}});
+      s.addText(t, {x:x+0.46, y:cy-0.02, w:cw-0.72, h:0.66, isTextBox:true, margin:0,
+        fontFace:F, fontSize:9, color:INK2, valign:"top", lineSpacingMultiple:1.20});
+      cy += 0.66;
+    });
+    s.addShape(pres.ShapeType.roundRect,{x:x+0.26, y:y+4.66, w:cw-0.52, h:0.52,
       fill:{color:UP}, line:{width:0}, rectRadius:0.05});
-    s.addText(a[3], {x:x+0.26, y:y+2.32, w:cw-0.52, h:0.30, isTextBox:true, margin:0,
-      align:"center", valign:"middle", fontFace:F, fontSize:9.5, bold:true, color:W});
+    s.addText(a[3], {x:x+0.30, y:y+4.66, w:cw-0.60, h:0.52, isTextBox:true, margin:0,
+      align:"center", valign:"middle", fontFace:F, fontSize:9.5, bold:true, color:W, lineSpacingMultiple:1.10});
   });
   footer(s);
-  s.addNotes("①②は商品企画（メガ割向けセット商品）より。優先順は①単品のメガ割適用 → ②セット商品の造成。");
+  s.addNotes("①は商品企画（メガ割向けセット商品）ご提案①より。③はセール用クリエイティブと回遊導線の整備。");
 }
 
 pres.writeFile({fileName:"dr365_Qoo10_2026年8月メガポ_レポート.pptx"}).then(f=>console.log("WROTE",f));
