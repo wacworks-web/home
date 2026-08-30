@@ -22,7 +22,7 @@ pres.author = "株式会社Wacworks";
 pres.title = "dr365_Qoo10_2026年8月メガポ_レポート";
 
 let page = 0;
-const TOTAL = 14;
+const TOTAL = 13;
 
 function sh(o){ return {type:"outer", color:"9AA6B5", blur:6, offset:1, angle:90, opacity:0.18, ...o}; }
 
@@ -407,38 +407,6 @@ productSlide({
   ]
 });
 
-/* ---------------- 15. KW分析 ---------------- */
-{
-  const s = pres.addSlide();
-  head(s, "検索キーワード分析 ─ 7月vs8月比較", "検索流入 449PV → 468PV（+4.2%）");
-  const rows=[hrow(["検索ワード","7月","8月","増減","タイプ","評価"])];
-  D.kw.forEach(r=> rows.push([{text:r[0], options:{align:"left"}}, r[1], r[2], r[3], r[4], ev(r[5], r[6])]));
-  tbl(s, rows, {x:M, y:1.15, w:7.75, colW:[2.85,0.72,0.72,0.72,1.55,1.19], rowH:0.268, fontSize:9});
-  const ix=M+8.05, iw=CW-8.05;
-  const hi=[
-    ["★ ブランド指名 +29%","「dr365」156→202、「dr365 公式」35→50。指名検索は過去最高水準。",UP],
-    ["▼ アゼライン酸 -24%","101→77件。A.Z.セラムショットの売上-10%と直接連動している。",DOWN],
-    ["★ 効能KWが新規発生","「毛穴シミケア」「エイジングケア ハリ たるみ」「肌再生クリーム」が新規出現。",UP],
-    ["▼ カテゴリ指名が減少","「dr365 日焼け止め」-73%、「dr365 クレンジング」-80%。ブランド単体KWへ集約が進行。",DOWN]
-  ];
-  hi.forEach((c,i)=>{
-    const y=1.15+i*1.13;
-    card(s, ix, y, iw, 1.01, W);
-    s.addText(c[0], {x:ix+0.2, y:y+0.11, w:iw-0.4, h:0.3, isTextBox:true, margin:0,
-      fontFace:F, fontSize:11, bold:true, color:c[2], valign:"middle"});
-    s.addText(c[1], {x:ix+0.2, y:y+0.43, w:iw-0.4, h:0.5, isTextBox:true, margin:0,
-      fontFace:F, fontSize:9, color:MUTED, valign:"top", lineSpacingMultiple:1.15});
-  });
-  card(s, M, 5.72, CW, 1.14, W);
-  s.addText("■ KW施策まとめ（次回メガ割に向けて）", {x:M+0.28, y:5.80, w:6, h:0.28, isTextBox:true, margin:0,
-    fontFace:F, fontSize:10.5, bold:true, color:AMBER, valign:"middle"});
-  bullets(s, M+0.28, 6.10, CW-0.56, 0.68, [
-    "「アゼライン酸」の落ち込みが売上減に直結。Keyword Plusの入札上限を引き上げ、「アゼライン酸 クリーム/セラム/毛穴」の組合せKWを再拡張する。",
-    "新規発生した効能KW（毛穴シミケア／エイジングケア／肌再生クリーム）は購買意欲が高い層。該当商品ページに効能訴求コピーを追加し受け皿を作る。"
-  ], 9.5);
-  footer(s);
-}
-
 /* ---------------- AD-1. 広告パフォーマンス ---------------- */
 {
   const s = pres.addSlide();
@@ -468,16 +436,6 @@ productSlide({
     }) : base);
   });
   tbl(s, mr, {x:ix, y:2.92, w:iw, colW:[1.70,0.82,1.06,0.80,0.90], rowH:0.32, fontSize:9});
-  [["★ 初日2日への集中投下は非効率","8/1〜2に予算の60.6%（8,000）を投下しROAS 244%。以降の8/3〜9は5,200でROAS 1,383%と、少額×継続の方が効率が高かった。",DOWN],
-   ["▼ 最終日は予算切れ","8/9は400のみでROAS 3,389%・CVR37.50%と最高効率。売上第2位の日に投下できておらず、明確な取りこぼし。",DOWN]
-  ].forEach((c,i)=>{
-    const y=4.30+i*0.86;
-    card(s, ix, y, iw, 0.79, W);
-    s.addText(c[0], {x:ix+0.2, y:y+0.07, w:iw-0.4, h:0.26, isTextBox:true, margin:0,
-      fontFace:F, fontSize:10, bold:true, color:c[2], valign:"middle"});
-    s.addText(c[1], {x:ix+0.2, y:y+0.32, w:iw-0.4, h:0.44, isTextBox:true, margin:0,
-      fontFace:F, fontSize:8.5, color:MUTED, valign:"top", lineSpacingMultiple:1.15});
-  });
   card(s, M, 6.05, CW, 0.81, W);
   bullets(s, M+0.28, 6.15, CW-0.56, 0.62, [
     "★ キーワードプラスは費用の78.8%で売上の72.2%を創出。CTR 8.32%・CVR 9.14%と主力メニューとして機能している。",
@@ -509,22 +467,13 @@ productSlide({
     {text:r[4], options:{bold:true, color: parseFloat(r[4].replace(/[,%]/g,''))>=1000?UP:INK2}}, r[5]]));
   tbl(s, pm, {x:M, y:4.04, w:6.55, colW:[2.00,1.45,0.72,0.93,0.80,0.65], rowH:0.30, fontSize:9});
   const ix=M+6.85, iw=CW-6.85;
-  card(s, ix, 3.72, iw, 1.52, W);
-  s.addText("▼ 予算配分が成果と逆転している", {x:ix+0.24, y:3.82, w:iw-0.48, h:0.28, isTextBox:true, margin:0,
-    fontFace:F, fontSize:11, bold:true, color:DOWN, valign:"middle"});
-  bullets(s, ix+0.24, 4.14, iw-0.48, 1.02, [
-    "A.Z. セラムショットが広告費の63.6%（8,400）を消費し、広告売上は19.3%（¥17,686）・ROAS 211%と最低。",
-    "対してプレエッセンスNは費用12.1%で売上43.8%、ROAS 2,501%。両者のROAS差は約12倍にのぼる。",
-    "TOP2（プレエッセンス＋UV）は費用24.2%で売上の71.0%を創出している。"
-  ], 8.5);
-  card(s, ix, 5.30, iw, 1.56, W);
-  s.addText("■ 次回メガ割に向けた打ち手", {x:ix+0.24, y:5.38, w:iw-0.48, h:0.26, isTextBox:true, margin:0,
+  card(s, ix, 4.87, iw, 1.26, W);
+  s.addText("■ 次回メガ割に向けた打ち手", {x:ix+0.24, y:4.95, w:iw-0.48, h:0.26, isTextBox:true, margin:0,
     fontFace:F, fontSize:11, bold:true, color:AMBER, valign:"middle"});
-  ["A.Z.の広告費を段階的に縮小（8,400→4,000目安）",
-   "縮小分をプレエッセンスN・UVデイエッセンスNへ振替",
-   "予算を全日平準化し、最終日用の枠を必ず確保"
+  ["A.Z.の広告費を縮小",
+   "縮小分をプレエッセンスN・UVデイエッセンスNへ振替"
   ].forEach((t,i)=>{
-    const y=5.68+i*0.38;
+    const y=5.27+i*0.38;
     s.addShape(pres.ShapeType.ellipse,{x:ix+0.24, y:y+0.02, w:0.235, h:0.235, fill:{color:AMBER}, line:{width:0}});
     s.addText(String(i+1),{x:ix+0.24, y:y+0.02, w:0.235, h:0.235, isTextBox:true, margin:0,
       align:"center", valign:"middle", fontFace:F, fontSize:8, bold:true, color:W});
@@ -535,46 +484,52 @@ productSlide({
   s.addNotes("A.Z.に予算の6割を投下しROAS211%。ROAS2,000%帯のTOP2へ振り替えるのが最大の改善余地。");
 }
 
-/* ---------------- 16. 改善アクション ---------------- */
+/* ---------------- 最終. 次回メガ割に向けた改善アクション（優先4施策） ---------------- */
 {
   const s = pres.addSlide();
-  head(s, "次回メガ割に向けた改善アクション ─ 4軸", "8月メガポ実績にもとづく優先施策");
-  const qs=[
-    ["① 流入チャネル改善",[
-      "A.Z.セラムショットが広告費の63.6%でROAS211%。予算をプレエッセンスN・UVへ再配分",
-      "自然検索の獲得：UVデイエッセンスの一般検索6PV→30PV超へタイトル最適化",
-      "ショップ流入+45%を維持：ショップページのメガ割特集枠を常設化",
-      "商品詳細ページ-40%の回復：関連商品レコメンド枠を全SKUに設置",
-      "外部Google+66%を継続：成分・効能テーマのSEO記事を追加投入"]],
-    ["② KW・検索対策",[
-      "成分KWの再獲得：「アゼライン酸 クリーム/セラム/毛穴」を再拡張",
-      "効能KWを新設：「毛穴シミケア」「エイジングケア ハリ たるみ」「肌再生クリーム」",
-      "カテゴリ語の再配置：「dr365＋日焼け止め/クレンジング」を商品タイトルへ",
-      "「導入美容液」「先行美容液」「ブースター」をプレエッセンスNの属性タグへ",
-      "完全商品名（V.C. UVデイエッセンスN 等）を商品タイトル先頭へ移動"]],
-    ["③ 商品別 優先順位",[
-      "UVデイエッセンスN：在庫確保が最優先（8月40件→メガ割60件を想定）",
-      "プレエッセンスN：UVとのバンドルで高単価併売を設計",
-      "A.Z.セラムショット：成分KW広告の再強化で反転を狙う",
-      "モイストフォーミングウォッシュ：+31%の伸びを定番化フェーズへ",
-      "減少商品（ディープリペア/メルトスクラブ）：秋冬の保湿訴求で再活性"]],
-    ["④ メガ割本番施策",[
-      "8月新規94名へメガ割直前クーポンを配布し、リピート転換を促進",
-      "残カート121件へのリマインド・クーポン投下で取りこぼしを回収",
-      "メガ割専用LP：TOP2（UV × プレエッセンス）の限定セットを主役に配置",
-      "お気に入り登録促進（371PVの基盤をさらに拡大）",
-      "レビュー特典でUVデイエッセンスの口コミ数を積み増し"]]
+  head(s, "次回メガ割に向けた改善アクション ─ 優先4施策", "8月メガポ実績＋商品企画にもとづく");
+  const cw=(CW-0.30)/2;
+  const acts=[
+    ["V.C. プレエッセンス N のメガ割適用",
+     "売上2位 ¥100,040（構成比22.4%）。客単価¥5,002は全SKU最高、広告ROASも2,501%で最高効率。にもかかわらずメガ割が適用できておらず、最大の伸びしろを取り逃している。",
+     "GWP付与等で定価を¥6,000へ引き上げ、メガ割適用後¥5,200で販売（商品企画ご提案①）。セール期間のみ単品ページを差し替え、適用金額から20%OFFを実施する。",
+     "目標： プレエッセンスN 売上 ≧ ¥150,000"],
+    ["ビタミン美容液を軸としたセット商品の造成",
+     "Qoo10のスキンケア上位店舗は「本品＋本品」「〇〇セット」＋GWPで30〜58%OFFを訴求。dr365もTOP2（UVデイエッセンス×プレエッセンス）の併売余地が大きい。",
+     "「毛穴集中ケア フルラインセット」等をセール限定で造成し、GWPで価格を調整してメガ割適用（商品企画ご提案②）。TOP2の併売で客単価を引き上げる。",
+     "目標： 客単価 ≧ ¥4,000"],
+    ["広告予算をROASの高い商品へ再配分",
+     "商品別ROASはプレエッセンスN 2,501%・UVデイエッセンスN 1,554%に対し、A.Z. セラムショットは211%。広告全体ではROAS 693%・広告売上¥91,450（全体売上の20.4%）。",
+     "A.Z.の広告費を縮小し、縮小分をプレエッセンスN・UVデイエッセンスNへ振替。CTR 8.32%のキーワードプラスを主軸に、指名KW中心の運用へ寄せる。",
+     "目標： 広告ROAS ≧ 900%"],
+    ["新規94名のリピート転換と残カート回収",
+     "新規比率75.2%（94名）と獲得は好調な一方、リピーターは31名（-18.4%）と減少。残カートは121件（カート249 − 注文128）が未回収のまま残っている。",
+     "メガ割直前に8月新規94名へクーポンを配布。残カート121件へリマインドを配信し、お気に入り371PVの基盤へ開始前の先出し告知を行う。",
+     "目標： リピーター ≧ 45名 ／ CVR ≧ 11.0%"]
   ];
-  qs.forEach((q,i)=>{
-    const x = M + (i%2)*(CW/2+0.15)/1, y = 1.30 + Math.floor(i/2)*2.78;
-    const qw = (CW-0.3)/2;
-    const qx = M + (i%2)*(qw+0.3);
-    card(s, qx, y, qw, 2.62, W);
-    s.addText(q[0], {x:qx+0.24, y:y+0.10, w:qw-0.48, h:0.34, isTextBox:true, margin:0,
-      fontFace:F, fontSize:12, bold:true, color:AMBER, valign:"middle"});
-    numList(s, qx+0.24, y+0.50, qw-0.48, q[1]);
+  acts.forEach((a,i)=>{
+    const x = M + (i%2)*(cw+0.30), y = 1.30 + Math.floor(i/2)*2.85;
+    card(s, x, y, cw, 2.70, W);
+    s.addShape(pres.ShapeType.ellipse,{x:x+0.26, y:y+0.15, w:0.36, h:0.36, fill:{color:AMBER}, line:{width:0}});
+    s.addText(String(i+1), {x:x+0.26, y:y+0.15, w:0.36, h:0.36, isTextBox:true, margin:0,
+      align:"center", valign:"middle", fontFace:F, fontSize:11, bold:true, color:W});
+    s.addText(a[0], {x:x+0.72, y:y+0.13, w:cw-0.98, h:0.40, isTextBox:true, margin:0,
+      fontFace:F, fontSize:12, bold:true, color:INK, valign:"middle"});
+    s.addText("根 拠", {x:x+0.26, y:y+0.60, w:1.2, h:0.22, isTextBox:true, margin:0,
+      fontFace:F, fontSize:8.5, bold:true, color:MUTED, valign:"middle"});
+    s.addText(a[1], {x:x+0.26, y:y+0.82, w:cw-0.52, h:0.62, isTextBox:true, margin:0,
+      fontFace:F, fontSize:9, color:INK2, valign:"top", lineSpacingMultiple:1.18});
+    s.addText("打ち手", {x:x+0.26, y:y+1.48, w:1.2, h:0.22, isTextBox:true, margin:0,
+      fontFace:F, fontSize:8.5, bold:true, color:MUTED, valign:"middle"});
+    s.addText(a[2], {x:x+0.26, y:y+1.70, w:cw-0.52, h:0.62, isTextBox:true, margin:0,
+      fontFace:F, fontSize:9, color:INK2, valign:"top", lineSpacingMultiple:1.18});
+    s.addShape(pres.ShapeType.roundRect,{x:x+0.26, y:y+2.32, w:cw-0.52, h:0.30,
+      fill:{color:UP}, line:{width:0}, rectRadius:0.05});
+    s.addText(a[3], {x:x+0.26, y:y+2.32, w:cw-0.52, h:0.30, isTextBox:true, margin:0,
+      align:"center", valign:"middle", fontFace:F, fontSize:9.5, bold:true, color:W});
   });
   footer(s);
+  s.addNotes("①②は商品企画（メガ割向けセット商品）より。優先順は①単品のメガ割適用 → ②セット商品の造成。");
 }
 
 pres.writeFile({fileName:"dr365_Qoo10_2026年8月メガポ_レポート.pptx"}).then(f=>console.log("WROTE",f));
