@@ -1,9 +1,17 @@
 const pptxgen = require("pptxgenjs");
 const D = require("./data.js");
 
-const INK="16263F", INK2="24344F", AMBER="E09B2D", AMBER_SOFT="FBEFD9",
-      UP="1F7A5C", DOWN="C0442E", MUTED="6B7688", CARD="F3F5F8",
-      LINE="DDE3EA", W="FFFFFF", TEAL="1F6F6B";
+// Wacworks house palette (extracted from the ByUR proposal deck)
+const INK="191F4D",      // primary navy
+      INK2="44496E",     // secondary navy
+      AMBER="191F4D",    // section labels / badges  (house style: navy, not amber)
+      AMBER_SOFT="E8EBF2",// total-row + chip tint
+      UP="2E75B6",       // positive delta (house blue)
+      DOWN="C00000",     // negative delta (house red)
+      MUTED="767C8A", CARD="F4F5F8", LINE="D4D6DE", RULE="8C929E",
+      W="FFFFFF", TEAL="2E75B6";
+const LOGO_DARK="assets/logo_dark.png", LOGO_WHITE="assets/logo_white.png",
+      TITLE_BG="assets/title_bg.jpg";
 const F="Meiryo";
 const SW=13.333, SH=7.5, M=0.6, CW=SW-2*M;
 
@@ -20,18 +28,24 @@ function sh(o){ return {type:"outer", color:"9AA6B5", blur:6, offset:1, angle:90
 function footer(s, dark){
   page++;
   s.addText("Copyright © Wacworks Inc. All Rights Reserved.", {
-    x:M, y:7.0, w:6, h:0.3, isTextBox:true, margin:0,
-    fontFace:F, fontSize:8, color: dark?"7C8AA3":"9AA6B5", valign:"middle"});
+    x:0.33, y:7.10, w:6, h:0.3, isTextBox:true, margin:0,
+    fontFace:F, fontSize:8, color: dark?"8892A8":"9AA0AC", valign:"middle"});
   s.addText(`${page} / ${TOTAL}`, {
-    x:SW-M-1.6, y:7.0, w:1.6, h:0.3, isTextBox:true, margin:0, align:"right",
-    fontFace:F, fontSize:8, color: dark?"7C8AA3":"9AA6B5", valign:"middle"});
+    x:SW-0.33-1.6, y:7.10, w:1.6, h:0.3, isTextBox:true, margin:0, align:"right",
+    fontFace:F, fontSize:8, color: dark?"8892A8":"9AA0AC", valign:"middle"});
 }
 
 function head(s, title, right){
-  s.addText(title, {x:M, y:0.30, w:CW-3.6, h:0.62, isTextBox:true, margin:0,
-    fontFace:F, fontSize:23, bold:true, color:INK, valign:"middle"});
-  if(right) s.addText(right, {x:SW-M-3.6, y:0.38, w:3.6, h:0.46, isTextBox:true, margin:0,
-    align:"right", fontFace:F, fontSize:10, color:MUTED, valign:"middle"});
+  // house style: small navy tick, title, hairline rule, Wacworks mark top-right
+  s.addShape(pres.ShapeType.rect, {x:0.33, y:0.25, w:0.15, h:0.54,
+    fill:{color:INK}, line:{color:INK, width:0}});
+  s.addText(title, {x:M, y:0.22, w:9.60, h:0.56, isTextBox:true, margin:0,
+    fontFace:F, fontSize:24, bold:true, color:INK, valign:"middle"});
+  s.addImage({path:LOGO_DARK, x:SW-0.35-2.55, y:0.24, w:2.55, h:0.474});
+  s.addShape(pres.ShapeType.line, {x:0.33, y:0.86, w:SW-0.66, h:0,
+    line:{color:RULE, width:0.75}});
+  if(right) s.addText(right, {x:SW-M-5.2, y:0.87, w:5.2, h:0.23, isTextBox:true, margin:0,
+    align:"right", fontFace:F, fontSize:9.5, color:MUTED, valign:"middle"});
 }
 
 function card(s, x, y, w, h, fill){
@@ -103,17 +117,24 @@ function totalRow(cells){
 {
   const s = pres.addSlide();
   s.background = {color:INK};
-  s.addShape(pres.ShapeType.ellipse,{x:9.9, y:-1.5, w:5.4, h:5.4, fill:{color:INK2}, line:{width:0}});
-  s.addShape(pres.ShapeType.ellipse,{x:11.6, y:4.6, w:3.2, h:3.2, fill:{color:"1E3A5F"}, line:{width:0}});
-  s.addText("dr365", {x:M+0.1, y:1.92, w:9, h:1.32, isTextBox:true, margin:0,
-    fontFace:F, fontSize:52, bold:true, color:W, charSpacing:1});
-  s.addText("Qoo10  2026年8月メガポ  運用振り返りレポート", {x:M+0.1, y:3.32, w:10.5, h:0.6, isTextBox:true, margin:0,
-    fontFace:F, fontSize:21, color:AMBER});
-  s.addShape(pres.ShapeType.roundRect,{x:M+0.1, y:4.0, w:8.5, h:0.72, fill:{color:INK2}, line:{width:0}, rectRadius:0.08});
-  s.addText("対象期間: 2026年8月1日〜9日（メガポ期間 9日間）  /  比較: 2026年7月1日〜9日（メガポ期間）",
-    {x:M+0.3, y:4.0, w:8.1, h:0.72, isTextBox:true, margin:0, fontFace:F, fontSize:11, color:"D6DEE9", valign:"middle"});
-  s.addText("作成：株式会社Wacworks   |   2026年8月", {x:M+0.1, y:5.35, w:8, h:0.4, isTextBox:true, margin:0,
-    fontFace:F, fontSize:11, color:"8FA0B8"});
+  s.addImage({path:TITLE_BG, x:0, y:0, w:SW, h:SH});
+  s.addShape(pres.ShapeType.rect, {x:0, y:0, w:SW, h:SH,
+    fill:{color:INK, transparency:5}, line:{color:INK, width:0}});
+  s.addImage({path:LOGO_WHITE, x:1.58, y:2.37, w:4.14, h:2.86});
+  s.addShape(pres.ShapeType.line, {x:6.67, y:2.37, w:0, h:2.95,
+    line:{color:"9AA0B4", width:0.75}});
+  s.addText("dr365様  Qoo10 メガポ 振り返りレポート", {x:7.38, y:2.62, w:5.55, h:0.62,
+    isTextBox:true, margin:0, fontFace:F, fontSize:19.5, bold:true, color:W, valign:"middle"});
+  s.addText("2026年8月メガポ 運用振り返り", {x:7.38, y:3.30, w:5.30, h:0.40,
+    isTextBox:true, margin:0, fontFace:F, fontSize:13, color:"C9CEDC", valign:"middle"});
+  s.addShape(pres.ShapeType.rect, {x:7.38, y:3.90, w:5.30, h:0.02,
+    fill:{color:"5B6182"}, line:{color:"5B6182", width:0}});
+  s.addText("対象期間: 2026年8月1日〜9日（メガポ期間 9日間）", {x:7.38, y:4.02, w:5.30, h:0.30,
+    isTextBox:true, margin:0, fontFace:F, fontSize:10.5, color:"C9CEDC", valign:"middle"});
+  s.addText("比較: 2026年7月1日〜9日（メガポ期間）", {x:7.38, y:4.30, w:5.30, h:0.30,
+    isTextBox:true, margin:0, fontFace:F, fontSize:10.5, color:"C9CEDC", valign:"middle"});
+  s.addText("作成：株式会社Wacworks   |   2026年8月", {x:7.38, y:4.78, w:5.30, h:0.32,
+    isTextBox:true, margin:0, fontFace:F, fontSize:10, color:"8892A8", valign:"middle"});
   footer(s, true);
   s.addNotes("dr365様 Qoo10 2026年8月メガポ（8/1〜8/9）の振り返り。比較対象は7月メガポ（7/1〜7/9）。");
 }
@@ -152,13 +173,13 @@ function totalRow(cells){
     ["売上件数","128件","平均14.2件/日（+5.8%）",INK],
     ["訪問者数","1,265","平均141人/日（+11.1%）",INK],
     ["平均客単価","¥3,495","前月比ほぼ横ばい（+¥1）",INK],
-    ["購入顧客数","125名","新規75.2%（+6.9pt）",AMBER]
+    ["購入顧客数","125名","新規75.2%（+6.9pt）",UP]
   ];
   cards.forEach((c,i)=> stat(s, M+i*(cw+0.16), 1.15, cw, 1.35, c[0], c[1], c[2], c[3]));
-  card(s, M, 2.72, CW, 4.13, W);
+  card(s, M, 2.72, CW, 3.50, W);
   s.addText("■ 総評", {x:M+0.28, y:2.85, w:4, h:0.32, isTextBox:true, margin:0,
     fontFace:F, fontSize:12.5, bold:true, color:AMBER});
-  bullets(s, M+0.28, 3.25, CW-0.56, 3.45, [
+  bullets(s, M+0.28, 3.25, CW-0.56, 2.90, [
     "8月メガポ期間（8/1〜9）売上¥447,380を達成。7月同期間（¥422,818）比で +5.8%、+¥24,562の成長。前年同月（¥234,300）比では +91.0% と大幅な伸長。",
     "V.C. UVデイエッセンスNが売上1位（¥142,120 / 40件）。7月比 +¥60,401（+74%）の躍進で、単月で全体の31.8%を占める最大の牽引役に。",
     "V.C. プレエッセンスNが2位（¥100,040 / 20件）。客単価¥5,002の高単価商品が7月比 +5% と安定推移し、収益面を下支え。",
@@ -245,7 +266,7 @@ function totalRow(cells){
   const cw=(CW-3*0.16)/4;
   const cards=[
     ["購入顧客（合計）","125名","9日間（7月120名比 +4.2%）",INK],
-    ["新規顧客","94名","75.2%（7月68.3%比 +6.9pt）",AMBER],
+    ["新規顧客","94名","75.2%（7月68.3%比 +6.9pt）",UP],
     ["リピーター","31名","24.8%（7月31.7%比 -6.9pt）",DOWN],
     ["フォロワー数","1,124名","期末時点（+20名/9日）",UP]
   ];
@@ -371,7 +392,7 @@ function totalRow(cells){
   head(s, "商品別売上ランキング ─ 2026年8月メガポ", "全12SKU / 売上¥447,380");
   const cw=(CW-3*0.16)/4;
   const cards=[
-    ["1位 売上","¥142,120","V.C. UVデイエッセンス N（31.8%）",AMBER],
+    ["1位 売上","¥142,120","V.C. UVデイエッセンス N（31.8%）",UP],
     ["2位 売上","¥100,040","V.C. プレエッセンス N（22.4%）",INK],
     ["TOP2合計シェア","54.1%","V.C.ライン主導の構造へ転換",INK],
     ["販売商品数","12SKU","TOP3で売上の68.4%",INK]
@@ -457,7 +478,7 @@ productSlide({
   title:"★ V.C. UVデイエッセンス N ─ 詳細分析",
   right:"商品番号 1194113791 / 30g",
   stats:[
-    ["8月売上","¥142,120","全体の31.8% / No.1",AMBER],
+    ["8月売上","¥142,120","全体の31.8% / No.1",UP],
     ["販売件数","40件","7月23件比 +74%",UP],
     ["1個単価","¥3,553","中価格 × 季節需要",INK],
     ["PV / CVR","392 / 10.20%","全SKU中トップ効率",INK]
@@ -484,7 +505,7 @@ productSlide({
   title:"★ V.C. プレエッセンス N ─ 詳細分析",
   right:"商品番号 1147122231 / 30ml",
   stats:[
-    ["8月売上","¥100,040","全体の22.4% / No.2",AMBER],
+    ["8月売上","¥100,040","全体の22.4% / No.2",UP],
     ["販売件数","20件","7月19件比 +5%",UP],
     ["1個単価","¥5,002","全SKU中 最高単価",INK],
     ["PV / CVR","249 / 8.03%","7月 9.79% から微減",INK]
@@ -585,10 +606,12 @@ productSlide({
 {
   const s = pres.addSlide();
   s.background = {color:INK};
-  s.addText("Next Step・総括 ─ 2026年8月メガポ", {x:M, y:0.34, w:CW, h:0.6, isTextBox:true, margin:0,
-    fontFace:F, fontSize:23, bold:true, color:W, valign:"middle"});
-  s.addText("【8月メガポ 実績総括】", {x:M, y:1.05, w:6, h:0.32, isTextBox:true, margin:0,
-    fontFace:F, fontSize:11.5, bold:true, color:AMBER, valign:"middle"});
+  s.addText("Next Step・総括 ─ 2026年8月メガポ", {x:M, y:0.28, w:9.4, h:0.6, isTextBox:true, margin:0,
+    fontFace:F, fontSize:24, bold:true, color:W, valign:"middle"});
+  s.addImage({path:LOGO_WHITE, x:SW-0.42-1.30, y:0.20, w:1.30, h:0.90});
+  s.addShape(pres.ShapeType.line, {x:0.33, y:0.98, w:SW-0.66, h:0, line:{color:"5B6182", width:0.75}});
+  s.addText("【8月メガポ 実績総括】", {x:M, y:1.10, w:6, h:0.30, isTextBox:true, margin:0,
+    fontFace:F, fontSize:11.5, bold:true, color:"C9CEDC", valign:"middle"});
   const cw=(CW-3*0.16)/4;
   const st=[["売上","¥447,380","7月比 +5.8%"],["件数","128件","7月比 +7件"],
             ["顧客数","125名","新規 75.2%"],["CVR","10.12%","▼ -0.51pt"]];
@@ -596,14 +619,14 @@ productSlide({
     const x=M+i*(cw+0.16);
     s.addShape(pres.ShapeType.roundRect,{x, y:1.45, w:cw, h:1.05, fill:{color:INK2}, line:{width:0}, rectRadius:0.07});
     s.addText(c[0], {x:x+0.2, y:1.53, w:cw-0.4, h:0.26, isTextBox:true, margin:0,
-      fontFace:F, fontSize:9.5, color:"8FA0B8", valign:"middle"});
+      fontFace:F, fontSize:9.5, color:"A6AEC4", valign:"middle"});
     s.addText(c[1], {x:x+0.2, y:1.79, w:cw-0.4, h:0.44, isTextBox:true, margin:0,
       fontFace:F, fontSize:20, bold:true, color:W, valign:"middle"});
     s.addText(c[2], {x:x+0.2, y:2.22, w:cw-0.4, h:0.24, isTextBox:true, margin:0,
-      fontFace:F, fontSize:9, color:"8FA0B8", valign:"middle"});
+      fontFace:F, fontSize:9, color:"A6AEC4", valign:"middle"});
   });
   s.addText("■ 次回メガ割に向けた優先3課題", {x:M, y:2.68, w:8, h:0.32, isTextBox:true, margin:0,
-    fontFace:F, fontSize:12.5, bold:true, color:AMBER, valign:"middle"});
+    fontFace:F, fontSize:12.5, bold:true, color:"C9CEDC", valign:"middle"});
   const pr=[
     ["【最優先①】 UVデイエッセンスN・プレエッセンスNの2枚看板に集中投資",
      "8月に躍進したTOP2（合計¥242,160＝売上の54.1%）へ在庫・広告・LPを集中。バンドル販売の新設でメガ割本番のTOP2合計¥350,000以上を狙う。",
@@ -621,10 +644,10 @@ productSlide({
     s.addText(p[0], {x:M+0.28, y:y+0.09, w:CW-4.0, h:0.3, isTextBox:true, margin:0,
       fontFace:F, fontSize:11.5, bold:true, color:W, valign:"middle"});
     s.addText(p[1], {x:M+0.28, y:y+0.42, w:CW-4.0, h:0.64, isTextBox:true, margin:0,
-      fontFace:F, fontSize:9.5, color:"B8C4D4", valign:"top", lineSpacingMultiple:1.18});
-    s.addShape(pres.ShapeType.roundRect,{x:SW-M-3.45, y:y+0.30, w:3.17, h:0.56, fill:{color:AMBER}, line:{width:0}, rectRadius:0.06});
+      fontFace:F, fontSize:9.5, color:"C2C8D8", valign:"top", lineSpacingMultiple:1.18});
+    s.addShape(pres.ShapeType.roundRect,{x:SW-M-3.45, y:y+0.30, w:3.17, h:0.56, fill:{color:UP}, line:{width:0}, rectRadius:0.06});
     s.addText(p[2], {x:SW-M-3.45, y:y+0.30, w:3.17, h:0.56, isTextBox:true, margin:0,
-      align:"center", valign:"middle", fontFace:F, fontSize:10, bold:true, color:INK});
+      align:"center", valign:"middle", fontFace:F, fontSize:10, bold:true, color:W});
   });
   footer(s, true);
 }

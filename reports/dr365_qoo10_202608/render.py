@@ -53,6 +53,11 @@ def draw_shape_bg(d, sh, x,y,w,h):
             line=rgb(sh.line.color, None)
             lw=max(1,px(sh.line.width or 0)) if sh.line.width else 1
     except Exception: pass
+    alpha=255
+    try:
+        a=sh.fill._xPr.find('.//{http://schemas.openxmlformats.org/drawingml/2006/main}alpha')
+        if a is not None: alpha=int(int(a.get('val'))/100000*255)
+    except Exception: pass
     if fill or line:
         st = sh.shape_type
         try: nm = sh._element.spPr.prstGeom.get('prst')
@@ -61,6 +66,9 @@ def draw_shape_bg(d, sh, x,y,w,h):
             d.ellipse([x,y,x+w,y+h], fill=fill, outline=line, width=lw)
         elif nm=='roundRect':
             d.rounded_rectangle([x,y,x+w,y+h], radius=max(3,int(min(w,h)*0.10)), fill=fill, outline=line, width=lw)
+        elif fill and alpha<255:
+            ov=Image.new("RGBA",(max(1,w),max(1,h)),tuple(list(fill)+[alpha]))
+            d._image.paste(ov,(x,y),ov)
         else:
             d.rectangle([x,y,x+w,y+h], fill=fill, outline=line, width=lw)
 
@@ -139,6 +147,14 @@ def render(path, outdir):
             if sh.has_chart:
                 d.rectangle([x,y,x+w,y+h], outline=(180,190,205), width=2)
                 d.text((x+10,y+10), "[CHART]", font=fnt(14), fill=(140,150,165))
+                continue
+            if sh.shape_type == MSO_SHAPE_TYPE.PICTURE:
+                try:
+                    import io
+                    pim=Image.open(io.BytesIO(sh.image.blob)).convert("RGBA").resize((max(1,w),max(1,h)))
+                    img.paste(pim,(x,y),pim); d=ImageDraw.Draw(img)
+                except Exception as e:
+                    d.rectangle([x,y,x+w,y+h], outline=(200,120,120), width=2)
                 continue
             if sh.shape_type == MSO_SHAPE_TYPE.TABLE or sh.has_table:
                 tb=sh.table
