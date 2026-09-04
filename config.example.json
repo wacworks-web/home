@@ -1,0 +1,9 @@
+{
+  "_comment": "このファイルを config.json にコピーして、LAGOM の認証情報を記入してください。config.json は .gitignore 済みでコミットされません。",
+  "_option_1": "発行済みの認証キーがある場合は cert_key のみでOK",
+  "cert_key": "",
+  "_option_2": "認証キーを毎回発行する場合は api_key + user_id + pwd を記入 (cert_key は空のまま)",
+  "api_key": "",
+  "user_id": "",
+  "pwd": ""
+}
