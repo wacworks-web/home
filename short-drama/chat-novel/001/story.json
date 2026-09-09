@@ -1,0 +1,19 @@
+{
+ "header": "夫",
+ "status_time": "23:12",
+ "messages": [
+  {"side": "narr", "text": "結婚3年目。夫の小遣いは月2万円。", "hold": 2.6},
+  {"side": "pill", "text": "今日"},
+  {"side": "left", "text": "ごめん、今月あと3000円しかない", "time": "23:12"},
+  {"side": "right", "text": "また？", "time": "23:12", "kidoku": true},
+  {"side": "left", "text": "後輩の送別会があって", "time": "23:13"},
+  {"side": "right", "text": "小遣いの範囲でやりくりする約束だよね", "time": "23:13", "kidoku": true},
+  {"side": "left", "text": "そうだね。ごめん", "time": "23:14"},
+  {"side": "left", "text": "……ねえ、逆に聞いていい？", "time": "23:15"},
+  {"side": "right", "text": "何？", "time": "23:15", "kidoku": true},
+  {"side": "left", "text": "俺の小遣いが2万で", "time": "23:15"},
+  {"side": "left", "text": "君の美容代が4万なのは、どういう計算？", "time": "23:16"},
+  {"side": "narr", "text": "……返信が、できなかった。", "hold": 2.6}
+ ],
+ "end_question": ["夫の小遣い月2万円は", "少なすぎ？妥当？"]
+}
