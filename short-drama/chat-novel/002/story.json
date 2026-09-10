@@ -1,0 +1,20 @@
+{
+ "header": "ユカ（親友）",
+ "status_time": "21:45",
+ "messages": [
+  {"side": "narr", "text": "先週、親友に3万円を貸した。", "hold": 2.4},
+  {"side": "pill", "text": "先週"},
+  {"side": "left", "text": "ほんとごめん！給料日に絶対返す！", "time": "9/3"},
+  {"side": "right", "text": "いいよ、困った時はお互い様", "time": "9/3", "kidoku": true},
+  {"side": "narr", "text": "そして昨日。彼女のストーリーには——", "hold": 2.6},
+  {"side": "narr", "text": "ディズニーの写真が、上がっていた。", "hold": 2.6},
+  {"side": "pill", "text": "今日"},
+  {"side": "right", "text": "ディズニー行ったんだね！楽しそうだった", "time": "21:45", "kidoku": true},
+  {"side": "left", "text": "そうなの！！年パスの元取らなきゃで笑", "time": "21:46"},
+  {"side": "right", "text": "そっか。あのさ、こないだの3万って", "time": "21:47", "kidoku": true},
+  {"side": "left", "text": "あー！ごめん給料日まだなんだよね", "time": "21:47"},
+  {"side": "left", "text": "てかディズニーはユカの分は彼氏が出したから！ノーカンだよ笑", "time": "21:48"},
+  {"side": "narr", "text": "……ノーカン、とは。", "hold": 2.4}
+ ],
+ "end_question": ["「借金あるのに遊ぶ友達」", "許せる？許せない？"]
+}
