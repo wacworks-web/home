@@ -140,6 +140,17 @@ def endcard(lines):
     d.text(((W - tw(d, t2, f2)) // 2, y + 40), t2, font=f2, fill=(126, 217, 87))
     return im
 
+def cover(lines):
+    im = Image.new('RGB', (W, H), (12, 12, 14))
+    d = ImageDraw.Draw(im)
+    sz = 54
+    f1 = font(sz)
+    y = H // 2 - (len(lines) * (sz + 22)) // 2
+    for t in lines:
+        d.text(((W - tw(d, t, f1)) // 2, y), t, font=f1, fill=(240, 240, 242))
+        y += sz + 22
+    return im
+
 def main():
     story = json.loads(pathlib.Path(sys.argv[1]).read_text())
     out = sys.argv[2]
@@ -149,6 +160,10 @@ def main():
     segs = []  # (png_path, duration, pop:boolean)
     shown = []
     idx = 0
+    if story.get('cover'):
+        p = tmp / f'f{idx:03d}.png'; idx += 1
+        cover(story['cover']).save(p)
+        segs.append((p, story.get('cover_hold', 1.5), False))
     for m in story['messages']:
         if m['side'] == 'left':
             ty = shown + [{'side': 'typing', 'text': ''}]

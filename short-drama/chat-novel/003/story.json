@@ -1,0 +1,21 @@
+{
+ "header": "アヤ（友達）",
+ "status_time": "20:31",
+ "cover": ["払ったご祝儀、", "合計27万円。"],
+ "cover_hold": 1.6,
+ "messages": [
+  {"side": "narr", "text": "34歳独身。出席した結婚式、9回。", "hold": 2.4},
+  {"side": "pill", "text": "今日"},
+  {"side": "left", "text": "私、式挙げることになった！！", "time": "20:31"},
+  {"side": "right", "text": "おめでとう！！", "time": "20:31", "kidoku": true},
+  {"side": "left", "text": "絶対来てね！ご祝儀は3万で大丈夫だよ〜", "time": "20:32"},
+  {"side": "right", "text": "うん、もちろん行く", "time": "20:33", "kidoku": true},
+  {"side": "narr", "text": "これで10回目。合計30万円。", "hold": 2.4},
+  {"side": "right", "text": "ねえ、変なこと聞いていい？", "time": "20:35", "kidoku": true},
+  {"side": "right", "text": "私みたいに式を挙げない人って、払ったご祝儀ってどうなるの？", "time": "20:36", "kidoku": true},
+  {"side": "left", "text": "え？どうって……", "time": "20:37"},
+  {"side": "left", "text": "お祝いだから、ノーリターンでしょ笑", "time": "20:37"},
+  {"side": "narr", "text": "30万円。ノーリターン。", "hold": 2.8}
+ ],
+ "end_question": ["式を挙げない人のご祝儀、", "回収できないのは仕方ない？"]
+}
