@@ -1,0 +1,19 @@
+{
+ "header": "義姉（夫の姉）",
+ "status_time": "13:20",
+ "cover": ["義母への仕送り、", "月3万円。"],
+ "cover_hold": 1.6,
+ "messages": [
+  {"side": "narr", "text": "結婚2年目。夫の母に毎月3万円。", "hold": 2.4},
+  {"side": "pill", "text": "今日"},
+  {"side": "left", "text": "お母さんの通院の送迎、お願いできる？私、仕事だから", "time": "13:20"},
+  {"side": "right", "text": "わかりました", "time": "13:21", "kidoku": true},
+  {"side": "right", "text": "あの、前から相談したかったんですけど", "time": "13:22", "kidoku": true},
+  {"side": "right", "text": "仕送り、うちだけ月3万は正直厳しくて。お義姉さんにも少しお願いできませんか", "time": "13:23", "kidoku": true},
+  {"side": "left", "text": "え？私は嫁いだ身だから笑", "time": "13:25"},
+  {"side": "left", "text": "長男夫婦が見るのが普通でしょ？", "time": "13:25"},
+  {"side": "right", "text": "……お義姉さんも、お母さんの娘ですよね？", "time": "13:27", "kidoku": true},
+  {"side": "narr", "text": "既読。返信は、来ない。", "hold": 2.8}
+ ],
+ "end_question": ["「親の面倒は長男夫婦」", "時代錯誤？それとも常識？"]
+}
