@@ -1,0 +1,20 @@
+{
+ "header": "ボスママ",
+ "status_time": "10:04",
+ "cover": ["ママ友ランチ会、", "月1回 4,000円。"],
+ "cover_hold": 1.6,
+ "messages": [
+  {"side": "narr", "text": "息子が幼稚園に入って、半年。", "hold": 2.2},
+  {"side": "pill", "text": "今日"},
+  {"side": "left", "text": "今月のランチ会、ホテルのビュッフェで4000円です♪", "time": "10:04"},
+  {"side": "right", "text": "すみません、今月は遠慮しておきます", "time": "10:10", "kidoku": true},
+  {"side": "left", "text": "え、また？みんな来るよ？", "time": "10:11"},
+  {"side": "right", "text": "家計が厳しくて。ごめんなさい", "time": "10:12", "kidoku": true},
+  {"side": "left", "text": "そっかー。残念", "time": "10:15"},
+  {"side": "left", "text": "あ、そういえば運動会の係決め、ランチ会で決めちゃうね", "time": "10:16"},
+  {"side": "right", "text": "……え？", "time": "10:16", "kidoku": true},
+  {"side": "left", "text": "来ない人は残った係になっちゃうけど、仕方ないよね笑", "time": "10:17"},
+  {"side": "narr", "text": "4,000円は参加費じゃなくて、みかじめ料だった。", "hold": 3.0}
+ ],
+ "end_question": ["行かないと不利になるランチ会、", "あなたなら行く？行かない？"]
+}
