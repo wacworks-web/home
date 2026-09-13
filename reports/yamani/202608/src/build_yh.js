@@ -267,19 +267,19 @@ const yoyColor = (v)=> {
 {
   const s = page("商品別売上ランキング TOP10（2026年8月）","BAGMANIA Yahoo!ショッピング店 / 店舗分析レポート / 2026年8月度",
     "JILL STUARTがTOP10中8商品。訪問者あたりの効率に大きな差。");
-  table(s, ["順位","商品コード","商品名","売上金額","注文数","訪問者数","購買率"], D.top10,
-    { x:0.55, y:1.45, w:12.22, colW:[0.7,1.5,5.52,1.45,0.85,1.1,1.1], rowH:0.34, fontSize:9.5,
-      align:["center","left","left","right","right","right","right"],
-      cellBold:(ri,ci)=>ci===3||ci===6,
-      cellColor:(ri,ci,r)=> ci===6 ? (parseFloat(r[6])>=3 ? POS : INK) : INK });
-  note(s,0.55,5.5,12.22,"▶  分析",[
+  table(s, ["順位","商品コード","商品名","売上金額","注文数","訪問者数","購買率","前年比"], D.top10,
+    { x:0.55, y:1.45, w:12.22, colW:[0.65,1.42,4.62,1.35,0.8,1.05,1.05,1.28], rowH:0.34, fontSize:9.5,
+      align:["center","left","left","right","right","right","right","right"],
+      cellBold:(ri,ci)=>ci===3||ci===6||ci===7,
+      cellColor:(ri,ci,r)=> ci===7 ? yoyColor(r[7]) : (ci===6 ? (parseFloat(r[6])>=3 ? POS : INK) : INK) });
+  note(s,0.55,5.42,12.22,"▶  分析",[
     "● TOP10 のうち 8商品が JILL STUART。1位 グローリア 折り財布 ¥288,900（22件）、2位 グローリア 口金折り財布 ¥270,200（19件）。",
     "● 注目は購買率の差。7位 グローリア 名刺入れ 4.46% / 8位 PINKY&DIANNE パドロック L字 4.07% / 6位 インプルーブ ラウンド長財布 3.70% と、",
     "  上位商品（1位 1.78% / 3位 1.65%）の2倍以上。集客量は少ないが転換効率が突出しており、露出を増やす余地が最も大きい。",
-    "● 特に 6位 インプルーブ ラウンドファスナー長財布 は訪問者189人・購買率3.70%・客単価 ¥18,657 と、少ない流入で高単価を取れている。"
-  ], 1.26, 9);
-  s.addText("※ 前年比は2025年8月の商品レポートが未取得のため本版では非掲載。",
-    { x:0.55, y:6.82, w:12.22, h:0.24, fontFace:JP, fontSize:8, color:MUTED, isTextBox:true, margin:0 });
+    "● 特に 6位 インプルーブ ラウンドファスナー長財布 は訪問者189人・購買率3.70%・客単価 ¥18,657 と、少ない流入で高単価を取れている。",
+    "● 前年比では 3位 エターナル L字ファスナー +220.2% が突出。一方 2位 グローリア 口金折り財布 は -13.6% で、留め具タイプによる明暗は楽天店と同傾向。",
+    "● 6・9・10位の3商品が新規（インプルーブ2型・BEAMS DESIGN 1型）。新シリーズ投入が上位を押し上げている。"
+  ], 1.45, 9);
 }
 
 /* ---------- 8. ブランド別売上分析 ---------- */
@@ -311,8 +311,58 @@ const yoyColor = (v)=> {
     "  MANIUNO も 1.7% → 4.0% と Yahoo で構成比が高い。",
     "  → チャネル別の品揃え・露出配分を検討する余地がある。"
   ], 4.9, 9.5);
-  s.addText("※ Yahooストア管理ツールの商品レポート（親商品行）を集計。合計は店舗売上 ¥7,167,305 と完全一致（捕捉率 100%）。前年比は2025年8月分が未取得のため本版では非掲載。",
+  s.addText("※ Yahooストア管理ツールの商品レポート（親商品行）を集計。合計は店舗売上 ¥7,167,305 と完全一致（捕捉率 100%）。2025年8月も同じ方法で集計し ¥5,129,320 と一致。",
     { x:0.55, y:6.0, w:6.6, h:0.62, fontFace:JP, fontSize:8, color:MUTED, isTextBox:true, margin:0, valign:"top" });
+}
+
+/* ---------- 8b. ブランド別売上前年比 ---------- */
+{
+  const s = page("ブランド別売上前年比","BAGMANIA Yahoo!ショッピング店 / 店舗分析レポート / 2026年8月度",
+    "取扱終了のNOMADOIを除く全ブランドが前年超え。BEAMS +102% / LANVIN +110%。");
+  s.addText("2026年8月 vs 2025年8月", { x:0.55, y:1.22, w:6, h:0.26, fontFace:JP, fontSize:10,
+    color:SLATE, isTextBox:true, margin:0 });
+  table(s, ["ブランド","売上(2026/08)","注文数","売上(2025/08)","注文数","売上前年比","備考"],
+    D.brandYoY.concat([D.brandYoYTotal]),
+    { x:0.55, y:1.5, w:12.22, colW:[3.0,1.72,0.9,1.72,0.9,1.38,2.6], rowH:0.285, fontSize:9.5,
+      align:["left","right","right","right","right","right","left"],
+      cellBold:(ri,ci)=> ci===5 || ri===11,
+      cellColor:(ri,ci,r)=> ri===11 ? NAVY : (ci===5 ? yoyColor(r[5]) : INK) });
+  note(s,0.55,5.72,12.22,"▶  総括",[
+    "● 合計 ¥5,129,320 → ¥7,167,305（前年比 140%）。取扱終了の NOMADOI と その他 を除く全ブランドが前年を上回った、きわめて素直な成長。",
+    "● 増加額では JILL STUART +¥882K が最大（構成比 35.3% → 37.6%）。次いで BEAMS +¥298K / PATRICK COX +¥263K / LANVIN +¥247K。",
+    "● 伸び率では MANIUNO +149% / LANVIN +110% / BEAMS +102% / PATRICK COX +61% と、中堅ブランドが軒並み2桁〜3桁成長。",
+    "  同じブランドが楽天店では MARGARET HOWELL -29% / UNGARO -30% / MANIUNO -42% と後退しており、チャネルによって明暗が完全に分かれている。"
+  ], 1.18, 9.5);
+}
+
+/* ---------- 8c. 伸び・落ち商品 ---------- */
+{
+  const s = page("前年対比 伸び・落ち商品","BAGMANIA Yahoo!ショッピング店 / 店舗分析レポート / 2026年8月度",
+    "前年主力6型が消滅し、新規5型が入れ替わる大規模な商品入替。");
+  s.addText("▲  伸び商品（新規・前年比プラス）", { x:0.55, y:1.28, w:6, h:0.3, fontFace:JP,
+    fontSize:12.5, bold:true, color:POS, isTextBox:true, margin:0 });
+  D.up.forEach((r,i)=>{
+    const y=1.68+i*0.68;
+    s.addShape(pres.ShapeType.roundRect,{x:0.55,y,w:6.03,h:0.58,fill:{color:"F0F8F3"},line:{color:"CBE4D6",width:1},rectRadius:0.04});
+    s.addText(r[0],{x:0.73,y:y+0.05,w:1.3,h:0.24,fontFace:"Calibri",fontSize:9.5,bold:true,color:POS,isTextBox:true,margin:0,valign:"middle"});
+    s.addText(r[1],{x:0.73,y:y+0.28,w:3.25,h:0.24,fontFace:JP,fontSize:8.5,color:INK,isTextBox:true,margin:0,valign:"middle"});
+    s.addText(r[2],{x:3.72,y:y+0.16,w:2.68,h:0.28,fontFace:JP,fontSize:9,bold:true,color:NAVY,isTextBox:true,margin:0,align:"right",valign:"middle"});
+  });
+  s.addText("▼  落ち商品（前年から消滅）", { x:6.75, y:1.28, w:6, h:0.3, fontFace:JP,
+    fontSize:12.5, bold:true, color:NEG, isTextBox:true, margin:0 });
+  D.down.forEach((r,i)=>{
+    const y=1.68+i*0.68;
+    s.addShape(pres.ShapeType.roundRect,{x:6.75,y,w:6.03,h:0.58,fill:{color:"FCF1F0"},line:{color:"EFD2CF",width:1},rectRadius:0.04});
+    s.addText(r[0],{x:6.93,y:y+0.05,w:1.3,h:0.24,fontFace:"Calibri",fontSize:9.5,bold:true,color:NEG,isTextBox:true,margin:0,valign:"middle"});
+    s.addText(r[1],{x:6.93,y:y+0.28,w:3.25,h:0.24,fontFace:JP,fontSize:8.5,color:INK,isTextBox:true,margin:0,valign:"middle"});
+    s.addText(r[2],{x:9.92,y:y+0.16,w:2.68,h:0.28,fontFace:JP,fontSize:9,bold:true,color:NAVY,isTextBox:true,margin:0,align:"right",valign:"middle"});
+  });
+  note(s,0.55,5.88,12.23,"▶  分析 — 商品入替が売上を作った月",[
+    "● 落ち商品は6型すべてが「消滅」（計 -¥567,300）。前年の主力だった JILL STUART ルナティ 口金折り財布、PINKY&DIANNE のラウンド長財布2型、",
+    "  MARGARET HOWELL idea の2型、BEAMS DESIGN ROUTINE バックパックが揃って取扱終了となっている。",
+    "● 対して伸び商品は新規5型で計 +¥528,900。特に JILL STUART「インプルーブ」シリーズ3型（ラウンド長財布・口金折り財布・L字折り財布）で ¥321,400 を占める。",
+    "● ほぼ1対1の商品入替に加えて既存商品が伸びた結果、店舗全体で +¥2,038K（+39.7%）。入替は成功と評価できる。"
+  ]);
 }
 
 /* ---------- 9. デバイス別・優良配送 ---------- */
