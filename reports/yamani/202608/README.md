@@ -7,7 +7,18 @@
 - SECTION 02 `WACWORKS_店舗分析_202608_SECTION02_BAGMANIA_v1.pptx`（15枚 / 16:9）
 - SECTION 03 `WACWORKS_店舗分析_202608_SECTION03_BAGMANIA_YAHOO_v2.pptx`（12枚 / 16:9）
 - SECTION 04 `WACWORKS_店舗分析_202608_SECTION04_BAGMANIA_AMAZON_v1.pptx`（7枚 / 16:9）
-- **統合版** `WACWORKS_店舗分析_202608_統合版_v2.pptx`（51枚 = 表紙 + 4チャネル横断サマリー + 各セクション）
+- **統合版** `WACWORKS_店舗分析_202608_統合版_v2.pptx`（51枚 = 表紙 + 4チャネル横断サマリー + 各セクション / フォント Meiryo・PowerPoint向け）
+- **統合版（Googleスライド変換用）** `WACWORKS_店舗分析_202608_統合版_v1_Googleスライド変換用.pptx`（同内容 / フォント Noto Sans JP）
+
+## Googleスライドへの変換について
+Drive連携ツールはファイル内容をインラインで渡す方式のため、4.3MBの本デッキは connector 経由でアップロードできない。手動で以下を実施する：
+1. `..._Googleスライド変換用.pptx` を マイドライブ直下（7月度版 `WACWORKS_店舗分析_202607_統合版_v1` と同じ場所）にアップロード
+2. 右クリック →「アプリで開く」→「Google スライド」で変換（またはDrive設定の「アップロードしたファイルを変換する」をONにしてからアップロード）
+3. ファイル名を `WACWORKS_店舗分析_202608_統合版_v1` に変更
+
+フォントは変換先に合わせて2種類用意：
+- Googleスライドにするなら **Noto Sans JP版**（Googleスライドに標準搭載。Meiryoは非搭載のため置換される）
+- PowerPointのまま使うなら **Meiryo版**
 
 ## データソース
 | 用途 | ソース |
