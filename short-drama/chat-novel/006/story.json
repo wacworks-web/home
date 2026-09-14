@@ -1,0 +1,19 @@
+{
+ "header": "幹事（同僚）",
+ "status_time": "17:42",
+ "cover": ["私の送別会、", "会費5,000円。"],
+ "cover_hold": 1.6,
+ "messages": [
+  {"side": "narr", "text": "7年勤めた会社を、今月で退職する。", "hold": 2.4},
+  {"side": "pill", "text": "今日"},
+  {"side": "left", "text": "金曜の送別会、会費5000円でーす！", "time": "17:42"},
+  {"side": "right", "text": "あの、私も払うんですか？", "time": "17:45", "kidoku": true},
+  {"side": "left", "text": "え、当たり前じゃん笑", "time": "17:46"},
+  {"side": "left", "text": "主役だからってタダは、ずるくない？", "time": "17:46"},
+  {"side": "right", "text": "……私の、送別会ですよね？", "time": "17:48", "kidoku": true},
+  {"side": "left", "text": "うちの部署、みんな平等が決まりだから", "time": "17:49"},
+  {"side": "left", "text": "あ、あと花束代で+500円ね！", "time": "17:50"},
+  {"side": "narr", "text": "自分の花束代を、自分で払うらしい。", "hold": 3.0}
+ ],
+ "end_question": ["主役から会費を取る送別会、", "アリ？ナシ？"]
+}
