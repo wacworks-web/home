@@ -289,7 +289,7 @@ const yoyColor = (v)=> {
   });
   s.addText("※ 商品分析レポート（売上上位1,000商品）ベース。店舗売上 ¥14,905,535 に対する捕捉率 91.1%。",
     { x:0.55, y:5.62, w:6.05, h:0.28, fontFace:JP, fontSize:8.5, color:MUTED, isTextBox:true, margin:0 });
-  s.addText("▶  上位3ブランドで構成比 68.7%。JILL STUART 単独で 42.7% と依存度が高く、同ブランドの主力商品入替が店舗全体の売上を直接左右する構造。",
+  s.addText("■  上位3ブランドで構成比 68.7%。JILL STUART 単独で 42.7% と依存度が高く、同ブランドの主力商品入替が店舗全体の売上を直接左右する構造。",
     { x:0.55, y:6.0, w:6.05, h:0.8, fontFace:JP, fontSize:9, color:INK, isTextBox:true, margin:0, valign:"top" });
 }
 
@@ -306,7 +306,7 @@ const yoyColor = (v)=> {
       align:["left","right","right","right","right","right","left"],
       cellBold:(ri,ci)=> ci===5 || ri===10,
       cellColor:(ri,ci,r)=> ri===10 ? NAVY : (ci===5 ? yoyColor(r[5]) : INK) });
-  note(s,0.55,5.68,12.22,"▶  総括",[
+  note(s,0.55,5.68,12.22,"■  総括",[
     "● 上位2ブランド（JILL STUART +4% / Pinky&Dianne +7%）と BEAMS +67% / PATRICK COX +11% が伸長し、全体では -3% に踏みとどまった。",
     "● 後退したのは中堅ブランド。MARGARET HOWELL -29%（-¥677K）/ UNGARO -30%（-¥330K）/ MANIUNO -42%（-¥167K）の3ブランドで",
     "  計 -¥1,174K の減少となり、全体の売上減 -¥450K を上回る。上位ブランドの伸びがこれを相殺した構図。",
@@ -316,7 +316,7 @@ const yoyColor = (v)=> {
 
 /* ---------- 9. カテゴリ別（全ブランド） ---------- */
 {
-  const s = page("カテゴリ別売上前年比 — 全ブランド","BAGMANIA 楽天市場店 / 店舗分析レポート / 2026年8月度",
+  const s = page("カテゴリ別売上前年比 ― 全ブランド","BAGMANIA 楽天市場店 / 店舗分析レポート / 2026年8月度",
     "主力のレディース財布-10.8%。メンズ財布・ハンドバッグ・名刺入れが伸長。");
   s.addText("2026年8月 vs 2025年8月", { x:0.55, y:1.22, w:6, h:0.26, fontFace:JP, fontSize:10,
     color:SLATE, isTextBox:true, margin:0 });
@@ -325,7 +325,7 @@ const yoyColor = (v)=> {
       cellBold:(ri,ci)=>ci===3, cellColor:(ri,ci,r)=> ci===3 ? yoyColor(r[3]) : INK });
   table(s, ["カテゴリ","売上 2026","売上 2025","前年比"], D.catAll, topt(0.55));
   table(s, ["カテゴリ","売上 2026","売上 2025","前年比"], D.catAll2, topt(6.83));
-  note(s,0.55,6.1,12.22,"▶  総括",[
+  note(s,0.55,6.1,12.22,"■  総括",[
     "合計 ¥14,026,000 → ¥13,575,750（前年比 97%）。主力のレディース財布が -10.8%（-¥893K）で全体を押し下げた一方、メンズ財布 +50.4% /",
     "ハンドバッグ +107.3% / 名刺入れ +35.7% / メンズコインケース +161.4% と、財布以外・メンズ領域が伸長。商品構成の多角化が進んでいる。"
   ],0.85,9.5);
@@ -340,7 +340,7 @@ const yoyColor = (v)=> {
       align:["center","left","left","right","right","right"],
       cellBold:(ri,ci)=>ci===3||ci===5,
       cellColor:(ri,ci,r)=> ci===5 ? yoyColor(r[5]) : INK });
-  note(s,0.55,5.62,12.22,"▶  分析",[
+  note(s,0.55,5.62,12.22,"■  分析",[
     "● TOP10 のうち 8商品が JILL STUART。1位 グローリア 折り財布 ¥720,000（60件）、2位 エターナル L字ファスナー折り財布 ¥624,000（+73.3%）。",
     "● 留め具タイプで明暗が分かれた。L字ファスナー系（2位 +73.3% / 5位 +38.9%）とラウンドファスナー（6位 +26.3%）が伸長する一方、",
     "  口金（がま口）系は 3位 -39.7% / 8位 -68.1% と大幅減。同じシリーズ内でも留め具によって前年比が逆方向に振れている。",
@@ -425,7 +425,7 @@ const yoyColor = (v)=> {
     s.addText(r[1],{x:6.93,y:y+0.28,w:3.7,h:0.24,fontFace:JP,fontSize:8.5,color:INK,isTextBox:true,margin:0,valign:"middle"});
     s.addText(r[2],{x:10.2,y:y+0.16,w:2.4,h:0.28,fontFace:JP,fontSize:9,bold:true,color:NAVY,isTextBox:true,margin:0,align:"right",valign:"middle"});
   });
-  note(s,0.55,5.88,12.23,"▶  分析 — 留め具タイプの明確な移行",[
+  note(s,0.55,5.88,12.23,"■  分析 ― 留め具タイプの明確な移行",[
     "● 落ち商品6件のうち5件が「口金（がま口）」タイプ。JILL STUART 3型（グローリア -68% / ルナティ 消滅 / エターナル -40%）と",
     "  U by ungaro 2型（-81% / 消滅）で、計 -¥1,674K。ブランドを跨いで同じ形状が同時に落ちており、需要そのものの移行と判断できる。",
     "● 対して伸び商品は L字ファスナー（エターナル +73% / Honey 新規）とかぶせ型（Honey 長財布 新規）、BEAMS の二つ折り2型。",
@@ -438,7 +438,7 @@ const yoyColor = (v)=> {
   const s = page("まとめと推奨アクション","BAGMANIA 楽天市場店 / 店舗分析レポート / 2026年8月度",
     "転換効率は改善。課題は集客基盤の縮小と中堅ブランドの後退。");
   s.addShape(pres.ShapeType.roundRect,{x:0.55,y:1.32,w:6.03,h:5.0,fill:{color:"F0F8F3"},line:{color:"CBE4D6",width:1},rectRadius:0.06});
-  s.addText("✓  成果・ポジティブ指標",{x:0.8,y:1.46,w:5.5,h:0.32,fontFace:JP,fontSize:13,bold:true,color:POS,isTextBox:true,margin:0,valign:"middle"});
+  s.addText("◎  成果・ポジティブ指標",{x:0.8,y:1.46,w:5.5,h:0.32,fontFace:JP,fontSize:13,bold:true,color:POS,isTextBox:true,margin:0,valign:"middle"});
   s.addText([
     "●  CVR 0.89%（+0.26pt）で直近13ヶ月の最高水準",
     "●  売上件数 +2.3%（1,156件 → 1,183件）と実数で増加",
@@ -475,7 +475,7 @@ const yoyColor = (v)=> {
 
 /* ---------- 15. カテゴリ別 JILL STUART ---------- */
 {
-  const s = page("カテゴリ別売上前年比 — JILL STUART","BAGMANIA 楽天市場店 / 店舗分析レポート / 2026年8月度",
+  const s = page("カテゴリ別売上前年比 ― JILL STUART","BAGMANIA 楽天市場店 / 店舗分析レポート / 2026年8月度",
     "主力ブランドの詳細。財布は-9.7%だが小物・バッグが大幅伸長。");
   s.addText("2026年8月 vs 2025年8月", { x:0.55, y:1.22, w:6, h:0.26, fontFace:JP, fontSize:10,
     color:SLATE, isTextBox:true, margin:0 });
@@ -500,7 +500,7 @@ const yoyColor = (v)=> {
     "  -11.2pt 低下。単一カテゴリ依存が緩和され、",
     "  ブランドとしての幅が出てきている。",
     "",
-    "▶ 推奨：伸びている名刺入れ・キーケース・バッグ",
+    "■ 推奨：伸びている名刺入れ・キーケース・バッグ",
     "  を独立導線で強化しつつ、財布は L字ファスナー",
     "  系へ主力を移す。"
   ], 4.95);

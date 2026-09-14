@@ -180,7 +180,7 @@ const yoyColor = (v)=> {
     "・スマホWeb  ¥1,144,315 → ¥1,071,675  （-¥73K / -6.4%）",
     "・PC  ¥424,215 → ¥397,760  （-¥26K / -6.2%）",
     "",
-    "▶ 増加分はアプリ単独で +¥2,137K。非アプリ経路の -¥99K を差し引いて +¥2,038K。",
+    "■ 増加分はアプリ単独で +¥2,137K。非アプリ経路の -¥99K を差し引いて +¥2,038K。",
     "  Yahoo の成長はアプリ内の露出獲得によるものと断定できる。"
   ], 2.0);
 }
@@ -272,7 +272,7 @@ const yoyColor = (v)=> {
       align:["center","left","left","right","right","right","right","right"],
       cellBold:(ri,ci)=>ci===3||ci===6||ci===7,
       cellColor:(ri,ci,r)=> ci===7 ? yoyColor(r[7]) : (ci===6 ? (parseFloat(r[6])>=3 ? POS : INK) : INK) });
-  note(s,0.55,5.42,12.22,"▶  分析",[
+  note(s,0.55,5.42,12.22,"■  分析",[
     "● TOP10 のうち 8商品が JILL STUART。1位 グローリア 折り財布 ¥288,900（22件）、2位 グローリア 口金折り財布 ¥270,200（19件）。",
     "● 注目は購買率の差。7位 グローリア 名刺入れ 4.46% / 8位 PINKY&DIANNE パドロック L字 4.07% / 6位 インプルーブ ラウンド長財布 3.70% と、",
     "  上位商品（1位 1.78% / 3位 1.65%）の2倍以上。集客量は少ないが転換効率が突出しており、露出を増やす余地が最も大きい。",
@@ -327,7 +327,7 @@ const yoyColor = (v)=> {
       align:["left","right","right","right","right","right","left"],
       cellBold:(ri,ci)=> ci===5 || ri===11,
       cellColor:(ri,ci,r)=> ri===11 ? NAVY : (ci===5 ? yoyColor(r[5]) : INK) });
-  note(s,0.55,5.72,12.22,"▶  総括",[
+  note(s,0.55,5.72,12.22,"■  総括",[
     "● 合計 ¥5,129,320 → ¥7,167,305（前年比 140%）。取扱終了の NOMADOI と その他 を除く全ブランドが前年を上回った、きわめて素直な成長。",
     "● 増加額では JILL STUART +¥882K が最大（構成比 35.3% → 37.6%）。次いで BEAMS +¥298K / PATRICK COX +¥263K / LANVIN +¥247K。",
     "● 伸び率では MANIUNO +149% / LANVIN +110% / BEAMS +102% / PATRICK COX +61% と、中堅ブランドが軒並み2桁〜3桁成長。",
@@ -357,7 +357,7 @@ const yoyColor = (v)=> {
     s.addText(r[1],{x:6.93,y:y+0.28,w:3.25,h:0.24,fontFace:JP,fontSize:8.5,color:INK,isTextBox:true,margin:0,valign:"middle"});
     s.addText(r[2],{x:9.92,y:y+0.16,w:2.68,h:0.28,fontFace:JP,fontSize:9,bold:true,color:NAVY,isTextBox:true,margin:0,align:"right",valign:"middle"});
   });
-  note(s,0.55,5.88,12.23,"▶  分析 — 商品入替が売上を作った月",[
+  note(s,0.55,5.88,12.23,"■  分析 ― 商品入替が売上を作った月",[
     "● 落ち商品は6型すべてが「消滅」（計 -¥567,300）。前年の主力だった JILL STUART ルナティ 口金折り財布、PINKY&DIANNE のラウンド長財布2型、",
     "  MARGARET HOWELL idea の2型、BEAMS DESIGN ROUTINE バックパックが揃って取扱終了となっている。",
     "● 対して伸び商品は新規5型で計 +¥528,900。特に JILL STUART「インプルーブ」シリーズ3型（ラウンド長財布・口金折り財布・L字折り財布）で ¥321,400 を占める。",
@@ -388,7 +388,7 @@ const yoyColor = (v)=> {
       align:["left","right","right","right"],
       cellBold:(ri,ci)=>ci===3, cellColor:(ri,ci,r)=> ci===3 ? yoyColor(r[3]) : INK });
   note(s,8.2,1.58,4.58,"■  分析・考察",[
-    "▶ Yahoo の成長はアプリ単独で説明できる。",
+    "■ Yahoo の成長はアプリ単独で説明できる。",
     "",
     "● アプリ経由売上 ¥3,560,790 → ¥5,697,870",
     "  （+60.0% / +¥2,137K）。売上構成比は",
@@ -409,7 +409,7 @@ const yoyColor = (v)=> {
     "  検索順位・訴求に効く施策として、",
     "  対象商品の拡大は引き続き有効。",
     "",
-    "▶ 推奨：アプリ向けの露出施策（優良配送対象",
+    "■ 推奨：アプリ向けの露出施策（優良配送対象",
     "  拡大・アプリ限定クーポン）に集中投下。",
     "  PC/スマホWeb は維持に留めてよい。"
   ], 5.3);
@@ -420,7 +420,7 @@ const yoyColor = (v)=> {
   const s = page("まとめと推奨アクション","BAGMANIA Yahoo!ショッピング店 / 店舗分析レポート / 2026年8月度",
     "3店舗で唯一の全面プラス。アプリ経路への集中と広告効率の回復が次の課題。");
   s.addShape(pres.ShapeType.roundRect,{x:0.55,y:1.32,w:6.03,h:5.0,fill:{color:"F0F8F3"},line:{color:"CBE4D6",width:1},rectRadius:0.06});
-  s.addText("✓  成果・ポジティブ指標",{x:0.8,y:1.46,w:5.5,h:0.32,fontFace:JP,fontSize:13,bold:true,color:POS,isTextBox:true,margin:0,valign:"middle"});
+  s.addText("◎  成果・ポジティブ指標",{x:0.8,y:1.46,w:5.5,h:0.32,fontFace:JP,fontSize:13,bold:true,color:POS,isTextBox:true,margin:0,valign:"middle"});
   s.addText([
     "●  売上 ¥7,167,305、前年比 +39.7% で3店舗中最大の伸び",
     "●  注文件数 585件（+44.4%）/ 注文者数 578人（+45.2%）",

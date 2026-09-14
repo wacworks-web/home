@@ -3,12 +3,11 @@
 2026年7月度版（`WACWORKS_店舗分析_202607_統合版_v1`）と同じ構成で作成。
 
 ## 成果物
-- SECTION 01 `WACWORKS_店舗分析_202608_SECTION01_YAMANIGOLF_v1.pptx`（15枚 / 16:9）
-- SECTION 02 `WACWORKS_店舗分析_202608_SECTION02_BAGMANIA_v1.pptx`（15枚 / 16:9）
-- SECTION 03 `WACWORKS_店舗分析_202608_SECTION03_BAGMANIA_YAHOO_v2.pptx`（12枚 / 16:9）
-- SECTION 04 `WACWORKS_店舗分析_202608_SECTION04_BAGMANIA_AMAZON_v1.pptx`（7枚 / 16:9）
-- **統合版** `WACWORKS_店舗分析_202608_統合版_v2.pptx`（51枚 = 表紙 + 4チャネル横断サマリー + 各セクション / フォント Meiryo・PowerPoint向け）
-- **統合版（Googleスライド変換用・軽量版）** `WACWORKS_店舗分析_202608_統合版_v1_Googleスライド変換用_軽量版.pptx`（同内容 / フォント Noto Sans JP / 305KB）
+- SECTION 01 `WACWORKS_店舗分析_202608_SECTION01_YAMANIGOLF_v2.pptx`（15枚 / 16:9）
+- SECTION 02 `WACWORKS_店舗分析_202608_SECTION02_BAGMANIA_v2.pptx`（15枚 / 16:9）
+- SECTION 03 `WACWORKS_店舗分析_202608_SECTION03_BAGMANIA_YAHOO_v3.pptx`（12枚 / 16:9）
+- SECTION 04 `WACWORKS_店舗分析_202608_SECTION04_BAGMANIA_AMAZON_v2.pptx`（7枚 / 16:9）
+- **統合版** `WACWORKS_店舗分析_202608_統合版_v3.pptx`（51枚 / 305KB / フォント Meiryo）
 
 ## ファイルサイズについて
 pptxgenjs は zip を**無圧縮（STORED）**で出力するため、生成直後は 4.38MB ある。
@@ -27,9 +26,20 @@ Drive連携ツール（`create_file`）自体は動作し、pptx→Googleスラ�
 2. 右クリック →「アプリで開く」→「Google スライド」で変換（またはDrive設定の「アップロードしたファイルを変換する」をONにしてからアップロード）
 3. ファイル名を `WACWORKS_店舗分析_202608_統合版_v1` に変更
 
-フォントは変換先に合わせて2種類用意：
-- Googleスライドにするなら **Noto Sans JP版**（Googleスライドに標準搭載。Meiryoは非搭載のため置換される）
-- PowerPointのまま使うなら **Meiryo版**
+## フォントと文字化け対策（v2/v3 で修正）
+一度 Noto Sans JP 版を作ったが、**未インストール環境で日本語が豆腐（□）になる**報告を受けて Meiryo に統一した。
+Meiryo は Windows/Mac Office に標準搭載で、Googleスライドでは日本語が出る別フォントに置換されるため、どちらでも豆腐にならない。
+
+あわせて **JIS X 0208 外の記号**を全スライドで置換した（フォントによっては字形を持たず豆腐化するため）：
+
+| 元 | 置換後 | 箇所数 |
+|---|---|---|
+| `▶` U+25B6 | `■` | 22 |
+| `✓` U+2713 | `◎` | 4 |
+| `—` U+2014 (em dash) | `―` U+2015 | 27 |
+| `–` U+2013 (en dash) | `-` ASCII | 8 |
+
+検証スクリプトで全ファイル「JIS外文字なし」を確認済み。残る記号（`●■▲▼△◎※→―¥`）はすべて JIS X 0208 内。
 
 ## データソース
 | 用途 | ソース |

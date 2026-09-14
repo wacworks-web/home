@@ -302,7 +302,7 @@ const yoyColor = (v)=> {
       align:["left","right","right","right","right","right","left"],
       cellBold:(ri,ci)=> ci===5 || ri===14,
       cellColor:(ri,ci,r)=> ri===14 ? NAVY : (ci===5 ? yoyColor(r[5]) : INK) });
-  s.addText("▶  総括", { x:0.55, y:6.18, w:2, h:0.26, fontFace:JP, fontSize:11, bold:true,
+  s.addText("■  総括", { x:0.55, y:6.18, w:2, h:0.26, fontFace:JP, fontSize:11, bold:true,
     color:ORANGE, isTextBox:true, margin:0, valign:"middle" });
   s.addText("PEARLY GATES +157% / MASTER BUNNY +101% / New Era +567% / ProSENDR +522% で伸長、Sun Mountain は新規 ¥859K を上乗せ。TOMMY HILFIGER Golf -35% / new balance -46% が後退し、構成比1位が TOMMY HILFIGER から PEARLY GATES へ入れ替わった。",
     { x:0.55, y:6.46, w:12.22, h:0.46, fontFace:JP, fontSize:9.5, color:INK, isTextBox:true, margin:0, valign:"top" });
@@ -310,7 +310,7 @@ const yoyColor = (v)=> {
 
 /* ---------- 9. カテゴリ別（全ブランド） ---------- */
 {
-  const s = page("カテゴリ別売上前年比 — 全ブランド","YAMANIGOLF 楽天市場店 / 店舗分析レポート / 2026年8月度",
+  const s = page("カテゴリ別売上前年比 ― 全ブランド","YAMANIGOLF 楽天市場店 / 店舗分析レポート / 2026年8月度",
     "キャディバッグ+104.9%が牽引。シャツ・ポロシャツ-29.4%、メンズシューズ-56.4%が後退。");
   s.addText("2026年8月 vs 2025年8月", { x:0.55, y:1.22, w:6, h:0.26, fontFace:JP, fontSize:10,
     color:SLATE, isTextBox:true, margin:0 });
@@ -319,7 +319,7 @@ const yoyColor = (v)=> {
       cellBold:(ri,ci)=>ci===3, cellColor:(ri,ci,r)=> ci===3 ? yoyColor(r[3]) : INK });
   table(s, ["カテゴリ","売上 2026","売上 2025","前年比"], D.catAll, topt(0.55));
   table(s, ["カテゴリ","売上 2026","売上 2025","前年比"], D.catAll2, topt(6.83));
-  note(s,0.55,6.35,12.22,"▶  総括",[
+  note(s,0.55,6.35,12.22,"■  総括",[
     "合計 ¥6,257,440 → ¥8,440,950（前年比 135%）。キャディバッグ ¥2,828K（構成比 33.5%）が単独で +¥1,448K を稼ぎ、全体の増加額の約66%を占める。シャツ・ポロシャツ -29.4% / メンズシューズ -56.4% / 傘・パラソル -69.4% / トートバッグ -72.7% が主な減少要因。"
   ],0.88);
 }
@@ -333,7 +333,7 @@ const yoyColor = (v)=> {
       align:["center","left","left","right","right","right"],
       cellBold:(ri,ci)=>ci===3||ci===5,
       cellColor:(ri,ci,r)=> ci===5 ? yoyColor(r[5]) : INK });
-  note(s,0.55,5.62,12.22,"▶  分析",[
+  note(s,0.55,5.62,12.22,"■  分析",[
     "● TOP10 のうち 9商品が「新規」。秋冬キャディバッグ新作の先行投入が8月売上を作った構図で、前年同月の商品構成とはほぼ入れ替わっている。",
     "● 1位 PEARLY GATES ビッグニコキャディバッグ ¥612,000（7件・単価 ¥87,429）が突出。2〜3位 Sun Mountain 2型で計 ¥481,000、5・7位 MASTER BUNNY 2型で ¥358,000。",
     "● 非バッグでは 4位 ProSENDR WIDENER（練習器）¥228,000、9位 Admiral GOLF 冷感ベスト ¥122,400（16件）が健闘。"
@@ -414,7 +414,7 @@ const yoyColor = (v)=> {
     s.addText(r[1],{x:6.93,y:y+0.28,w:3.6,h:0.24,fontFace:JP,fontSize:9,color:INK,isTextBox:true,margin:0,valign:"middle"});
     s.addText(r[2],{x:10.2,y:y+0.16,w:2.4,h:0.28,fontFace:JP,fontSize:9.5,bold:true,color:NAVY,isTextBox:true,margin:0,align:"right",valign:"middle"});
   });
-  note(s,0.55,5.88,12.23,"▶  分析",[
+  note(s,0.55,5.88,12.23,"■  分析",[
     "● 伸び商品は秋冬キャディバッグ新作が独占。前年に存在しなかった商品群が +¥1,563K を新規に積み上げた。",
     "● 落ち商品は前年主力だったキャディバッグ5型と new balance 574 v3 SL ゴルフシューズ2型が揃って販売終了。計 -¥762K の消滅。",
     "● 商品入替は機能しているが、new balance のシューズは後継モデルが未投入。検索需要（KW -40〜62%）も連動して失っている点は要対応。"
@@ -426,7 +426,7 @@ const yoyColor = (v)=> {
   const s = page("まとめと推奨アクション","YAMANIGOLF 楽天市場店 / 店舗分析レポート / 2026年8月度",
     "増収基調は継続。TOMMY HILFIGER / new balance の立て直しとSNS再構築が次の課題。");
   s.addShape(pres.ShapeType.roundRect,{x:0.55,y:1.32,w:6.03,h:5.0,fill:{color:"F0F8F3"},line:{color:"CBE4D6",width:1},rectRadius:0.06});
-  s.addText("✓  成果・ポジティブ指標",{x:0.8,y:1.46,w:5.5,h:0.32,fontFace:JP,fontSize:13,bold:true,color:POS,isTextBox:true,margin:0,valign:"middle"});
+  s.addText("◎  成果・ポジティブ指標",{x:0.8,y:1.46,w:5.5,h:0.32,fontFace:JP,fontSize:13,bold:true,color:POS,isTextBox:true,margin:0,valign:"middle"});
   s.addText([
     "●  売上 ¥9,706,322、前年比 +35.7% で大幅増収",
     "●  アクセス 84,921人（+24.8%）で大幅拡大",
@@ -463,7 +463,7 @@ const yoyColor = (v)=> {
 
 /* ---------- 15. カテゴリ別 Tommy Hilfiger ---------- */
 {
-  const s = page("カテゴリ別売上前年比 — Tommy Hilfiger Golf","YAMANIGOLF 楽天市場店 / 店舗分析レポート / 2026年8月度",
+  const s = page("カテゴリ別売上前年比 ― Tommy Hilfiger Golf","YAMANIGOLF 楽天市場店 / 店舗分析レポート / 2026年8月度",
     "主力ブランドの詳細分析。ウェア・バッグの2本柱が同時に半減。");
   s.addText("2026年8月 vs 2025年8月", { x:0.55, y:1.22, w:6, h:0.26, fontFace:JP, fontSize:10,
     color:SLATE, isTextBox:true, margin:0 });
@@ -489,7 +489,7 @@ const yoyColor = (v)=> {
     "  スカート +83%、ベルト +35% は伸長。小物・レディース",
     "  ラインには拡大余地がある。",
     "",
-    "▶ 推奨：秋冬キャディバッグ／モックネックの投入前倒しと、",
+    "■ 推奨：秋冬キャディバッグ／モックネックの投入前倒しと、",
     "  伸びているボストンバッグ・アンダーウェアの露出拡大。"
   ], 4.95);
   s.addText("※ 表は売上上位15カテゴリを掲載", { x:0.55, y:6.5, w:7.25, h:0.26, fontFace:JP,

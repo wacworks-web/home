@@ -103,7 +103,7 @@ const yoyColor = (v)=> {
 {
   const s = pres.addSlide();
   s.background = { color: NAVY };
-  s.addText("WAC WORKS — 店舗分析レポート", { x:0.9, y:1.55, w:11, h:0.4, fontFace:JP, fontSize:14,
+  s.addText("WAC WORKS ― 店舗分析レポート", { x:0.9, y:1.55, w:11, h:0.4, fontFace:JP, fontSize:14,
     bold:true, color:"E8703A", charSpacing:2, isTextBox:true, margin:0 });
   s.addText("ヤマニ様 4店舗 月次振り返り", { x:0.9, y:2.05, w:11, h:0.85, fontFace:JP, fontSize:40,
     bold:true, color:WHITE, isTextBox:true, margin:0 });
@@ -132,8 +132,8 @@ const yoyColor = (v)=> {
     ["YAMANIGOLF 楽天市場店","¥9,706,322","+35.7%","¥11,583","0.99%","¥1,577,960","372%","60.5%"],
     ["BAG MANIA 楽天市場店","¥14,905,535","-3.2%","¥12,600","0.89%","¥2,767,357","271%","50.2%"],
     ["BAG MANIA Yahoo!店","¥7,167,305","+39.7%","¥12,400","1.65%","¥1,080,261","397%","59.8%"],
-    ["BAG MANIA Amazon（上代）","¥23,619,924","+15.0%","¥10,668","—","¥860,421","999%","36.4%"],
-    ["合計","¥55,399,086","+14.9%","—","—","¥6,285,999","418%","47.4%"]
+    ["BAG MANIA Amazon（上代）","¥23,619,924","+15.0%","¥10,668","―","¥860,421","999%","36.4%"],
+    ["合計","¥55,399,086","+14.9%","―","―","¥6,285,999","418%","47.4%"]
   ], { x:0.55, y:1.45, w:12.22, colW:[3.0,1.65,1.1,1.25,1.05,1.6,1.25,1.32], rowH:0.42, fontSize:10.5,
        align:["left","right","right","right","right","right","right","right"],
        cellBold:(ri,ci)=> ri===4 || ci===2,
@@ -149,6 +149,7 @@ const yoyColor = (v)=> {
   s.addText("※ Amazonは上代（下代は ¥14,970,830）。楽天・Yahooとは価格ベースが異なるため単純比較には注意。転換率は楽天=CVR / Yahoo=購買率（注文者数÷訪問者数）。広告ROASは各媒体レポートの定義に準拠。",
     { x:0.55, y:6.45, w:12.22, h:0.46, fontFace:JP, fontSize:8, color:MUTED, isTextBox:true, margin:0, valign:"top" });
 }
+
 
 
 /* ================= build.js ================= */
@@ -362,7 +363,7 @@ FOOT = "Confidential  |  YAMANIGOLF 楽天市場店  /  2026年8月度 分析レ
       align:["left","right","right","right","right","right","left"],
       cellBold:(ri,ci)=> ci===5 || ri===14,
       cellColor:(ri,ci,r)=> ri===14 ? NAVY : (ci===5 ? yoyColor(r[5]) : INK) });
-  s.addText("▶  総括", { x:0.55, y:6.18, w:2, h:0.26, fontFace:JP, fontSize:11, bold:true,
+  s.addText("■  総括", { x:0.55, y:6.18, w:2, h:0.26, fontFace:JP, fontSize:11, bold:true,
     color:ORANGE, isTextBox:true, margin:0, valign:"middle" });
   s.addText("PEARLY GATES +157% / MASTER BUNNY +101% / New Era +567% / ProSENDR +522% で伸長、Sun Mountain は新規 ¥859K を上乗せ。TOMMY HILFIGER Golf -35% / new balance -46% が後退し、構成比1位が TOMMY HILFIGER から PEARLY GATES へ入れ替わった。",
     { x:0.55, y:6.46, w:12.22, h:0.46, fontFace:JP, fontSize:9.5, color:INK, isTextBox:true, margin:0, valign:"top" });
@@ -370,7 +371,7 @@ FOOT = "Confidential  |  YAMANIGOLF 楽天市場店  /  2026年8月度 分析レ
 
 /* ---------- 9. カテゴリ別（全ブランド） ---------- */
 {
-  const s = page("カテゴリ別売上前年比 — 全ブランド","YAMANIGOLF 楽天市場店 / 店舗分析レポート / 2026年8月度",
+  const s = page("カテゴリ別売上前年比 ― 全ブランド","YAMANIGOLF 楽天市場店 / 店舗分析レポート / 2026年8月度",
     "キャディバッグ+104.9%が牽引。シャツ・ポロシャツ-29.4%、メンズシューズ-56.4%が後退。");
   s.addText("2026年8月 vs 2025年8月", { x:0.55, y:1.22, w:6, h:0.26, fontFace:JP, fontSize:10,
     color:SLATE, isTextBox:true, margin:0 });
@@ -379,7 +380,7 @@ FOOT = "Confidential  |  YAMANIGOLF 楽天市場店  /  2026年8月度 分析レ
       cellBold:(ri,ci)=>ci===3, cellColor:(ri,ci,r)=> ci===3 ? yoyColor(r[3]) : INK });
   table(s, ["カテゴリ","売上 2026","売上 2025","前年比"], D1.catAll, topt(0.55));
   table(s, ["カテゴリ","売上 2026","売上 2025","前年比"], D1.catAll2, topt(6.83));
-  note(s,0.55,6.35,12.22,"▶  総括",[
+  note(s,0.55,6.35,12.22,"■  総括",[
     "合計 ¥6,257,440 → ¥8,440,950（前年比 135%）。キャディバッグ ¥2,828K（構成比 33.5%）が単独で +¥1,448K を稼ぎ、全体の増加額の約66%を占める。シャツ・ポロシャツ -29.4% / メンズシューズ -56.4% / 傘・パラソル -69.4% / トートバッグ -72.7% が主な減少要因。"
   ],0.88);
 }
@@ -393,7 +394,7 @@ FOOT = "Confidential  |  YAMANIGOLF 楽天市場店  /  2026年8月度 分析レ
       align:["center","left","left","right","right","right"],
       cellBold:(ri,ci)=>ci===3||ci===5,
       cellColor:(ri,ci,r)=> ci===5 ? yoyColor(r[5]) : INK });
-  note(s,0.55,5.62,12.22,"▶  分析",[
+  note(s,0.55,5.62,12.22,"■  分析",[
     "● TOP10 のうち 9商品が「新規」。秋冬キャディバッグ新作の先行投入が8月売上を作った構図で、前年同月の商品構成とはほぼ入れ替わっている。",
     "● 1位 PEARLY GATES ビッグニコキャディバッグ ¥612,000（7件・単価 ¥87,429）が突出。2〜3位 Sun Mountain 2型で計 ¥481,000、5・7位 MASTER BUNNY 2型で ¥358,000。",
     "● 非バッグでは 4位 ProSENDR WIDENER（練習器）¥228,000、9位 Admiral GOLF 冷感ベスト ¥122,400（16件）が健闘。"
@@ -474,7 +475,7 @@ FOOT = "Confidential  |  YAMANIGOLF 楽天市場店  /  2026年8月度 分析レ
     s.addText(r[1],{x:6.93,y:y+0.28,w:3.6,h:0.24,fontFace:JP,fontSize:9,color:INK,isTextBox:true,margin:0,valign:"middle"});
     s.addText(r[2],{x:10.2,y:y+0.16,w:2.4,h:0.28,fontFace:JP,fontSize:9.5,bold:true,color:NAVY,isTextBox:true,margin:0,align:"right",valign:"middle"});
   });
-  note(s,0.55,5.88,12.23,"▶  分析",[
+  note(s,0.55,5.88,12.23,"■  分析",[
     "● 伸び商品は秋冬キャディバッグ新作が独占。前年に存在しなかった商品群が +¥1,563K を新規に積み上げた。",
     "● 落ち商品は前年主力だったキャディバッグ5型と new balance 574 v3 SL ゴルフシューズ2型が揃って販売終了。計 -¥762K の消滅。",
     "● 商品入替は機能しているが、new balance のシューズは後継モデルが未投入。検索需要（KW -40〜62%）も連動して失っている点は要対応。"
@@ -486,7 +487,7 @@ FOOT = "Confidential  |  YAMANIGOLF 楽天市場店  /  2026年8月度 分析レ
   const s = page("まとめと推奨アクション","YAMANIGOLF 楽天市場店 / 店舗分析レポート / 2026年8月度",
     "増収基調は継続。TOMMY HILFIGER / new balance の立て直しとSNS再構築が次の課題。");
   s.addShape(pres.ShapeType.roundRect,{x:0.55,y:1.32,w:6.03,h:5.0,fill:{color:"F0F8F3"},line:{color:"CBE4D6",width:1},rectRadius:0.06});
-  s.addText("✓  成果・ポジティブ指標",{x:0.8,y:1.46,w:5.5,h:0.32,fontFace:JP,fontSize:13,bold:true,color:POS,isTextBox:true,margin:0,valign:"middle"});
+  s.addText("◎  成果・ポジティブ指標",{x:0.8,y:1.46,w:5.5,h:0.32,fontFace:JP,fontSize:13,bold:true,color:POS,isTextBox:true,margin:0,valign:"middle"});
   s.addText([
     "●  売上 ¥9,706,322、前年比 +35.7% で大幅増収",
     "●  アクセス 84,921人（+24.8%）で大幅拡大",
@@ -523,7 +524,7 @@ FOOT = "Confidential  |  YAMANIGOLF 楽天市場店  /  2026年8月度 分析レ
 
 /* ---------- 15. カテゴリ別 Tommy Hilfiger ---------- */
 {
-  const s = page("カテゴリ別売上前年比 — Tommy Hilfiger Golf","YAMANIGOLF 楽天市場店 / 店舗分析レポート / 2026年8月度",
+  const s = page("カテゴリ別売上前年比 ― Tommy Hilfiger Golf","YAMANIGOLF 楽天市場店 / 店舗分析レポート / 2026年8月度",
     "主力ブランドの詳細分析。ウェア・バッグの2本柱が同時に半減。");
   s.addText("2026年8月 vs 2025年8月", { x:0.55, y:1.22, w:6, h:0.26, fontFace:JP, fontSize:10,
     color:SLATE, isTextBox:true, margin:0 });
@@ -549,7 +550,7 @@ FOOT = "Confidential  |  YAMANIGOLF 楽天市場店  /  2026年8月度 分析レ
     "  スカート +83%、ベルト +35% は伸長。小物・レディース",
     "  ラインには拡大余地がある。",
     "",
-    "▶ 推奨：秋冬キャディバッグ／モックネックの投入前倒しと、",
+    "■ 推奨：秋冬キャディバッグ／モックネックの投入前倒しと、",
     "  伸びているボストンバッグ・アンダーウェアの露出拡大。"
   ], 4.95);
   s.addText("※ 表は売上上位15カテゴリを掲載", { x:0.55, y:6.5, w:7.25, h:0.26, fontFace:JP,
@@ -755,7 +756,7 @@ FOOT = "Confidential  |  BAGMANIA 楽天市場店  /  2026年8月度 分析レ�
   });
   s.addText("※ 商品分析レポート（売上上位1,000商品）ベース。店舗売上 ¥14,905,535 に対する捕捉率 91.1%。",
     { x:0.55, y:5.62, w:6.05, h:0.28, fontFace:JP, fontSize:8.5, color:MUTED, isTextBox:true, margin:0 });
-  s.addText("▶  上位3ブランドで構成比 68.7%。JILL STUART 単独で 42.7% と依存度が高く、同ブランドの主力商品入替が店舗全体の売上を直接左右する構造。",
+  s.addText("■  上位3ブランドで構成比 68.7%。JILL STUART 単独で 42.7% と依存度が高く、同ブランドの主力商品入替が店舗全体の売上を直接左右する構造。",
     { x:0.55, y:6.0, w:6.05, h:0.8, fontFace:JP, fontSize:9, color:INK, isTextBox:true, margin:0, valign:"top" });
 }
 
@@ -772,7 +773,7 @@ FOOT = "Confidential  |  BAGMANIA 楽天市場店  /  2026年8月度 分析レ�
       align:["left","right","right","right","right","right","left"],
       cellBold:(ri,ci)=> ci===5 || ri===10,
       cellColor:(ri,ci,r)=> ri===10 ? NAVY : (ci===5 ? yoyColor(r[5]) : INK) });
-  note(s,0.55,5.68,12.22,"▶  総括",[
+  note(s,0.55,5.68,12.22,"■  総括",[
     "● 上位2ブランド（JILL STUART +4% / Pinky&Dianne +7%）と BEAMS +67% / PATRICK COX +11% が伸長し、全体では -3% に踏みとどまった。",
     "● 後退したのは中堅ブランド。MARGARET HOWELL -29%（-¥677K）/ UNGARO -30%（-¥330K）/ MANIUNO -42%（-¥167K）の3ブランドで",
     "  計 -¥1,174K の減少となり、全体の売上減 -¥450K を上回る。上位ブランドの伸びがこれを相殺した構図。",
@@ -782,7 +783,7 @@ FOOT = "Confidential  |  BAGMANIA 楽天市場店  /  2026年8月度 分析レ�
 
 /* ---------- 9. カテゴリ別（全ブランド） ---------- */
 {
-  const s = page("カテゴリ別売上前年比 — 全ブランド","BAGMANIA 楽天市場店 / 店舗分析レポート / 2026年8月度",
+  const s = page("カテゴリ別売上前年比 ― 全ブランド","BAGMANIA 楽天市場店 / 店舗分析レポート / 2026年8月度",
     "主力のレディース財布-10.8%。メンズ財布・ハンドバッグ・名刺入れが伸長。");
   s.addText("2026年8月 vs 2025年8月", { x:0.55, y:1.22, w:6, h:0.26, fontFace:JP, fontSize:10,
     color:SLATE, isTextBox:true, margin:0 });
@@ -791,7 +792,7 @@ FOOT = "Confidential  |  BAGMANIA 楽天市場店  /  2026年8月度 分析レ�
       cellBold:(ri,ci)=>ci===3, cellColor:(ri,ci,r)=> ci===3 ? yoyColor(r[3]) : INK });
   table(s, ["カテゴリ","売上 2026","売上 2025","前年比"], D2.catAll, topt(0.55));
   table(s, ["カテゴリ","売上 2026","売上 2025","前年比"], D2.catAll2, topt(6.83));
-  note(s,0.55,6.1,12.22,"▶  総括",[
+  note(s,0.55,6.1,12.22,"■  総括",[
     "合計 ¥14,026,000 → ¥13,575,750（前年比 97%）。主力のレディース財布が -10.8%（-¥893K）で全体を押し下げた一方、メンズ財布 +50.4% /",
     "ハンドバッグ +107.3% / 名刺入れ +35.7% / メンズコインケース +161.4% と、財布以外・メンズ領域が伸長。商品構成の多角化が進んでいる。"
   ],0.85,9.5);
@@ -806,7 +807,7 @@ FOOT = "Confidential  |  BAGMANIA 楽天市場店  /  2026年8月度 分析レ�
       align:["center","left","left","right","right","right"],
       cellBold:(ri,ci)=>ci===3||ci===5,
       cellColor:(ri,ci,r)=> ci===5 ? yoyColor(r[5]) : INK });
-  note(s,0.55,5.62,12.22,"▶  分析",[
+  note(s,0.55,5.62,12.22,"■  分析",[
     "● TOP10 のうち 8商品が JILL STUART。1位 グローリア 折り財布 ¥720,000（60件）、2位 エターナル L字ファスナー折り財布 ¥624,000（+73.3%）。",
     "● 留め具タイプで明暗が分かれた。L字ファスナー系（2位 +73.3% / 5位 +38.9%）とラウンドファスナー（6位 +26.3%）が伸長する一方、",
     "  口金（がま口）系は 3位 -39.7% / 8位 -68.1% と大幅減。同じシリーズ内でも留め具によって前年比が逆方向に振れている。",
@@ -891,7 +892,7 @@ FOOT = "Confidential  |  BAGMANIA 楽天市場店  /  2026年8月度 分析レ�
     s.addText(r[1],{x:6.93,y:y+0.28,w:3.7,h:0.24,fontFace:JP,fontSize:8.5,color:INK,isTextBox:true,margin:0,valign:"middle"});
     s.addText(r[2],{x:10.2,y:y+0.16,w:2.4,h:0.28,fontFace:JP,fontSize:9,bold:true,color:NAVY,isTextBox:true,margin:0,align:"right",valign:"middle"});
   });
-  note(s,0.55,5.88,12.23,"▶  分析 — 留め具タイプの明確な移行",[
+  note(s,0.55,5.88,12.23,"■  分析 ― 留め具タイプの明確な移行",[
     "● 落ち商品6件のうち5件が「口金（がま口）」タイプ。JILL STUART 3型（グローリア -68% / ルナティ 消滅 / エターナル -40%）と",
     "  U by ungaro 2型（-81% / 消滅）で、計 -¥1,674K。ブランドを跨いで同じ形状が同時に落ちており、需要そのものの移行と判断できる。",
     "● 対して伸び商品は L字ファスナー（エターナル +73% / Honey 新規）とかぶせ型（Honey 長財布 新規）、BEAMS の二つ折り2型。",
@@ -904,7 +905,7 @@ FOOT = "Confidential  |  BAGMANIA 楽天市場店  /  2026年8月度 分析レ�
   const s = page("まとめと推奨アクション","BAGMANIA 楽天市場店 / 店舗分析レポート / 2026年8月度",
     "転換効率は改善。課題は集客基盤の縮小と中堅ブランドの後退。");
   s.addShape(pres.ShapeType.roundRect,{x:0.55,y:1.32,w:6.03,h:5.0,fill:{color:"F0F8F3"},line:{color:"CBE4D6",width:1},rectRadius:0.06});
-  s.addText("✓  成果・ポジティブ指標",{x:0.8,y:1.46,w:5.5,h:0.32,fontFace:JP,fontSize:13,bold:true,color:POS,isTextBox:true,margin:0,valign:"middle"});
+  s.addText("◎  成果・ポジティブ指標",{x:0.8,y:1.46,w:5.5,h:0.32,fontFace:JP,fontSize:13,bold:true,color:POS,isTextBox:true,margin:0,valign:"middle"});
   s.addText([
     "●  CVR 0.89%（+0.26pt）で直近13ヶ月の最高水準",
     "●  売上件数 +2.3%（1,156件 → 1,183件）と実数で増加",
@@ -941,7 +942,7 @@ FOOT = "Confidential  |  BAGMANIA 楽天市場店  /  2026年8月度 分析レ�
 
 /* ---------- 15. カテゴリ別 JILL STUART ---------- */
 {
-  const s = page("カテゴリ別売上前年比 — JILL STUART","BAGMANIA 楽天市場店 / 店舗分析レポート / 2026年8月度",
+  const s = page("カテゴリ別売上前年比 ― JILL STUART","BAGMANIA 楽天市場店 / 店舗分析レポート / 2026年8月度",
     "主力ブランドの詳細。財布は-9.7%だが小物・バッグが大幅伸長。");
   s.addText("2026年8月 vs 2025年8月", { x:0.55, y:1.22, w:6, h:0.26, fontFace:JP, fontSize:10,
     color:SLATE, isTextBox:true, margin:0 });
@@ -966,7 +967,7 @@ FOOT = "Confidential  |  BAGMANIA 楽天市場店  /  2026年8月度 分析レ�
     "  -11.2pt 低下。単一カテゴリ依存が緩和され、",
     "  ブランドとしての幅が出てきている。",
     "",
-    "▶ 推奨：伸びている名刺入れ・キーケース・バッグ",
+    "■ 推奨：伸びている名刺入れ・キーケース・バッグ",
     "  を独立導線で強化しつつ、財布は L字ファスナー",
     "  系へ主力を移す。"
   ], 4.95);
@@ -1064,7 +1065,7 @@ FOOT = "Confidential  |  BAGMANIA Yahoo!ショッピング店  /  2026年8月度
     "・スマホWeb  ¥1,144,315 → ¥1,071,675  （-¥73K / -6.4%）",
     "・PC  ¥424,215 → ¥397,760  （-¥26K / -6.2%）",
     "",
-    "▶ 増加分はアプリ単独で +¥2,137K。非アプリ経路の -¥99K を差し引いて +¥2,038K。",
+    "■ 増加分はアプリ単独で +¥2,137K。非アプリ経路の -¥99K を差し引いて +¥2,038K。",
     "  Yahoo の成長はアプリ内の露出獲得によるものと断定できる。"
   ], 2.0);
 }
@@ -1156,7 +1157,7 @@ FOOT = "Confidential  |  BAGMANIA Yahoo!ショッピング店  /  2026年8月度
       align:["center","left","left","right","right","right","right","right"],
       cellBold:(ri,ci)=>ci===3||ci===6||ci===7,
       cellColor:(ri,ci,r)=> ci===7 ? yoyColor(r[7]) : (ci===6 ? (parseFloat(r[6])>=3 ? POS : INK) : INK) });
-  note(s,0.55,5.42,12.22,"▶  分析",[
+  note(s,0.55,5.42,12.22,"■  分析",[
     "● TOP10 のうち 8商品が JILL STUART。1位 グローリア 折り財布 ¥288,900（22件）、2位 グローリア 口金折り財布 ¥270,200（19件）。",
     "● 注目は購買率の差。7位 グローリア 名刺入れ 4.46% / 8位 PINKY&DIANNE パドロック L字 4.07% / 6位 インプルーブ ラウンド長財布 3.70% と、",
     "  上位商品（1位 1.78% / 3位 1.65%）の2倍以上。集客量は少ないが転換効率が突出しており、露出を増やす余地が最も大きい。",
@@ -1211,7 +1212,7 @@ FOOT = "Confidential  |  BAGMANIA Yahoo!ショッピング店  /  2026年8月度
       align:["left","right","right","right","right","right","left"],
       cellBold:(ri,ci)=> ci===5 || ri===11,
       cellColor:(ri,ci,r)=> ri===11 ? NAVY : (ci===5 ? yoyColor(r[5]) : INK) });
-  note(s,0.55,5.72,12.22,"▶  総括",[
+  note(s,0.55,5.72,12.22,"■  総括",[
     "● 合計 ¥5,129,320 → ¥7,167,305（前年比 140%）。取扱終了の NOMADOI と その他 を除く全ブランドが前年を上回った、きわめて素直な成長。",
     "● 増加額では JILL STUART +¥882K が最大（構成比 35.3% → 37.6%）。次いで BEAMS +¥298K / PATRICK COX +¥263K / LANVIN +¥247K。",
     "● 伸び率では MANIUNO +149% / LANVIN +110% / BEAMS +102% / PATRICK COX +61% と、中堅ブランドが軒並み2桁〜3桁成長。",
@@ -1241,7 +1242,7 @@ FOOT = "Confidential  |  BAGMANIA Yahoo!ショッピング店  /  2026年8月度
     s.addText(r[1],{x:6.93,y:y+0.28,w:3.25,h:0.24,fontFace:JP,fontSize:8.5,color:INK,isTextBox:true,margin:0,valign:"middle"});
     s.addText(r[2],{x:9.92,y:y+0.16,w:2.68,h:0.28,fontFace:JP,fontSize:9,bold:true,color:NAVY,isTextBox:true,margin:0,align:"right",valign:"middle"});
   });
-  note(s,0.55,5.88,12.23,"▶  分析 — 商品入替が売上を作った月",[
+  note(s,0.55,5.88,12.23,"■  分析 ― 商品入替が売上を作った月",[
     "● 落ち商品は6型すべてが「消滅」（計 -¥567,300）。前年の主力だった JILL STUART ルナティ 口金折り財布、PINKY&DIANNE のラウンド長財布2型、",
     "  MARGARET HOWELL idea の2型、BEAMS DESIGN ROUTINE バックパックが揃って取扱終了となっている。",
     "● 対して伸び商品は新規5型で計 +¥528,900。特に JILL STUART「インプルーブ」シリーズ3型（ラウンド長財布・口金折り財布・L字折り財布）で ¥321,400 を占める。",
@@ -1272,7 +1273,7 @@ FOOT = "Confidential  |  BAGMANIA Yahoo!ショッピング店  /  2026年8月度
       align:["left","right","right","right"],
       cellBold:(ri,ci)=>ci===3, cellColor:(ri,ci,r)=> ci===3 ? yoyColor(r[3]) : INK });
   note(s,8.2,1.58,4.58,"■  分析・考察",[
-    "▶ Yahoo の成長はアプリ単独で説明できる。",
+    "■ Yahoo の成長はアプリ単独で説明できる。",
     "",
     "● アプリ経由売上 ¥3,560,790 → ¥5,697,870",
     "  （+60.0% / +¥2,137K）。売上構成比は",
@@ -1293,7 +1294,7 @@ FOOT = "Confidential  |  BAGMANIA Yahoo!ショッピング店  /  2026年8月度
     "  検索順位・訴求に効く施策として、",
     "  対象商品の拡大は引き続き有効。",
     "",
-    "▶ 推奨：アプリ向けの露出施策（優良配送対象",
+    "■ 推奨：アプリ向けの露出施策（優良配送対象",
     "  拡大・アプリ限定クーポン）に集中投下。",
     "  PC/スマホWeb は維持に留めてよい。"
   ], 5.3);
@@ -1304,7 +1305,7 @@ FOOT = "Confidential  |  BAGMANIA Yahoo!ショッピング店  /  2026年8月度
   const s = page("まとめと推奨アクション","BAGMANIA Yahoo!ショッピング店 / 店舗分析レポート / 2026年8月度",
     "3店舗で唯一の全面プラス。アプリ経路への集中と広告効率の回復が次の課題。");
   s.addShape(pres.ShapeType.roundRect,{x:0.55,y:1.32,w:6.03,h:5.0,fill:{color:"F0F8F3"},line:{color:"CBE4D6",width:1},rectRadius:0.06});
-  s.addText("✓  成果・ポジティブ指標",{x:0.8,y:1.46,w:5.5,h:0.32,fontFace:JP,fontSize:13,bold:true,color:POS,isTextBox:true,margin:0,valign:"middle"});
+  s.addText("◎  成果・ポジティブ指標",{x:0.8,y:1.46,w:5.5,h:0.32,fontFace:JP,fontSize:13,bold:true,color:POS,isTextBox:true,margin:0,valign:"middle"});
   s.addText([
     "●  売上 ¥7,167,305、前年比 +39.7% で3店舗中最大の伸び",
     "●  注文件数 585件（+44.4%）/ 注文者数 578人（+45.2%）",
@@ -1417,7 +1418,7 @@ FOOT = "Confidential  |  BAGMANIA Amazon (ベンダー)  /  2026年8月度 分�
     "● 客単価 ¥10,668（+0.8%）はほぼ横ばい。",
     "  単価ではなく件数で伸ばした月。",
     "",
-    "▶ 広告効率そのものは大きく改善しているため、",
+    "■ 広告効率そのものは大きく改善しているため、",
     "  短期の判断としては正しい投下。ただし",
     "  自然検索の低下が続くと広告費なしでは",
     "  売上が維持できない構造になる。"
@@ -1426,7 +1427,7 @@ FOOT = "Confidential  |  BAGMANIA Amazon (ベンダー)  /  2026年8月度 分�
     "2025年8月：  自然検索 ¥16,161,509（78.7%） ＋ 広告経由 ¥4,373,712（21.3%）",
     "2026年8月：  自然検索 ¥15,022,901（63.6%） ＋ 広告経由 ¥8,597,023（36.4%）",
     "",
-    "▶ 自然検索は金額でも構成比でも低下。Amazonの検索順位・レビュー・在庫など、",
+    "■ 自然検索は金額でも構成比でも低下。Amazonの検索順位・レビュー・在庫など、",
     "  広告に頼らない土台の見直しが中期の最優先テーマ。"
   ], 1.7);
 }
@@ -1454,8 +1455,8 @@ FOOT = "Confidential  |  BAGMANIA Amazon (ベンダー)  /  2026年8月度 分�
       cellColor:(ri,ci,r)=> ri===5 ? NAVY : (ci===5 ? (parseFloat(r[5].replace(',',''))>=1000?POS:NEG) : INK) });
   note(s,7.25,3.62,5.70,"■  注目ポイント",[
     "● 広告費の日平均が月内で急変している。",
-    "  8/1–8/7   ¥21,464/日",
-    "  8/29–8/31 ¥58,153/日（2.7倍）",
+    "  8/1-8/7   ¥21,464/日",
+    "  8/29-8/31 ¥58,153/日（2.7倍）",
     "",
     "● それに伴い ROAS は 1,201% → 1,298% →",
     "  1,093% → 903% → 558% と一貫して低下。",
@@ -1463,7 +1464,7 @@ FOOT = "Confidential  |  BAGMANIA Amazon (ベンダー)  /  2026年8月度 分�
     "  約半分で、投下量の増加が効率を大きく",
     "  押し下げている。",
     "",
-    "● 売上のピークは第2週（8/8–8/14）¥5.82M。",
+    "● 売上のピークは第2週（8/8-8/14）¥5.82M。",
     "  最終3日間を除けば週あたり ¥5.0〜5.8M で",
     "  安定しており、需要側の変動は小さい。"
   ], 2.88, 8.5);
@@ -1471,7 +1472,7 @@ FOOT = "Confidential  |  BAGMANIA Amazon (ベンダー)  /  2026年8月度 分�
     "● 週次で見ると自然検索売上は ¥3.2〜3.6M/週 でほぼ一定。",
     "  売上の振れ幅は広告経由（¥1.79M〜2.20M）で生まれている。",
     "",
-    "▶ 月末の追加投下は効率が悪い。予算を月内で均すか、",
+    "■ 月末の追加投下は効率が悪い。予算を月内で均すか、",
     "  ROAS 下限を決めて自動的に絞る運用へ切り替えたい。"
   ], 1.55, 9);
 }
@@ -1503,7 +1504,7 @@ FOOT = "Confidential  |  BAGMANIA Amazon (ベンダー)  /  2026年8月度 分�
     "● 一方 全体ROAS は 3,407% → 2,745%、TACOS は",
     "  2.93% → 3.64%。広告を増やした分だけ店舗全体の",
     "  コスト率は上がっている。",
-    "▶ 広告の伸びしろはまだあるが、自然検索が減っている",
+    "■ 広告の伸びしろはまだあるが、自然検索が減っている",
     "  状態での増額は TACOS 悪化に直結する。"
   ], 2.6, 8);
 }
@@ -1535,7 +1536,7 @@ FOOT = "Confidential  |  BAGMANIA Amazon (ベンダー)  /  2026年8月度 分�
     "  大きく、8月は JILL STUART が全体の",
     "  足を引っ張った形。",
     "",
-    "▶ 楽天（構成比 42.7%）/ Yahoo（37.6%）でも",
+    "■ 楽天（構成比 42.7%）/ Yahoo（37.6%）でも",
     "  首位であり、3チャネル共通の主力。"
   ], 4.85, 9.5);
   note(s,0.55,3.9,7.4,"■  本版で作成できていないスライド",[
@@ -1554,7 +1555,7 @@ FOOT = "Confidential  |  BAGMANIA Amazon (ベンダー)  /  2026年8月度 分�
   const s = page("まとめと推奨アクション","BAGMANIA Amazon ベンダー / 店舗分析レポート / 2026年8月度",
     "4チャネル最大規模。広告効率は良いが、自然検索の縮小が中期リスク。");
   s.addShape(pres.ShapeType.roundRect,{x:0.55,y:1.32,w:6.03,h:4.3,fill:{color:"F0F8F3"},line:{color:"CBE4D6",width:1},rectRadius:0.06});
-  s.addText("✓  成果・ポジティブ指標",{x:0.8,y:1.46,w:5.5,h:0.32,fontFace:JP,fontSize:13,bold:true,color:POS,isTextBox:true,margin:0,valign:"middle"});
+  s.addText("◎  成果・ポジティブ指標",{x:0.8,y:1.46,w:5.5,h:0.32,fontFace:JP,fontSize:13,bold:true,color:POS,isTextBox:true,margin:0,valign:"middle"});
   s.addText([
     "●  上代売上 ¥23,619,924（+15.0%）で4チャネル中最大規模",
     "●  売上件数 2,214件（+14.1%）と実数で拡大",
