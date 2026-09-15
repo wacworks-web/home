@@ -1,0 +1,19 @@
+{
+ "header": "彼氏",
+ "status_time": "22:08",
+ "cover": ["彼の家に同棲。", "家賃、月6万円。"],
+ "cover_hold": 1.6,
+ "messages": [
+  {"side": "narr", "text": "同棲を始めて、1年になる。", "hold": 2.2},
+  {"side": "pill", "text": "今日"},
+  {"side": "right", "text": "ねえ、ちょっと聞きたいんだけど", "time": "22:08", "kidoku": true},
+  {"side": "right", "text": "私が毎月払ってる家賃6万って、大家さんに払ってるんだよね？", "time": "22:09", "kidoku": true},
+  {"side": "left", "text": "え？ここ俺のマンションだけど", "time": "22:10"},
+  {"side": "right", "text": "……持ち家ってこと？", "time": "22:10", "kidoku": true},
+  {"side": "left", "text": "そう、ローン返済中。だから家賃っていうか住居費？", "time": "22:11"},
+  {"side": "right", "text": "私が払った6万は、あなたの資産になってるってこと？", "time": "22:12", "kidoku": true},
+  {"side": "left", "text": "まあそうなるけど、住んでるんだから当たり前じゃない？", "time": "22:13"},
+  {"side": "narr", "text": "1年間で72万円。全部、彼の資産に。", "hold": 3.0}
+ ],
+ "end_question": ["彼名義のローンを彼女が", "「家賃」で払うの、アリ？ナシ？"]
+}
