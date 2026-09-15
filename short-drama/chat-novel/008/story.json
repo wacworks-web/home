@@ -1,0 +1,19 @@
+{
+ "header": "お母さん",
+ "status_time": "20:44",
+ "cover": ["親に預けたお年玉、", "総額50万円。"],
+ "cover_hold": 1.6,
+ "messages": [
+  {"side": "narr", "text": "社会人になって、ふと気になった。", "hold": 2.2},
+  {"side": "pill", "text": "今日"},
+  {"side": "right", "text": "そういえば私のお年玉って、今どうなってるの？", "time": "20:44", "kidoku": true},
+  {"side": "left", "text": "ん？何が？", "time": "20:46"},
+  {"side": "right", "text": "毎年「預かっておくね」って言ってたやつ。計算したら50万くらいあるはずなんだけど", "time": "20:47", "kidoku": true},
+  {"side": "left", "text": "ああ、あれね", "time": "20:49"},
+  {"side": "left", "text": "あなたの塾代とか給食費になったわよ", "time": "20:49"},
+  {"side": "right", "text": "……え？預かってたんじゃないの？", "time": "20:50", "kidoku": true},
+  {"side": "left", "text": "誰が稼いだお金で生活してたと思ってるの？", "time": "20:52"},
+  {"side": "narr", "text": "私のお年玉は、最初から家計だった。", "hold": 3.0}
+ ],
+ "end_question": ["親が「預かった」お年玉、", "返すべき？家計ならアリ？"]
+}
