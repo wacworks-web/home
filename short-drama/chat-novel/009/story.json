@@ -1,0 +1,19 @@
+{
+ "header": "後輩（入社2年目）",
+ "status_time": "13:02",
+ "cover": ["後輩にランチを奢ったら、", "PayPayで返ってきた。"],
+ "cover_hold": 1.7,
+ "messages": [
+  {"side": "narr", "text": "初めて後輩とランチに行った日。", "hold": 2.2},
+  {"side": "pill", "text": "今日"},
+  {"side": "left", "text": "今日はありがとうございました！", "time": "13:02"},
+  {"side": "left", "text": "PayPay送っておいたので、確認お願いします！", "time": "13:02"},
+  {"side": "narr", "text": "通知：「1,180円を受け取りました」", "hold": 2.6},
+  {"side": "right", "text": "え、いいのに！奢るつもりだったんだけど", "time": "13:04", "kidoku": true},
+  {"side": "left", "text": "いえ！割り勘のほうが気楽なので！", "time": "13:05"},
+  {"side": "right", "text": "そっか。じゃあ今度はお言葉に甘えようかな", "time": "13:06", "kidoku": true},
+  {"side": "left", "text": "あ、あと今後の飲み会も、自分は不参加で大丈夫です！", "time": "13:07"},
+  {"side": "narr", "text": "律儀なのか、線を引かれたのか。", "hold": 3.0}
+ ],
+ "end_question": ["奢りを1円単位で返す後輩、", "律儀？それとも水くさい？"]
+}
