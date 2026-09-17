@@ -1,0 +1,19 @@
+{
+ "header": "夫",
+ "status_time": "21:18",
+ "cover": ["結婚後に知った、", "夫の奨学金380万円。"],
+ "cover_hold": 1.7,
+ "messages": [
+  {"side": "narr", "text": "結婚して3ヶ月。夫が改まって言った。", "hold": 2.4},
+  {"side": "pill", "text": "今日"},
+  {"side": "left", "text": "お金のこと、話したいんだけど", "time": "21:18"},
+  {"side": "left", "text": "実は奨学金が残ってて。毎月3万返してる", "time": "21:19"},
+  {"side": "right", "text": "え、いくら残ってるの？", "time": "21:20", "kidoku": true},
+  {"side": "left", "text": "380万", "time": "21:21"},
+  {"side": "right", "text": "……なんで結婚前に言ってくれなかったの？", "time": "21:23", "kidoku": true},
+  {"side": "left", "text": "言ったら、結婚してくれないと思って", "time": "21:24"},
+  {"side": "left", "text": "これからは、家計から返していいかな", "time": "21:25"},
+  {"side": "narr", "text": "私の給料も、彼の過去に消えていく。", "hold": 3.0}
+ ],
+ "end_question": ["夫の奨学金380万、", "家計から返すのはアリ？ナシ？"]
+}
