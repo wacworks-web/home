@@ -1,0 +1,18 @@
+{
+ "header": "夫",
+ "status_time": "22:41",
+ "cover": ["夫のカード明細に、", "毎月4万円の「花屋」。"],
+ "cover_hold": 1.7,
+ "messages": [
+  {"side": "narr", "text": "家計簿をつけていて、気づいた。", "hold": 2.4},
+  {"side": "narr", "text": "私は、花なんてもらったことがない。", "hold": 2.6},
+  {"side": "pill", "text": "今日"},
+  {"side": "right", "text": "ねえ、カードの明細にあるお花屋さんって何？", "time": "22:41", "kidoku": true},
+  {"side": "left", "text": "ああ、会社の受付に飾る花。経費で落ちるから立て替えてるだけ", "time": "22:44"},
+  {"side": "right", "text": "そうなんだ。毎月4万も？", "time": "22:45", "kidoku": true},
+  {"side": "left", "text": "そういう契約なんだよ。気にしないで", "time": "22:45"},
+  {"side": "narr", "text": "夫の会社の受付は、無人だ。", "hold": 2.6},
+  {"side": "narr", "text": "去年の忘年会で、私はそれを見ている。", "hold": 2.8}
+ ],
+ "end_question": ["毎月4万円の花の届け先、", "あなたなら、どう調べる？"]
+}
