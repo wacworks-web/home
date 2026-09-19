@@ -1,0 +1,18 @@
+{
+ "header": "夫",
+ "status_time": "21:12",
+ "cover": ["ジャケットのポケットに、", "レシートが残っていた。"],
+ "cover_hold": 1.7,
+ "messages": [
+  {"side": "narr", "text": "『家計簿が、不倫を教えてくれた。』#2", "hold": 2.2},
+  {"side": "narr", "text": "ホテルラウンジ。ケーキセット、2名分。", "hold": 2.6},
+  {"side": "pill", "text": "今日"},
+  {"side": "right", "text": "クリーニング出すよ。ポケットにレシート入ってたから机に置いておいたよ", "time": "21:12", "kidoku": true},
+  {"side": "left", "text": "ありがとう", "time": "21:15"},
+  {"side": "left", "text": "……見た？", "time": "21:15"},
+  {"side": "right", "text": "何が？", "time": "21:16", "kidoku": true},
+  {"side": "left", "text": "いや、なんでもない。取引先とお茶しただけだから", "time": "21:17"},
+  {"side": "narr", "text": "何も、聞いていないのに。", "hold": 2.8}
+ ],
+ "end_question": ["「見た？」と先に聞く夫。", "クロ？まだシロ？"]
+}
