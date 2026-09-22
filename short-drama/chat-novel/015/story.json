@@ -1,0 +1,19 @@
+{
+ "header": "夫",
+ "status_time": "19:04",
+ "cover": ["慰謝料300万円の内訳を、", "1円単位で計算した。"],
+ "cover_hold": 1.8,
+ "messages": [
+  {"side": "narr", "text": "『家計簿が、不倫を教えてくれた。』最終話", "hold": 2.2},
+  {"side": "pill", "text": "今日"},
+  {"side": "right", "text": "弁護士から書類が届いたと思います", "time": "19:04", "kidoku": true},
+  {"side": "left", "text": "話し合えないかな。300万なんて払えないよ", "time": "19:10"},
+  {"side": "right", "text": "花代48万、ホテル代62万、あなたに使った探偵代60万", "time": "19:12", "kidoku": true},
+  {"side": "right", "text": "全部、私がつけてた家計簿から計算しました", "time": "19:12", "kidoku": true},
+  {"side": "left", "text": "……やり直せないかな。もう一度だけ", "time": "19:15"},
+  {"side": "right", "text": "10年間、1円単位で家計を守ってきた私を騙した時点で", "time": "19:18", "kidoku": true},
+  {"side": "right", "text": "あなたはこの家の「支出」になりました", "time": "19:18", "kidoku": true},
+  {"side": "narr", "text": "家計簿の最終行に、書いた。「精算、完了」", "hold": 3.2}
+ ],
+ "end_question": ["あなたの「発覚のきっかけ」は？", "次回作の題材、コメントで募集します"]
+}
