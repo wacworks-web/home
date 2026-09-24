@@ -1,0 +1,18 @@
+{
+ "header": "義母",
+ "status_time": "14:11",
+ "cover": ["義母から、慰謝料の", "値下げ交渉をされた。"],
+ "cover_hold": 1.8,
+ "messages": [
+  {"side": "narr", "text": "夫の不倫が発覚して、2週間。", "hold": 2.4},
+  {"side": "pill", "text": "今日"},
+  {"side": "left", "text": "あなたも、気づかなかった責任があるんじゃない？", "time": "14:11"},
+  {"side": "right", "text": "お義母さん。責任は、不倫した側にあります", "time": "14:15", "kidoku": true},
+  {"side": "left", "text": "夫婦は支え合いでしょう。あなたが冷たかったから外に行ったのよ", "time": "14:17"},
+  {"side": "left", "text": "300万なんて息子が可哀想。100万にまけてあげて。ね？", "time": "14:18"},
+  {"side": "right", "text": "わかりました", "time": "14:22", "kidoku": true},
+  {"side": "right", "text": "このやり取りも、そのまま弁護士に共有しますね", "time": "14:22", "kidoku": true},
+  {"side": "narr", "text": "既読のまま、3日が経った。", "hold": 3.0}
+ ],
+ "end_question": ["「気づかなかった妻にも責任」", "義母の言い分、1ミリでもある？"]
+}
