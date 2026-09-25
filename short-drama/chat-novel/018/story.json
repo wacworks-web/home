@@ -1,0 +1,19 @@
+{
+ "header": "友人（新婦）",
+ "status_time": "20:15",
+ "cover": ["欠席した結婚式の", "ご祝儀を、請求された。"],
+ "cover_hold": 1.8,
+ "messages": [
+  {"side": "narr", "text": "友人の結婚式を、身内の不幸で欠席した。", "hold": 2.6},
+  {"side": "pill", "text": "今日"},
+  {"side": "left", "text": "この前は残念だったね！", "time": "20:15"},
+  {"side": "left", "text": "ところでご祝儀って、いつ頃もらえるかな？", "time": "20:15"},
+  {"side": "right", "text": "え、欠席したのに？", "time": "20:18", "kidoku": true},
+  {"side": "left", "text": "席もコース料理も用意してたから、キャンセル料かかってるんだよね", "time": "20:19"},
+  {"side": "left", "text": "2万でいいよ！", "time": "20:19"},
+  {"side": "right", "text": "……祖母のお葬式で必死だった週に、その連絡なんだ", "time": "20:23", "kidoku": true},
+  {"side": "left", "text": "それとこれとは別じゃない？笑", "time": "20:24"},
+  {"side": "narr", "text": "15年の友情の値段は、2万円だった。", "hold": 3.0}
+ ],
+ "end_question": ["欠席者へのご祝儀請求、", "アリ？ナシ？"]
+}
