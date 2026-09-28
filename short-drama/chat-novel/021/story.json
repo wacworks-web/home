@@ -1,0 +1,21 @@
+{
+ "header": "同僚ミキ",
+ "status_time": "21:30",
+ "cover": ["二次会の幹事をしたら、", "赤字5万円が私持ちになった。"],
+ "cover_hold": 1.8,
+ "messages": [
+  {"side": "narr", "text": "同期の結婚式二次会。幹事を私が引き受けた。", "hold": 2.6},
+  {"side": "pill", "text": "今日"},
+  {"side": "left", "text": "会費の集計、どうだった？", "time": "21:30"},
+  {"side": "right", "text": "ドタキャン4人分で、5万円の赤字だった…", "time": "21:33", "kidoku": true},
+  {"side": "left", "text": "えー。でもそれ、幹事が責任持つやつでしょ", "time": "21:35"},
+  {"side": "right", "text": "私がキャンセル料を払うってこと？", "time": "21:36", "kidoku": true},
+  {"side": "left", "text": "新婦に請求するわけにいかないじゃん。角が立つし", "time": "21:38"},
+  {"side": "left", "text": "みんなもそう言ってるよ", "time": "21:38"},
+  {"side": "narr", "text": "その「みんな」に、私は入っていない。", "hold": 2.6},
+  {"side": "right", "text": "わかった。ドタキャンした4人に、個別に連絡するね", "time": "21:42", "kidoku": true},
+  {"side": "left", "text": "ちょっと、それは大ごとにしすぎだって", "time": "21:44"},
+  {"side": "narr", "text": "大ごとにしたのは、どっちだろう。", "hold": 3.0}
+ ],
+ "end_question": ["幹事の赤字5万円。", "誰が払うべき？"]
+}
