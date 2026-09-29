@@ -1,0 +1,22 @@
+{
+ "header": "夫",
+ "status_time": "22:04",
+ "cover": ["義妹の奨学金300万を、", "うちが払っていた。"],
+ "cover_hold": 1.8,
+ "messages": [
+  {"side": "narr", "text": "家計簿に、毎月3万円の謎の引き落としがある。", "hold": 2.6},
+  {"side": "pill", "text": "今日"},
+  {"side": "right", "text": "この毎月3万の引き落とし、何？", "time": "22:04", "kidoku": true},
+  {"side": "left", "text": "ああ、それ。妹の奨学金", "time": "22:07"},
+  {"side": "right", "text": "え？なんでうちが払ってるの？", "time": "22:08", "kidoku": true},
+  {"side": "left", "text": "母さんに頼まれてさ。家族だから当然だろって", "time": "22:10"},
+  {"side": "left", "text": "妹もいずれ返すって言ってるし", "time": "22:10"},
+  {"side": "right", "text": "いつから払ってるの？", "time": "22:12", "kidoku": true},
+  {"side": "left", "text": "……結婚した年から", "time": "22:15"},
+  {"side": "narr", "text": "7年間で、252万円だった。", "hold": 2.8},
+  {"side": "right", "text": "私が食費を節約してたの、何のためだったんだろうね", "time": "22:19", "kidoku": true},
+  {"side": "left", "text": "……ごめん", "time": "22:23"},
+  {"side": "narr", "text": "義妹は先月、新車を買った。", "hold": 3.0}
+ ],
+ "end_question": ["「家族だから当然」の252万円。", "あなたなら許せる？"]
+}
