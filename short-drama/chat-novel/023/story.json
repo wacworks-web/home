@@ -1,0 +1,22 @@
+{
+ "header": "夫",
+ "status_time": "21:12",
+ "cover": ["夫が不倫相手に貸した50万、", "返すのは私だった。"],
+ "cover_hold": 1.8,
+ "messages": [
+  {"side": "narr", "text": "夫の不倫が発覚して、1ヶ月。別れたはずだった。", "hold": 2.6},
+  {"side": "pill", "text": "今日"},
+  {"side": "left", "text": "話がある。あいつに貸してた50万、返ってこないことになった", "time": "21:12"},
+  {"side": "right", "text": "貸してた？不倫相手に？", "time": "21:14", "kidoku": true},
+  {"side": "left", "text": "別れる時に、手切れ金でチャラにしようって言われて", "time": "21:15"},
+  {"side": "left", "text": "だから今月の家計、少し厳しいかも", "time": "21:16"},
+  {"side": "right", "text": "待って。それ、家のお金だよね？", "time": "21:18", "kidoku": true},
+  {"side": "left", "text": "家計っていうか、俺の給料だし", "time": "21:19"},
+  {"side": "narr", "text": "その給料で、私は7年間やりくりしてきた。", "hold": 2.6},
+  {"side": "right", "text": "わかった。じゃあ50万は、あなたのお小遣いから返済ね", "time": "21:23", "kidoku": true},
+  {"side": "right", "text": "月2万の25ヶ月。弁護士にも相談しておきます", "time": "21:23", "kidoku": true},
+  {"side": "left", "text": "……大ごとにするなよ", "time": "21:27"},
+  {"side": "narr", "text": "大ごとにしたのは、50万を貸した人だ。", "hold": 3.0}
+ ],
+ "end_question": ["不倫相手への手切れ金50万。", "家計から出すの、アリ？"]
+}
