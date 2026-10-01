@@ -1,0 +1,21 @@
+{
+ "header": "友人アヤ",
+ "status_time": "11:46",
+ "cover": ["二人目の出産祝いを、", "金額指定で請求された。"],
+ "cover_hold": 1.8,
+ "messages": [
+  {"side": "narr", "text": "友人に、二人目の赤ちゃんが生まれた。", "hold": 2.4},
+  {"side": "pill", "text": "今日"},
+  {"side": "left", "text": "無事に生まれました！", "time": "11:46"},
+  {"side": "right", "text": "おめでとう！体は大丈夫？", "time": "11:50", "kidoku": true},
+  {"side": "left", "text": "ありがとう！それでね、お祝いの件なんだけど", "time": "11:52"},
+  {"side": "left", "text": "上の子と同じ3万円でお願いします。現金で", "time": "11:52"},
+  {"side": "right", "text": "……え、金額の指定？", "time": "11:55", "kidoku": true},
+  {"side": "left", "text": "差があると下の子が可哀想でしょ。みんなにお願いしてるの", "time": "11:56"},
+  {"side": "narr", "text": "一人目の内祝いは、3000円のカタログギフトだった。", "hold": 2.8},
+  {"side": "right", "text": "わかった。じゃあ私も、前回の内祝いと同じ「気持ち」の額で贈るね", "time": "12:01", "kidoku": true},
+  {"side": "left", "text": "それ、どういう意味？", "time": "12:03"},
+  {"side": "narr", "text": "気持ちは、ちゃんと伝わったらしい。", "hold": 3.0}
+ ],
+ "end_question": ["お祝いの金額指定、", "アリ？ナシ？"]
+}
