@@ -1,0 +1,22 @@
+{
+ "header": "夫",
+ "status_time": "21:48",
+ "cover": ["私名義の借金80万が、", "見つかった。"],
+ "cover_hold": 1.8,
+ "messages": [
+  {"side": "narr", "text": "信用情報を取り寄せたら、知らないローンがあった。", "hold": 2.8},
+  {"side": "pill", "text": "今日"},
+  {"side": "right", "text": "カードローン80万って何？私の名義なんだけど", "time": "21:48", "kidoku": true},
+  {"side": "left", "text": "……ごめん。言おうと思ってた", "time": "21:52"},
+  {"side": "left", "text": "パチンコとかじゃない。付き合いとか、色々あって", "time": "21:53"},
+  {"side": "right", "text": "なんで私の名義なの？", "time": "21:54", "kidoku": true},
+  {"side": "left", "text": "俺、審査通らなかったんだ。夫婦なんだからいいだろ", "time": "21:56"},
+  {"side": "narr", "text": "夫婦でも、無断の名義借金は犯罪になる。", "hold": 2.8},
+  {"side": "right", "text": "これ、私の署名を偽造したってことだよね？", "time": "21:59", "kidoku": true},
+  {"side": "left", "text": "大げさだな。俺がちゃんと返してるんだから実害ないだろ", "time": "22:01"},
+  {"side": "right", "text": "明日、窓口と警察に相談してくる。記録も全部持って", "time": "22:03", "kidoku": true},
+  {"side": "left", "text": "待て待て。話し合おう", "time": "22:04"},
+  {"side": "narr", "text": "「話し合おう」は、バレた人の決まり文句だ。", "hold": 3.0}
+ ],
+ "end_question": ["配偶者の無断名義借金80万。", "許す？法的に動く？"]
+}
