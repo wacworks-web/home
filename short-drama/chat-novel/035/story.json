@@ -1,0 +1,22 @@
+{
+ "header": "夫",
+ "status_time": "20:17",
+ "cover": ["夫の生命保険の受取人が、", "知らない女だった。"],
+ "cover_hold": 1.8,
+ "messages": [
+  {"side": "narr", "text": "保険の更新書類に、知らない名前があった。", "hold": 2.6},
+  {"side": "pill", "text": "今日"},
+  {"side": "right", "text": "保険の受取人の「佐藤ミサキ」さんって、誰？", "time": "20:17", "kidoku": true},
+  {"side": "left", "text": "……会社の後輩。たぶん書類のミスだと思う", "time": "20:21"},
+  {"side": "right", "text": "ミスで他人のフルネームは書かれないよ", "time": "20:22", "kidoku": true},
+  {"side": "left", "text": "去年の手続きで、担当者が間違えたんだって", "time": "20:24"},
+  {"side": "right", "text": "保険会社に電話したよ。変更届は、あなたの直筆だって", "time": "20:26", "kidoku": true},
+  {"side": "left", "text": "勝手に電話したのか？", "time": "20:27"},
+  {"side": "narr", "text": "謝罪より先に、「勝手に」が出た。", "hold": 2.6},
+  {"side": "right", "text": "受取人は子どもに戻します。書類はもう取り寄せた", "time": "20:30", "kidoku": true},
+  {"side": "right", "text": "「佐藤ミサキ」さんの件は、弁護士と話します", "time": "20:30", "kidoku": true},
+  {"side": "left", "text": "待ってくれ。説明する", "time": "20:32"},
+  {"side": "narr", "text": "説明は、バレてからでは遅い。", "hold": 3.0}
+ ],
+ "end_question": ["受取人は、知らない女。", "夫の「説明」聞く価値ある？"]
+}
