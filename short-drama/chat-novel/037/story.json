@@ -1,0 +1,23 @@
+{
+ "header": "友人ケイコ",
+ "status_time": "15:02",
+ "cover": ["お見舞い1万円のお返しが、", "LINEスタンプだった。"],
+ "cover_hold": 1.8,
+ "messages": [
+  {"side": "narr", "text": "入院した友人に、お見舞い1万円を渡した。", "hold": 2.6},
+  {"side": "pill", "text": "今日"},
+  {"side": "left", "text": "退院しました！お見舞いありがとう", "time": "15:02"},
+  {"side": "right", "text": "おかえり！元気になって本当によかった", "time": "15:05", "kidoku": true},
+  {"side": "left", "text": "お返しと言ってはなんだけど……これ！", "time": "15:07"},
+  {"side": "narr", "text": "届いたのは「ありがとう」のスタンプ。", "hold": 2.8},
+  {"side": "right", "text": "かわいいスタンプだね", "time": "15:10", "kidoku": true},
+  {"side": "left", "text": "でしょ？これ有料のやつだよ。250円した", "time": "15:11"},
+  {"side": "right", "text": "……快気祝いって、半返しが相場じゃなかったっけ", "time": "15:14", "kidoku": true},
+  {"side": "left", "text": "え、友達同士でそういうの気にする？水くさいな〜", "time": "15:16"},
+  {"side": "narr", "text": "1万円が、250円のスタンプになった。", "hold": 2.6},
+  {"side": "right", "text": "じゃあ次に私が入院したら、スタンプでお返しするね", "time": "15:19", "kidoku": true},
+  {"side": "left", "text": "それはさすがに非常識じゃない？", "time": "15:21"},
+  {"side": "narr", "text": "非常識は、どっちだろう。", "hold": 3.0}
+ ],
+ "end_question": ["お見舞い1万の返しがスタンプ。", "アリ？ナシ？"]
+}
