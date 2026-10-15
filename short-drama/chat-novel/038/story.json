@@ -1,0 +1,21 @@
+{
+ "header": "夫",
+ "status_time": "22:33",
+ "cover": ["家計簿アプリに、", "知らないカードが繋がった。"],
+ "cover_hold": 1.8,
+ "messages": [
+  {"side": "narr", "text": "家計簿アプリが、知らないカードを拾った。", "hold": 2.6},
+  {"side": "pill", "text": "今日"},
+  {"side": "right", "text": "アプリに知らないカードが連携されてるの、あなたの？", "time": "22:33", "kidoku": true},
+  {"side": "left", "text": "ああ、仕事用のサブカード。気にしないで", "time": "22:37"},
+  {"side": "right", "text": "明細も同期されてるよ。レストラン、4万2千円", "time": "22:38", "kidoku": true},
+  {"side": "left", "text": "接待だよ。経費で落ちるやつ", "time": "22:40"},
+  {"side": "right", "text": "日曜の夜に？「ジュエリー 8万6千円」も経費？", "time": "22:41", "kidoku": true},
+  {"side": "left", "text": "……それは", "time": "22:44"},
+  {"side": "narr", "text": "私の誕生日に、ジュエリーは届いていない。", "hold": 2.8},
+  {"side": "right", "text": "明細は全部印刷しました。話は弁護士さんの前で聞くね", "time": "22:47", "kidoku": true},
+  {"side": "left", "text": "待て。話せばわかる", "time": "22:48"},
+  {"side": "narr", "text": "便利な時代だ。嘘だけが、不便になった。", "hold": 3.0}
+ ],
+ "end_question": ["隠しカードの明細13万。", "言い訳、聞きたい？"]
+}
