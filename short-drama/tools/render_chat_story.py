@@ -32,6 +32,13 @@ CHAT_TOP, CHAT_BOTTOM = 160, H - 120
 BG = (142, 165, 196); HEAD = (245, 246, 248); GREEN = (126, 217, 87)
 WHITE = (255, 255, 255); TXT = (30, 34, 40)
 
+def set_theme(name):
+    # story.json "theme":"dark" switches to a LINE dark-mode palette for visual variety
+    global BG, HEAD, GREEN, WHITE, TXT
+    if name == 'dark':
+        BG = (20, 22, 27); HEAD = (32, 35, 42); GREEN = (96, 196, 76)
+        WHITE = (58, 62, 72); TXT = (235, 237, 240)
+
 def font(sz): return ImageFont.truetype(FG, sz)
 
 def tw(d, t, f):
@@ -154,6 +161,7 @@ def cover(lines):
 def main():
     story = json.loads(pathlib.Path(sys.argv[1]).read_text())
     out = sys.argv[2]
+    set_theme(story.get('theme', 'light'))
     header = story.get('header', '')
     st = story.get('status_time', '21:00')
     tmp = pathlib.Path(tempfile.mkdtemp(prefix='chatstory_'))

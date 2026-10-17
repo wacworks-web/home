@@ -1,0 +1,21 @@
+{
+ "theme": "dark",
+ "header": "新婦リコ",
+ "status_time": "20:44",
+ "cover": ["式の3日前に、", "招待を取り消された。"],
+ "cover_hold": 1.8,
+ "messages": [
+  {"side": "narr", "text": "結婚式の3日前、新婦から連絡が来た。", "hold": 2.6},
+  {"side": "pill", "text": "今日"},
+  {"side": "left", "text": "ごめん！席の調整で、今回は遠慮してもらえないかな", "time": "20:44"},
+  {"side": "right", "text": "え、3日前だよ？ドレスも美容院も予約してるよ", "time": "20:48", "kidoku": true},
+  {"side": "left", "text": "親戚が増えちゃって。気持ちだけで嬉しいから！", "time": "20:50"},
+  {"side": "right", "text": "キャンセル料、ドレスと美容院で1万5千円かかるの", "time": "20:52", "kidoku": true},
+  {"side": "left", "text": "それは私に言われても。予約はそっちの判断だし", "time": "20:55"},
+  {"side": "narr", "text": "招待状には「ぜひ」と書いてあった。", "hold": 2.8},
+  {"side": "right", "text": "わかった。じゃあご祝儀は「気持ちだけ」送るね", "time": "20:58", "kidoku": true},
+  {"side": "left", "text": "え、それどういう意味？", "time": "21:01"},
+  {"side": "narr", "text": "気持ちだけで嬉しいと、言ったのはそっちだ。", "hold": 3.0}
+ ],
+ "end_question": ["3日前の招待取り消し。", "キャンセル料、請求できる？"]
+}
