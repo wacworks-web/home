@@ -1,0 +1,22 @@
+{
+ "theme": "light",
+ "header": "友人カナ",
+ "status_time": "18:08",
+ "cover": ["旅行をドタキャンした友人、", "キャンセル料を拒否。"],
+ "cover_hold": 1.8,
+ "messages": [
+  {"side": "narr", "text": "3人の温泉旅行。前日にカナが抜けた。", "hold": 2.6},
+  {"side": "pill", "text": "今日"},
+  {"side": "right", "text": "宿からキャンセル料の請求きたよ。カナの分、2万円", "time": "18:08", "kidoku": true},
+  {"side": "left", "text": "え、なんで私？行ってないのに", "time": "18:12"},
+  {"side": "right", "text": "前日キャンセルは宿泊費の100%なの。予約の時に共有したよね", "time": "18:13", "kidoku": true},
+  {"side": "left", "text": "でも実際に泊まってないじゃん。払う意味なくない？", "time": "18:15"},
+  {"side": "right", "text": "泊まった2人が、カナの分まで払う意味は？", "time": "18:17", "kidoku": true},
+  {"side": "left", "text": "こういうのって、幹事が多めに持つものでしょ", "time": "18:19"},
+  {"side": "narr", "text": "幹事は、保険会社ではない。", "hold": 2.6},
+  {"side": "right", "text": "じゃあ宿に「払わない」と直接伝えて。連絡先を送るね", "time": "18:22", "kidoku": true},
+  {"side": "left", "text": "ちょっと、それは気まずいって", "time": "18:24"},
+  {"side": "narr", "text": "気まずさだけは、払いたくないらしい。", "hold": 3.0}
+ ],
+ "end_question": ["ドタキャンのキャンセル料2万。", "誰が払う？"]
+}
