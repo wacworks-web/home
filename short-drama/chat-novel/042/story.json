@@ -1,0 +1,22 @@
+{
+ "theme": "dark",
+ "header": "夫",
+ "status_time": "19:33",
+ "cover": ["子どもの学資保険が、", "勝手に解約されていた。"],
+ "cover_hold": 1.8,
+ "messages": [
+  {"side": "narr", "text": "保険会社から「解約完了」の通知が届いた。", "hold": 2.6},
+  {"side": "pill", "text": "今日"},
+  {"side": "right", "text": "学資保険の解約通知が来たんだけど、何これ", "time": "19:33", "kidoku": true},
+  {"side": "left", "text": "ああ、言ってなかったか。先月解約した", "time": "19:37"},
+  {"side": "right", "text": "10年積み立てた進学資金だよ？200万あったよね", "time": "19:38", "kidoku": true},
+  {"side": "left", "text": "契約者は俺だから、手続き上は問題ない", "time": "19:40"},
+  {"side": "right", "text": "聞いてるのは手続きじゃなくて、200万の行き先", "time": "19:41", "kidoku": true},
+  {"side": "left", "text": "車のローンとか色々だよ。家族のためでもある", "time": "19:44"},
+  {"side": "narr", "text": "子どもの進学より先に、車が来た。", "hold": 2.6},
+  {"side": "right", "text": "弁護士に伝えます。使い込みは財産分与で精算されるので", "time": "19:47", "kidoku": true},
+  {"side": "left", "text": "おい、話し合いで解決しようって言っただろ", "time": "19:49"},
+  {"side": "narr", "text": "話し合いは、お金があるうちにするものだ。", "hold": 3.0}
+ ],
+ "end_question": ["学資保険200万の無断解約。", "取り返せると思う？"]
+}
