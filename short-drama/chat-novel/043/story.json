@@ -1,0 +1,28 @@
+{
+  "theme": "light",
+  "header": "リカ",
+  "status_time": "21:42",
+  "cover": ["友人の結婚式で", "受付を引き受けた私に", "届いた追加請求。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "昨日"},
+    {"side": "narr", "text": "親友リカの結婚式が終わった。", "hold": 2.2},
+    {"side": "narr", "text": "私は朝7時から受付を担当した。", "hold": 2.4},
+    {"side": "left", "text": "昨日はありがとう！", "time": "21:42"},
+    {"side": "right", "text": "おめでとう！いい式だったね", "time": "21:43", "kidoku": true},
+    {"side": "left", "text": "それでね、言いにくいんだけど", "time": "21:45"},
+    {"side": "left", "text": "ご祝儀のことなんだけど…", "time": "21:45"},
+    {"side": "right", "text": "うん？", "time": "21:46", "kidoku": true},
+    {"side": "left", "text": "ミキ、3万円だったよね？", "time": "21:47"},
+    {"side": "left", "text": "他のみんなは5万入れてくれてて", "time": "21:47"},
+    {"side": "right", "text": "え、友人で3万は普通じゃ…", "time": "21:49", "kidoku": true},
+    {"side": "left", "text": "うち、式にお金かけたから", "time": "21:50"},
+    {"side": "left", "text": "差額の2万、お願いできない？", "time": "21:50"},
+    {"side": "narr", "text": "受付は朝7時集合。お礼はなし。", "hold": 2.6},
+    {"side": "right", "text": "受付、無償でやったんだけど", "time": "21:53", "kidoku": true},
+    {"side": "left", "text": "それとこれとは別でしょ？", "time": "21:54"},
+    {"side": "left", "text": "友達なんだから協力してよ", "time": "21:54"},
+    {"side": "narr", "text": "友達、なんだよね…？", "hold": 2.4}
+  ],
+  "end_question": ["追加の2万円、", "あなたなら払う？"]
+}
