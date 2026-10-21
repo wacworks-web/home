@@ -1,0 +1,28 @@
+{
+  "theme": "dark",
+  "header": "ユウジ",
+  "status_time": "19:08",
+  "cover": ["給料日、", "振込額が半分だった。", "夫に聞くと…"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "給料日。通帳を見て、手が止まった。", "hold": 2.4},
+    {"side": "narr", "text": "振込額が、いつもの半分。", "hold": 2.2},
+    {"side": "right", "text": "ねえ、今月お給料半分なんだけど", "time": "19:08", "kidoku": true},
+    {"side": "left", "text": "あー、経理のミスらしい", "time": "19:12"},
+    {"side": "left", "text": "来月まとめて入るって", "time": "19:12"},
+    {"side": "right", "text": "先月もそう言ってたよね？", "time": "19:13", "kidoku": true},
+    {"side": "narr", "text": "振込が半分なのは、3ヶ月目だった。", "hold": 2.6},
+    {"side": "right", "text": "会社に電話していい？", "time": "19:15", "kidoku": true},
+    {"side": "left", "text": "は？なんでそうなるの", "time": "19:16"},
+    {"side": "left", "text": "俺を疑うわけ？", "time": "19:16"},
+    {"side": "narr", "text": "翌日、会社に電話した。", "hold": 2.2},
+    {"side": "narr", "text": "「ご主人は3ヶ月前に退職されてます」", "hold": 3.0},
+    {"side": "right", "text": "今日、会社どうだった？", "time": "19:02", "kidoku": true},
+    {"side": "left", "text": "いつも通りだよ。疲れた", "time": "19:05"},
+    {"side": "right", "text": "そっか。おつかれさま", "time": "19:06", "kidoku": true},
+    {"side": "narr", "text": "毎朝スーツで出ていく夫。", "hold": 2.2},
+    {"side": "narr", "text": "3ヶ月間、どこに行ってたの？", "hold": 2.6}
+  ],
+  "end_question": ["夫の「出勤先」、", "どこだと思う？"]
+}
