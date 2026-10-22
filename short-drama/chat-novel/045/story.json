@@ -1,0 +1,26 @@
+{
+  "theme": "light",
+  "header": "ミホ",
+  "status_time": "20:15",
+  "cover": ["卒園アルバム代、", "集金したママ友と", "連絡が取れない。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "卒園アルバム代、ひとり3500円。", "hold": 2.4},
+    {"side": "narr", "text": "集金係は、サキさんだった。", "hold": 2.2},
+    {"side": "right", "text": "ミホさん、サキさんと連絡取れてる？", "time": "20:15", "kidoku": true},
+    {"side": "left", "text": "ううん、既読つかない", "time": "20:17"},
+    {"side": "left", "text": "もう2週間だよね", "time": "20:17"},
+    {"side": "right", "text": "アルバム、いつ届くんだろう", "time": "20:18", "kidoku": true},
+    {"side": "left", "text": "業者さんに電話してみたの", "time": "20:20"},
+    {"side": "left", "text": "「入金されてません」って…", "time": "20:20"},
+    {"side": "right", "text": "えっ、35人分だよ？", "time": "20:21", "kidoku": true},
+    {"side": "narr", "text": "集めたお金は、12万円。", "hold": 2.4},
+    {"side": "left", "text": "昨日、園の前で見かけたけど", "time": "20:23"},
+    {"side": "left", "text": "新しいバッグ持ってた", "time": "20:23"},
+    {"side": "right", "text": "まさか、ね…", "time": "20:24", "kidoku": true},
+    {"side": "narr", "text": "さっき、サキさんのSNSが更新された。", "hold": 2.6},
+    {"side": "narr", "text": "家族で沖縄。楽しそうだった。", "hold": 2.6}
+  ],
+  "end_question": ["集めた12万円、", "返ってくると思う？"]
+}
