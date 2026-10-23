@@ -1,0 +1,25 @@
+{
+  "theme": "dark",
+  "header": "アヤ",
+  "status_time": "21:20",
+  "cover": ["友人の余興のため", "自腹4万円。", "お礼は、まさかの…"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "先週"},
+    {"side": "narr", "text": "親友アヤの結婚式で余興をした。", "hold": 2.4},
+    {"side": "narr", "text": "ダンス練習、1ヶ月。", "hold": 2.0},
+    {"side": "left", "text": "余興ほんとにありがとう！", "time": "21:20"},
+    {"side": "left", "text": "みんな感動してたよ", "time": "21:20"},
+    {"side": "right", "text": "喜んでもらえてよかった！", "time": "21:21", "kidoku": true},
+    {"side": "left", "text": "お礼、式場に預けてあるから", "time": "21:22"},
+    {"side": "left", "text": "取りに行ってね", "time": "21:22"},
+    {"side": "narr", "text": "式場で受け取ったのは、", "hold": 2.2},
+    {"side": "narr", "text": "500円のお菓子詰め合わせ。", "hold": 2.6},
+    {"side": "right", "text": "衣装とスタジオ代で4万かかってて", "time": "21:40", "kidoku": true},
+    {"side": "right", "text": "少しだけでも出してもらえない？", "time": "21:40", "kidoku": true},
+    {"side": "left", "text": "えっ、お礼もう渡したよね？", "time": "21:43"},
+    {"side": "left", "text": "好きでやってくれたんだと思ってた", "time": "21:43"},
+    {"side": "narr", "text": "好きでやった。でも…。", "hold": 2.4}
+  ],
+  "end_question": ["余興の自腹4万円、", "請求するのは非常識？"]
+}
