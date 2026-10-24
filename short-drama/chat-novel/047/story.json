@@ -1,0 +1,25 @@
+{
+  "theme": "light",
+  "header": "ケンジ",
+  "status_time": "22:05",
+  "cover": ["夫の不倫が発覚。", "慰謝料300万を", "払うのは、まさかの…"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "夫の不倫が、発覚した。", "hold": 2.2},
+    {"side": "narr", "text": "相手の旦那さんから慰謝料請求。", "hold": 2.4},
+    {"side": "left", "text": "話し合い終わった", "time": "22:05"},
+    {"side": "left", "text": "慰謝料、300万で決まった", "time": "22:05"},
+    {"side": "right", "text": "そう。それで？", "time": "22:07", "kidoku": true},
+    {"side": "left", "text": "貯金から出すしかないよね", "time": "22:08"},
+    {"side": "right", "text": "貯金って、どの？", "time": "22:09", "kidoku": true},
+    {"side": "left", "text": "家の口座のやつ", "time": "22:10"},
+    {"side": "narr", "text": "あれは、子どもの進学資金。", "hold": 2.4},
+    {"side": "right", "text": "あれは子どもの大学のお金だよ", "time": "22:12", "kidoku": true},
+    {"side": "left", "text": "他にないんだから仕方ないだろ", "time": "22:13"},
+    {"side": "left", "text": "家族なんだから協力してくれよ", "time": "22:13"},
+    {"side": "right", "text": "その言葉、そっくり返すね", "time": "22:15", "kidoku": true},
+    {"side": "narr", "text": "家族を裏切ったのは、どっち？", "hold": 2.8}
+  ],
+  "end_question": ["夫の慰謝料300万、", "家のお金で払うべき？"]
+}
