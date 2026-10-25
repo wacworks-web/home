@@ -1,0 +1,25 @@
+{
+  "theme": "dark",
+  "header": "ユミ",
+  "status_time": "20:40",
+  "cover": ["新築祝いの招待、", "「現金3万円」と", "金額指定された。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "友人ユミが、家を建てた。", "hold": 2.2},
+    {"side": "left", "text": "新築パーティーのお知らせ！", "time": "20:40"},
+    {"side": "left", "text": "来月3日、ぜひ来てね", "time": "20:40"},
+    {"side": "right", "text": "おめでとう！行く行く！", "time": "20:42", "kidoku": true},
+    {"side": "left", "text": "それでお願いなんだけど", "time": "20:43"},
+    {"side": "left", "text": "お祝いは現金で3万円でお願い", "time": "20:43"},
+    {"side": "right", "text": "え、金額指定…？", "time": "20:45", "kidoku": true},
+    {"side": "left", "text": "物もらっても困るからさ", "time": "20:46"},
+    {"side": "left", "text": "みんなにお願いしてるの", "time": "20:46"},
+    {"side": "narr", "text": "ランチ会のメンバーは、8人。", "hold": 2.4},
+    {"side": "right", "text": "相場って1万くらいじゃ…", "time": "20:48", "kidoku": true},
+    {"side": "left", "text": "うち、建てるの大変だったから", "time": "20:49"},
+    {"side": "left", "text": "来るなら3万。無理なら来なくていいよ", "time": "20:50"},
+    {"side": "narr", "text": "友情の値段は、3万円らしい。", "hold": 2.8}
+  ],
+  "end_question": ["金額指定の新築祝い、", "あなたなら行く？"]
+}
