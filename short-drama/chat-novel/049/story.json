@@ -1,0 +1,27 @@
+{
+  "theme": "light",
+  "header": "ヒロシ（兄）",
+  "status_time": "21:10",
+  "cover": ["親の介護費用を", "兄が「一円も", "払わない」と言った。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "母が、要介護2になった。", "hold": 2.2},
+    {"side": "narr", "text": "施設の費用は、月12万円。", "hold": 2.4},
+    {"side": "right", "text": "施設の契約、進めようと思う", "time": "21:10", "kidoku": true},
+    {"side": "right", "text": "費用、折半でいい？", "time": "21:10", "kidoku": true},
+    {"side": "left", "text": "は？無理無理", "time": "21:14"},
+    {"side": "left", "text": "うち住宅ローンあるし", "time": "21:14"},
+    {"side": "right", "text": "うちだってあるよ", "time": "21:15", "kidoku": true},
+    {"side": "left", "text": "お前、母さんの近くだろ", "time": "21:16"},
+    {"side": "left", "text": "世話するのは娘の役目じゃん", "time": "21:16"},
+    {"side": "narr", "text": "兄は長男。実家を相続する予定。", "hold": 2.6},
+    {"side": "right", "text": "実家はもらうのに？", "time": "21:18", "kidoku": true},
+    {"side": "left", "text": "それとこれとは別の話", "time": "21:19"},
+    {"side": "left", "text": "とにかくうちは出せないから", "time": "21:19"},
+    {"side": "right", "text": "わかった。弁護士に相談する", "time": "21:21", "kidoku": true},
+    {"side": "left", "text": "は？大げさだろ", "time": "21:22"},
+    {"side": "narr", "text": "母を見捨てる選択肢は、ない。", "hold": 2.8}
+  ],
+  "end_question": ["介護費用月12万、", "兄に請求できると思う？"]
+}
