@@ -1,0 +1,25 @@
+{
+  "theme": "dark",
+  "header": "サヤカ",
+  "status_time": "19:45",
+  "cover": ["結婚式を欠席したら", "請求書が届いた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "子どもの発熱で、結婚式を欠席した。", "hold": 2.4},
+    {"side": "narr", "text": "ご祝儀1万円は、事前に渡した。", "hold": 2.4},
+    {"side": "left", "text": "この前の式のことなんだけど", "time": "19:45"},
+    {"side": "left", "text": "サヤカの席、用意してたから", "time": "19:45"},
+    {"side": "left", "text": "料理と引き出物で2万5千円ね", "time": "19:46"},
+    {"side": "right", "text": "えっ、請求…？", "time": "19:48", "kidoku": true},
+    {"side": "left", "text": "キャンセル料かかったの", "time": "19:49"},
+    {"side": "right", "text": "ご祝儀1万は渡したよね", "time": "19:50", "kidoku": true},
+    {"side": "left", "text": "それはお祝いでしょ？", "time": "19:51"},
+    {"side": "left", "text": "実費は別だよ", "time": "19:51"},
+    {"side": "narr", "text": "子どもの熱は、39度だった。", "hold": 2.4},
+    {"side": "right", "text": "当日の朝に連絡したよね", "time": "19:53", "kidoku": true},
+    {"side": "left", "text": "こっちは損してるんだけど？", "time": "19:54"},
+    {"side": "narr", "text": "お祝いした気持ちまで、冷めていく。", "hold": 2.8}
+  ],
+  "end_question": ["欠席の実費2万5千円、", "払うべきだと思う？"]
+}
