@@ -1,0 +1,25 @@
+{
+  "theme": "light",
+  "header": "タクヤ",
+  "status_time": "21:55",
+  "cover": ["独身時代の貯金を", "夫が「家族のお金」", "と言い出した。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "独身時代の貯金、300万円。", "hold": 2.4},
+    {"side": "narr", "text": "コツコツ貯めた、私のお金。", "hold": 2.2},
+    {"side": "left", "text": "車、そろそろ買い替えたい", "time": "21:55"},
+    {"side": "left", "text": "頭金、お前の貯金から出せる？", "time": "21:55"},
+    {"side": "right", "text": "え、あれは私の貯金だよ", "time": "21:57", "kidoku": true},
+    {"side": "left", "text": "結婚したんだから家族のお金だろ", "time": "21:58"},
+    {"side": "right", "text": "結婚前に貯めたお金だよ？", "time": "21:59", "kidoku": true},
+    {"side": "left", "text": "細かいこと言うなよ", "time": "22:00"},
+    {"side": "narr", "text": "買いたいのは、夫の趣味の車。", "hold": 2.4},
+    {"side": "right", "text": "それ、家族のためじゃなくない？", "time": "22:02", "kidoku": true},
+    {"side": "left", "text": "俺が気持ちよく働ければ", "time": "22:03"},
+    {"side": "left", "text": "家族のためになるだろ", "time": "22:03"},
+    {"side": "narr", "text": "ちなみに独身時代の貯金は、法律上", "hold": 2.4},
+    {"side": "narr", "text": "「特有財産」。私のもの。", "hold": 2.8}
+  ],
+  "end_question": ["独身時代の貯金300万、", "夫に使わせる？"]
+}
