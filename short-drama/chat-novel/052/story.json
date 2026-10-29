@@ -1,0 +1,26 @@
+{
+  "theme": "dark",
+  "header": "マリ",
+  "status_time": "13:20",
+  "cover": ["ランチ代の立て替え", "4000円を半年、", "払ってもらえない。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "ママ友ランチの立て替え、4000円。", "hold": 2.4},
+    {"side": "narr", "text": "あれから、半年が経った。", "hold": 2.2},
+    {"side": "right", "text": "マリちゃん、この前のランチ代…", "time": "13:20", "kidoku": true},
+    {"side": "left", "text": "ごめん！今度払うね", "time": "13:24"},
+    {"side": "narr", "text": "「今度」は、6回目だった。", "hold": 2.4},
+    {"side": "right", "text": "4000円、PayPayでも大丈夫だよ", "time": "13:25", "kidoku": true},
+    {"side": "left", "text": "えー、覚えてないなあ", "time": "13:28"},
+    {"side": "left", "text": "そんなの請求する？笑", "time": "13:28"},
+    {"side": "right", "text": "レシートもあるよ", "time": "13:29", "kidoku": true},
+    {"side": "left", "text": "たかが4000円でしつこくない？", "time": "13:31"},
+    {"side": "left", "text": "ママ友やめたいの？", "time": "13:31"},
+    {"side": "right", "text": "じゃあ今度のランチ会で精算ね", "time": "13:33", "kidoku": true},
+    {"side": "left", "text": "あ、次から別のお店にするから", "time": "13:36"},
+    {"side": "narr", "text": "たかが4000円。でも、6回。", "hold": 2.4},
+    {"side": "narr", "text": "先週、彼女は新しいバッグを買った。", "hold": 2.8}
+  ],
+  "end_question": ["半年返ってこない4000円、", "あなたなら諦める？"]
+}
