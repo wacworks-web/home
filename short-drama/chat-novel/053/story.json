@@ -1,0 +1,27 @@
+{
+  "theme": "light",
+  "header": "シンゴ",
+  "status_time": "23:10",
+  "cover": ["夫のスマホに", "「今月もありがとう」", "の通知が見えた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "昨夜"},
+    {"side": "narr", "text": "夫のスマホに、通知が光った。", "hold": 2.4},
+    {"side": "narr", "text": "送金アプリの、お礼メッセージ。", "hold": 2.4},
+    {"side": "right", "text": "ねえ、毎月10万どこに送ってるの", "time": "23:10", "kidoku": true},
+    {"side": "left", "text": "は？何の話", "time": "23:12"},
+    {"side": "right", "text": "アプリの履歴、見たよ", "time": "23:12", "kidoku": true},
+    {"side": "left", "text": "勝手に見るなよ！", "time": "23:13"},
+    {"side": "left", "text": "後輩に貸してるだけだって", "time": "23:13"},
+    {"side": "right", "text": "お礼のメッセージも見たよ", "time": "23:14", "kidoku": true},
+    {"side": "left", "text": "深い意味ないだろ", "time": "23:15"},
+    {"side": "narr", "text": "送金は、10ヶ月前から毎月。", "hold": 2.4},
+    {"side": "narr", "text": "合計、100万円。", "hold": 2.4},
+    {"side": "right", "text": "相手の名前、言える？", "time": "23:17", "kidoku": true},
+    {"side": "left", "text": "…", "time": "23:19"},
+    {"side": "left", "text": "話せば長くなるんだけど", "time": "23:21"},
+    {"side": "right", "text": "短くていいよ。名前だけ", "time": "23:22", "kidoku": true},
+    {"side": "narr", "text": "沈黙が、答えだった。", "hold": 2.8}
+  ],
+  "end_question": ["不倫相手への100万円、", "取り返せると思う？"]
+}
