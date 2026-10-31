@@ -1,0 +1,26 @@
+{
+  "theme": "dark",
+  "header": "ケイスケ（兄）",
+  "status_time": "20:30",
+  "cover": ["父の葬儀。", "香典200万を", "兄が持ち帰った。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "父の葬儀が、終わった。", "hold": 2.2},
+    {"side": "narr", "text": "香典は、約200万円集まった。", "hold": 2.4},
+    {"side": "left", "text": "葬儀代の件だけど", "time": "20:30"},
+    {"side": "left", "text": "150万だったから、75万ずつな", "time": "20:30"},
+    {"side": "right", "text": "香典の200万があるよね？", "time": "20:32", "kidoku": true},
+    {"side": "left", "text": "香典は喪主のものだから", "time": "20:33"},
+    {"side": "left", "text": "俺が受け取るのが筋だろ", "time": "20:33"},
+    {"side": "right", "text": "それで葬儀代は折半なの？", "time": "20:35", "kidoku": true},
+    {"side": "left", "text": "費用は子ども全員で負担だろ", "time": "20:36"},
+    {"side": "narr", "text": "香典は全額、兄のポケットへ。", "hold": 2.4},
+    {"side": "right", "text": "それはおかしくない？", "time": "20:38", "kidoku": true},
+    {"side": "left", "text": "長男に逆らうのか？", "time": "20:39"},
+    {"side": "right", "text": "葬儀代、香典から出すのが普通だよ", "time": "20:41", "kidoku": true},
+    {"side": "left", "text": "うちはうち。よそはよそ", "time": "20:42"},
+    {"side": "narr", "text": "香典は本来、葬儀費用に充てるもの。", "hold": 2.8}
+  ],
+  "end_question": ["香典200万は兄のもの、", "葬儀代は折半。アリ？"]
+}
