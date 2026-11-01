@@ -1,0 +1,24 @@
+{
+  "theme": "light",
+  "header": "アユミ（姉）",
+  "status_time": "20:05",
+  "cover": ["姉の沖縄挙式。", "旅費20万は自腹で", "ご祝儀は10万指定。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "姉の結婚式が、沖縄で開かれる。", "hold": 2.4},
+    {"side": "narr", "text": "家族4人の旅費は、20万円。", "hold": 2.4},
+    {"side": "left", "text": "式の件なんだけど", "time": "20:05"},
+    {"side": "left", "text": "ご祝儀、夫婦なら10万だよね", "time": "20:05"},
+    {"side": "right", "text": "旅費だけで20万かかるんだけど", "time": "20:07", "kidoku": true},
+    {"side": "left", "text": "それは勝手に家族で来るんでしょ", "time": "20:08"},
+    {"side": "right", "text": "お車代は出ないの？", "time": "20:09", "kidoku": true},
+    {"side": "left", "text": "リゾート婚にお車代はないよ", "time": "20:10"},
+    {"side": "left", "text": "旅行も兼ねられてお得じゃん", "time": "20:10"},
+    {"side": "narr", "text": "子どもの飛行機代も、全額自腹。", "hold": 2.4},
+    {"side": "right", "text": "せめてご祝儀は5万にさせて", "time": "20:12", "kidoku": true},
+    {"side": "left", "text": "は？ケチったら親に言うから", "time": "20:13"},
+    {"side": "narr", "text": "合計30万円の「おめでとう」。", "hold": 2.8}
+  ],
+  "end_question": ["旅費20万＋ご祝儀10万、", "あなたなら出す？"]
+}
