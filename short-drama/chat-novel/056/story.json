@@ -1,0 +1,27 @@
+{
+  "theme": "dark",
+  "header": "ナオキ",
+  "status_time": "18:50",
+  "cover": ["夫が内緒で", "400万のローンを", "組んでいた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "郵便受けに、ローン会社の封筒。", "hold": 2.4},
+    {"side": "narr", "text": "宛名は、夫だった。", "hold": 2.2},
+    {"side": "right", "text": "ローンの書類が届いてたよ", "time": "18:50", "kidoku": true},
+    {"side": "left", "text": "あー、それね", "time": "18:53"},
+    {"side": "right", "text": "400万って何？聞いてないよ", "time": "18:54", "kidoku": true},
+    {"side": "left", "text": "車買ったんだよね、新車", "time": "18:55"},
+    {"side": "right", "text": "は？相談は？", "time": "18:55", "kidoku": true},
+    {"side": "left", "text": "俺の給料から返すからいいだろ", "time": "18:56"},
+    {"side": "narr", "text": "家計は、私のパート代も入れてる。", "hold": 2.4},
+    {"side": "right", "text": "毎月の返済、いくら？", "time": "18:58", "kidoku": true},
+    {"side": "left", "text": "6万ちょい。7年ローン", "time": "18:59"},
+    {"side": "right", "text": "子どもの習い事、諦めさせたのに", "time": "19:00", "kidoku": true},
+    {"side": "left", "text": "車は家族のためでもあるだろ", "time": "19:01"},
+    {"side": "right", "text": "2人乗りのスポーツカーだよね？", "time": "19:02", "kidoku": true},
+    {"side": "left", "text": "…", "time": "19:04"},
+    {"side": "narr", "text": "納車は、来週らしい。", "hold": 2.6}
+  ],
+  "end_question": ["無断の400万ローン、", "あなたなら許せる？"]
+}
