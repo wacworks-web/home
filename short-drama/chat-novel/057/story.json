@@ -1,0 +1,25 @@
+{
+  "theme": "light",
+  "header": "エリ",
+  "status_time": "21:30",
+  "cover": ["貸した30万円を", "「ご祝儀代わりに」", "チャラにされかけてる。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "友人エリに貸した、30万円。", "hold": 2.4},
+    {"side": "narr", "text": "来月、彼女は結婚する。", "hold": 2.2},
+    {"side": "right", "text": "30万の返済、どうなってる？", "time": "21:30", "kidoku": true},
+    {"side": "left", "text": "それなんだけどさ", "time": "21:33"},
+    {"side": "left", "text": "式の費用で今カツカツで", "time": "21:33"},
+    {"side": "right", "text": "約束は今月末だったよね", "time": "21:34", "kidoku": true},
+    {"side": "left", "text": "だからさ、提案なんだけど", "time": "21:35"},
+    {"side": "left", "text": "30万、ご祝儀代わりにしない？", "time": "21:35"},
+    {"side": "right", "text": "は？", "time": "21:36", "kidoku": true},
+    {"side": "left", "text": "私たちへのお祝いってことで", "time": "21:37"},
+    {"side": "narr", "text": "友人のご祝儀相場は、3万円。", "hold": 2.4},
+    {"side": "right", "text": "ご祝儀は3万で包むつもりだよ", "time": "21:39", "kidoku": true},
+    {"side": "left", "text": "細かいなあ。親友でしょ？", "time": "21:40"},
+    {"side": "narr", "text": "親友の定義が、わからなくなった。", "hold": 2.8}
+  ],
+  "end_question": ["貸した30万＝ご祝儀、", "あなたなら受け入れる？"]
+}
