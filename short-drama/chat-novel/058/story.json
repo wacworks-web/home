@@ -1,0 +1,26 @@
+{
+  "theme": "dark",
+  "header": "ミサキ",
+  "status_time": "20:20",
+  "cover": ["「お車代出すから」", "と言われて行った", "結婚式の結末。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "先月"},
+    {"side": "narr", "text": "北海道での、友人の結婚式。", "hold": 2.2},
+    {"side": "left", "text": "お車代出すから来てほしい！", "time": "10:15"},
+    {"side": "right", "text": "わかった、行くね！", "time": "10:20", "kidoku": true},
+    {"side": "narr", "text": "飛行機とホテルで、15万円。", "hold": 2.4},
+    {"side": "pill", "text": "今日"},
+    {"side": "right", "text": "お車代の件、どうなってる？", "time": "20:20", "kidoku": true},
+    {"side": "left", "text": "ごめん、式でお金使いすぎて", "time": "20:24"},
+    {"side": "left", "text": "出せなくなっちゃった", "time": "20:24"},
+    {"side": "right", "text": "15万かかってるんだけど", "time": "20:25", "kidoku": true},
+    {"side": "left", "text": "来てくれたのは嬉しかったよ", "time": "20:26"},
+    {"side": "left", "text": "それじゃダメ？", "time": "20:26"},
+    {"side": "narr", "text": "ご祝儀3万も、渡してる。", "hold": 2.4},
+    {"side": "right", "text": "約束だったよね？", "time": "20:28", "kidoku": true},
+    {"side": "left", "text": "そんなに言うなら縁切る？", "time": "20:29"},
+    {"side": "narr", "text": "合計18万円の「友情」だった。", "hold": 2.8}
+  ],
+  "end_question": ["約束されたお車代15万、", "請求し続ける？"]
+}
