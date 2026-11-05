@@ -1,0 +1,26 @@
+{
+  "theme": "warm",
+  "header": "カナ",
+  "status_time": "19:30",
+  "cover": ["子どもの貯金箱から", "20万円が", "消えていた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "子どものお年玉貯金、20万円。", "hold": 2.4},
+    {"side": "narr", "text": "通帳の残高が、ゼロになっていた。", "hold": 2.6},
+    {"side": "right", "text": "ユウの口座、何で空なの？", "time": "19:30", "kidoku": true},
+    {"side": "left", "text": "ちょっと借りただけ", "time": "19:34"},
+    {"side": "right", "text": "20万だよ？何に使ったの", "time": "19:35", "kidoku": true},
+    {"side": "left", "text": "飲み会とか、付き合いだよ", "time": "19:36"},
+    {"side": "left", "text": "ボーナスで返すから", "time": "19:36"},
+    {"side": "narr", "text": "ボーナスは、先月出たばかり。", "hold": 2.4},
+    {"side": "right", "text": "先月のボーナスはどこ？", "time": "19:38", "kidoku": true},
+    {"side": "left", "text": "それはもうない", "time": "19:39"},
+    {"side": "right", "text": "子どものお金だよ？", "time": "19:40", "kidoku": true},
+    {"side": "left", "text": "家族のお金は家族のものだろ", "time": "19:41"},
+    {"side": "right", "text": "じゃああなたの口座も家族のだね", "time": "19:42", "kidoku": true},
+    {"side": "left", "text": "それは話が違うだろ", "time": "19:43"},
+    {"side": "narr", "text": "10年分のお年玉が、飲み代に。", "hold": 2.8}
+  ],
+  "end_question": ["子どもの20万を使う夫、", "あなたなら許す？"]
+}
