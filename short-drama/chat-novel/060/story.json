@@ -1,0 +1,27 @@
+{
+  "theme": "light",
+  "header": "リナ",
+  "status_time": "20:50",
+  "cover": ["慰謝料300万を", "「月5000円の分割で」", "と言われた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "夫の不倫相手に、慰謝料を請求した。", "hold": 2.4},
+    {"side": "narr", "text": "金額は、300万円。", "hold": 2.2},
+    {"side": "left", "text": "慰謝料の件、考えました", "time": "20:50"},
+    {"side": "left", "text": "払う意思はあります", "time": "20:50"},
+    {"side": "right", "text": "それで？", "time": "20:52", "kidoku": true},
+    {"side": "left", "text": "でも貯金がないので", "time": "20:53"},
+    {"side": "left", "text": "月5000円の分割でお願いします", "time": "20:53"},
+    {"side": "right", "text": "300万を月5000円…？", "time": "20:54", "kidoku": true},
+    {"side": "narr", "text": "完済まで、50年。", "hold": 2.4},
+    {"side": "right", "text": "50年かかる計算だけど", "time": "20:56", "kidoku": true},
+    {"side": "left", "text": "誠意は見せてるじゃないですか", "time": "20:57"},
+    {"side": "left", "text": "無理なものは無理です", "time": "20:57"},
+    {"side": "narr", "text": "先週、彼女のSNSはハワイだった。", "hold": 2.6},
+    {"side": "right", "text": "ハワイ、楽しかった？", "time": "20:59", "kidoku": true},
+    {"side": "left", "text": "…それとこれとは別です", "time": "21:01"},
+    {"side": "narr", "text": "誠意の形は、人によって違うらしい。", "hold": 2.8}
+  ],
+  "end_question": ["月5000円×50年の誠意、", "あなたなら許す？"]
+}
