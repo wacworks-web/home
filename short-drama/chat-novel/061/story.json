@@ -1,0 +1,26 @@
+{
+  "theme": "dark",
+  "header": "アミ",
+  "status_time": "22:15",
+  "cover": ["結婚式のご祝儀、", "30万円が", "消えていた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "私の結婚式が、終わった。", "hold": 2.2},
+    {"side": "narr", "text": "ご祝儀の集計で、手が止まった。", "hold": 2.4},
+    {"side": "right", "text": "アミ、ご祝儀の件で聞きたいの", "time": "22:15", "kidoku": true},
+    {"side": "left", "text": "どうしたの？", "time": "22:17"},
+    {"side": "right", "text": "名簿だと62人分あるはずで", "time": "22:18", "kidoku": true},
+    {"side": "right", "text": "でも52人分しかなくて", "time": "22:18", "kidoku": true},
+    {"side": "left", "text": "数え間違いじゃない？", "time": "22:20"},
+    {"side": "narr", "text": "10人分、約30万円が足りない。", "hold": 2.4},
+    {"side": "right", "text": "受付で預かったのアミだよね", "time": "22:22", "kidoku": true},
+    {"side": "left", "text": "私を疑ってるの？", "time": "22:23"},
+    {"side": "left", "text": "ひどくない？親友なのに", "time": "22:23"},
+    {"side": "right", "text": "式場のカメラ、確認してもらった", "time": "22:25", "kidoku": true},
+    {"side": "left", "text": "…", "time": "22:28"},
+    {"side": "left", "text": "待って。話せばわかるから", "time": "22:29"},
+    {"side": "narr", "text": "映像には、袋を開ける彼女がいた。", "hold": 2.8}
+  ],
+  "end_question": ["ご祝儀を抜いた親友、", "警察に通報する？"]
+}
