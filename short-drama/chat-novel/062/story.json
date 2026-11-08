@@ -1,0 +1,25 @@
+{
+  "theme": "warm",
+  "header": "ナツキ",
+  "status_time": "14:40",
+  "cover": ["ママ友に勧められた", "「絶対儲かる」投資。", "50万が消えた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "3ヶ月前"},
+    {"side": "left", "text": "すごい投資案件があるの", "time": "14:40"},
+    {"side": "left", "text": "月利10%、絶対儲かるから", "time": "14:40"},
+    {"side": "right", "text": "投資はちょっと怖いな…", "time": "14:42", "kidoku": true},
+    {"side": "left", "text": "50万が半年で80万になるよ", "time": "14:43"},
+    {"side": "left", "text": "私はもう30万増えたし", "time": "14:43"},
+    {"side": "narr", "text": "信じて、50万円を預けた。", "hold": 2.4},
+    {"side": "pill", "text": "今日"},
+    {"side": "right", "text": "出金申請、まだ反映されないの", "time": "15:10", "kidoku": true},
+    {"side": "left", "text": "今システム障害みたいで", "time": "15:14"},
+    {"side": "right", "text": "先月も同じこと言ってたよね", "time": "15:15", "kidoku": true},
+    {"side": "left", "text": "私に言われても困る", "time": "15:17"},
+    {"side": "left", "text": "紹介しただけだし", "time": "15:17"},
+    {"side": "narr", "text": "運営会社は、連絡が取れない。", "hold": 2.4},
+    {"side": "narr", "text": "ナツキの紹介報酬は、5万円。", "hold": 2.8}
+  ],
+  "end_question": ["紹介したママ友の責任、", "あると思う？"]
+}
