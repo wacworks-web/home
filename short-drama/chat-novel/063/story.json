@@ -1,0 +1,26 @@
+{
+  "theme": "light",
+  "header": "ダイキ",
+  "status_time": "17:25",
+  "cover": ["住宅ローン審査で", "夫の隠れ借金300万", "が発覚した。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "住宅ローンの審査に、落ちた。", "hold": 2.4},
+    {"side": "narr", "text": "理由を聞いて、耳を疑った。", "hold": 2.4},
+    {"side": "right", "text": "銀行から電話きたよ", "time": "17:25", "kidoku": true},
+    {"side": "right", "text": "審査落ちたって。なんで？", "time": "17:25", "kidoku": true},
+    {"side": "left", "text": "あー…やっぱりか", "time": "17:28"},
+    {"side": "right", "text": "「やっぱり」って何？", "time": "17:29", "kidoku": true},
+    {"side": "left", "text": "実は昔の借金がまだ残ってて", "time": "17:31"},
+    {"side": "right", "text": "いくら？", "time": "17:31", "kidoku": true},
+    {"side": "left", "text": "300くらい…", "time": "17:33"},
+    {"side": "narr", "text": "結婚して、5年目だった。", "hold": 2.4},
+    {"side": "right", "text": "5年間、隠してたの？", "time": "17:35", "kidoku": true},
+    {"side": "left", "text": "言ったら結婚できないと思って", "time": "17:36"},
+    {"side": "left", "text": "毎月ちゃんと返してるから", "time": "17:36"},
+    {"side": "narr", "text": "子どものために選んだ、建売の家。", "hold": 2.4},
+    {"side": "narr", "text": "夢が、審査落ちで消えた。", "hold": 2.8}
+  ],
+  "end_question": ["借金300万を隠してた夫、", "あなたなら許せる？"]
+}
