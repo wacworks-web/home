@@ -1,0 +1,25 @@
+{
+  "theme": "dark",
+  "header": "ミオ（妹）",
+  "status_time": "19:40",
+  "cover": ["母の遺産500万を", "妹が独り占め", "しようとしている。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "母の四十九日が、終わった。", "hold": 2.4},
+    {"side": "narr", "text": "遺産は、預金500万円。", "hold": 2.2},
+    {"side": "left", "text": "遺産のことなんだけど", "time": "19:40"},
+    {"side": "left", "text": "全部私がもらうから", "time": "19:40"},
+    {"side": "right", "text": "え、どういうこと？", "time": "19:42", "kidoku": true},
+    {"side": "left", "text": "介護したのは私だよね？", "time": "19:43"},
+    {"side": "left", "text": "お姉ちゃん何もしてないじゃん", "time": "19:43"},
+    {"side": "right", "text": "毎月5万、仕送りしてたよ", "time": "19:45", "kidoku": true},
+    {"side": "left", "text": "お金だけでしょ？", "time": "19:46"},
+    {"side": "narr", "text": "仕送りは10年間。総額600万円。", "hold": 2.6},
+    {"side": "right", "text": "妹の家賃も生活費も母さん持ちだったよね", "time": "19:48", "kidoku": true},
+    {"side": "left", "text": "それとこれとは別！", "time": "19:49"},
+    {"side": "left", "text": "とにかく全部私のものだから", "time": "19:49"},
+    {"side": "narr", "text": "法律上は、姉妹で2分の1ずつ。", "hold": 2.8}
+  ],
+  "end_question": ["介護した妹の独り占め、", "あなたは認める？"]
+}
