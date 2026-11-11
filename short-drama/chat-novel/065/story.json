@@ -1,0 +1,25 @@
+{
+  "theme": "warm",
+  "header": "課長",
+  "status_time": "16:05",
+  "cover": ["会社の立て替え18万、", "退職したら", "払えないと言われた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "先月、7年勤めた会社を辞めた。", "hold": 2.4},
+    {"side": "narr", "text": "経費の立て替えが、18万円。", "hold": 2.4},
+    {"side": "right", "text": "立て替え経費の精算、いつですか？", "time": "16:05", "kidoku": true},
+    {"side": "left", "text": "あー、その件ね", "time": "16:09"},
+    {"side": "left", "text": "退職者への精算は難しくて", "time": "16:09"},
+    {"side": "right", "text": "どういうことですか？", "time": "16:10", "kidoku": true},
+    {"side": "left", "text": "規定で在職中の精算のみなんだよ", "time": "16:12"},
+    {"side": "right", "text": "そんな規定、聞いてません", "time": "16:13", "kidoku": true},
+    {"side": "left", "text": "まあ会社のルールだから", "time": "16:14"},
+    {"side": "narr", "text": "出張費も備品も、自腹だった。", "hold": 2.4},
+    {"side": "right", "text": "領収書も全部あります", "time": "16:16", "kidoku": true},
+    {"side": "left", "text": "君が辞めるのが悪いんだよ", "time": "16:18"},
+    {"side": "narr", "text": "立て替えは、法律上の債権。", "hold": 2.4},
+    {"side": "narr", "text": "泣き寝入りは、しない。", "hold": 2.6}
+  ],
+  "end_question": ["退職者の立て替え18万、", "取り返せると思う？"]
+}
