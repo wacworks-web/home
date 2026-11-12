@@ -1,0 +1,26 @@
+{
+  "theme": "light",
+  "header": "マコト",
+  "status_time": "21:05",
+  "cover": ["私名義のカードを", "夫の浮気相手が", "使っていた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "カード請求額が、60万円だった。", "hold": 2.4},
+    {"side": "narr", "text": "身に覚えのない、ブランド品。", "hold": 2.4},
+    {"side": "right", "text": "カードの明細、見たんだけど", "time": "21:05", "kidoku": true},
+    {"side": "right", "text": "バッグとか時計とか、何これ", "time": "21:05", "kidoku": true},
+    {"side": "left", "text": "俺は知らないよ", "time": "21:08"},
+    {"side": "right", "text": "家族カード、どこにあるの？", "time": "21:09", "kidoku": true},
+    {"side": "left", "text": "…", "time": "21:12"},
+    {"side": "left", "text": "ちょっと貸しただけだって", "time": "21:13"},
+    {"side": "right", "text": "誰に？", "time": "21:13", "kidoku": true},
+    {"side": "left", "text": "会社の後輩。困ってたから", "time": "21:15"},
+    {"side": "narr", "text": "後輩の名前は、検索で出てきた。", "hold": 2.4},
+    {"side": "narr", "text": "夫のSNSの「いいね」欄に。", "hold": 2.6},
+    {"side": "right", "text": "その子と、どういう関係？", "time": "21:18", "kidoku": true},
+    {"side": "left", "text": "だから後輩だって！", "time": "21:19"},
+    {"side": "narr", "text": "60万円の「後輩」。", "hold": 2.6}
+  ],
+  "end_question": ["浮気相手が使った60万、", "誰に請求する？"]
+}
