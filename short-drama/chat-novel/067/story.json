@@ -1,0 +1,27 @@
+{
+  "theme": "dark",
+  "header": "サトミ（姉）",
+  "status_time": "20:10",
+  "cover": ["45万円の振袖を", "姉が「タダで貸して」", "と言ってきた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "娘の振袖を、45万円で誂えた。", "hold": 2.4},
+    {"side": "narr", "text": "成人式まで、あと2ヶ月。", "hold": 2.2},
+    {"side": "left", "text": "振袖できたんだって？", "time": "20:10"},
+    {"side": "left", "text": "写真見たよ、素敵じゃん", "time": "20:10"},
+    {"side": "right", "text": "ありがとう！娘も喜んでて", "time": "20:12", "kidoku": true},
+    {"side": "left", "text": "それでお願いなんだけど", "time": "20:13"},
+    {"side": "left", "text": "うちの娘にも貸してくれない？", "time": "20:13"},
+    {"side": "right", "text": "え、同じ成人式だよね？", "time": "20:15", "kidoku": true},
+    {"side": "left", "text": "午前と午後で分ければいける", "time": "20:16"},
+    {"side": "right", "text": "着付けも髪も崩れるよ…", "time": "20:17", "kidoku": true},
+    {"side": "left", "text": "姪っ子のためなのにケチなの？", "time": "20:18"},
+    {"side": "narr", "text": "クリーニング代も着崩れも、", "hold": 2.2},
+    {"side": "narr", "text": "「貸す側」の負担らしい。", "hold": 2.4},
+    {"side": "right", "text": "レンタル代、半分出せる？", "time": "20:20", "kidoku": true},
+    {"side": "left", "text": "は？タダで貸すのが家族でしょ", "time": "20:21"},
+    {"side": "narr", "text": "家族の定義が、今日も都合よく動く。", "hold": 2.8}
+  ],
+  "end_question": ["45万の振袖タダ貸し、", "あなたなら断る？"]
+}
