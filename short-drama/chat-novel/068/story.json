@@ -1,0 +1,26 @@
+{
+  "theme": "warm",
+  "header": "マユコ",
+  "status_time": "15:50",
+  "cover": ["子ども会の収益15万を", "会計係が「報酬」として", "受け取っていた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "子ども会の夏祭りが、黒字だった。", "hold": 2.4},
+    {"side": "narr", "text": "収益は、15万円のはず。", "hold": 2.2},
+    {"side": "right", "text": "会計報告、収益3万になってるね", "time": "15:50", "kidoku": true},
+    {"side": "left", "text": "うん、それで合ってるよ", "time": "15:53"},
+    {"side": "right", "text": "屋台だけで15万売れてたよね", "time": "15:54", "kidoku": true},
+    {"side": "left", "text": "経費いろいろかかったから", "time": "15:55"},
+    {"side": "right", "text": "内訳見せてもらえる？", "time": "15:56", "kidoku": true},
+    {"side": "left", "text": "えっと…", "time": "15:58"},
+    {"side": "left", "text": "会計係の報酬が12万入ってる", "time": "15:59"},
+    {"side": "right", "text": "報酬？ボランティアだよね？", "time": "16:00", "kidoku": true},
+    {"side": "left", "text": "私だけ働くのおかしくない？", "time": "16:01"},
+    {"side": "narr", "text": "規約に、報酬の記載はない。", "hold": 2.4},
+    {"side": "right", "text": "みんなに共有していい？", "time": "16:03", "kidoku": true},
+    {"side": "left", "text": "それは待って", "time": "16:04"},
+    {"side": "narr", "text": "子どもたちのための、15万円。", "hold": 2.8}
+  ],
+  "end_question": ["勝手な報酬12万、", "あなたなら追及する？"]
+}
