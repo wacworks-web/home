@@ -1,0 +1,27 @@
+{
+  "theme": "light",
+  "header": "ヒデオ",
+  "status_time": "18:35",
+  "cover": ["夫の退職金1200万、", "相談なしで", "投資に消えかけてる。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "夫の退職金、1200万円。", "hold": 2.4},
+    {"side": "narr", "text": "老後の、すべてだった。", "hold": 2.2},
+    {"side": "right", "text": "退職金、振り込まれた？", "time": "18:35", "kidoku": true},
+    {"side": "left", "text": "ああ、それなんだけど", "time": "18:38"},
+    {"side": "left", "text": "全額、投資に回すことにした", "time": "18:38"},
+    {"side": "right", "text": "は？聞いてないよ", "time": "18:39", "kidoku": true},
+    {"side": "left", "text": "知り合いに任せれば年15%らしい", "time": "18:41"},
+    {"side": "right", "text": "年15%って、怪しすぎるよ", "time": "18:42", "kidoku": true},
+    {"side": "left", "text": "銀行に置いてても増えないだろ", "time": "18:43"},
+    {"side": "narr", "text": "「知り合い」は、SNSで知った人。", "hold": 2.4},
+    {"side": "right", "text": "その人と会ったことある？", "time": "18:45", "kidoku": true},
+    {"side": "left", "text": "ないけど、実績の画像は見た", "time": "18:46"},
+    {"side": "narr", "text": "画像は、いくらでも作れる。", "hold": 2.4},
+    {"side": "right", "text": "お願いだから一回止まって", "time": "18:48", "kidoku": true},
+    {"side": "left", "text": "もう500万振り込んだ", "time": "18:50"},
+    {"side": "narr", "text": "老後が、音を立てて崩れていく。", "hold": 2.8}
+  ],
+  "end_question": ["残り700万、", "止める方法あると思う？"]
+}
