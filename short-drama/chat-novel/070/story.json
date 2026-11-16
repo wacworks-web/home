@@ -1,0 +1,26 @@
+{
+  "theme": "dark",
+  "header": "ユカコ",
+  "status_time": "19:55",
+  "cover": ["ご祝儀の金額で", "引き出物に差を", "つけられていた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "友人の結婚式から、1週間。", "hold": 2.4},
+    {"side": "right", "text": "引き出物のカタログ、見たよ", "time": "19:55", "kidoku": true},
+    {"side": "right", "text": "私のは3000円のだった", "time": "19:55", "kidoku": true},
+    {"side": "left", "text": "あ、気づいた？", "time": "19:58"},
+    {"side": "left", "text": "ご祝儀の額で分けたんだ", "time": "19:58"},
+    {"side": "right", "text": "えっ、本当に？", "time": "19:59", "kidoku": true},
+    {"side": "left", "text": "5万の人には1万のカタログ", "time": "20:00"},
+    {"side": "left", "text": "3万の人は3000円。合理的でしょ", "time": "20:00"},
+    {"side": "narr", "text": "ご祝儀3万は、友人の相場。", "hold": 2.4},
+    {"side": "right", "text": "相場通りに包んだつもりだけど", "time": "20:02", "kidoku": true},
+    {"side": "left", "text": "もらった分お返ししただけ", "time": "20:03"},
+    {"side": "left", "text": "文句あるなら5万包めばよかったね", "time": "20:04"},
+    {"side": "right", "text": "お祝いの気持ちだったんだけどな", "time": "20:06", "kidoku": true},
+    {"side": "left", "text": "気持ちはお金で見えるからね", "time": "20:07"},
+    {"side": "narr", "text": "結婚式は「収支」らしい。", "hold": 2.8}
+  ],
+  "end_question": ["ご祝儀額で引き出物に差、", "アリだと思う？"]
+}
