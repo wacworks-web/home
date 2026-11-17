@@ -1,0 +1,25 @@
+{
+  "theme": "warm",
+  "header": "ジュン（元夫）",
+  "status_time": "21:15",
+  "cover": ["養育費月6万が", "3ヶ月止まった。", "元夫のSNSには新車。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "離婚して、2年になる。", "hold": 2.2},
+    {"side": "narr", "text": "養育費は、月6万円の約束。", "hold": 2.4},
+    {"side": "right", "text": "今月も振り込まれてないよ", "time": "21:15", "kidoku": true},
+    {"side": "left", "text": "ごめん、今ちょっと厳しくて", "time": "21:18"},
+    {"side": "right", "text": "3ヶ月で18万になるけど", "time": "21:19", "kidoku": true},
+    {"side": "left", "text": "仕事が減ったんだって", "time": "21:20"},
+    {"side": "narr", "text": "昨日、彼のSNSが更新された。", "hold": 2.4},
+    {"side": "narr", "text": "ピカピカの、新車と一緒に。", "hold": 2.4},
+    {"side": "right", "text": "新車買ったんだね", "time": "21:22", "kidoku": true},
+    {"side": "left", "text": "…見たの？", "time": "21:25"},
+    {"side": "left", "text": "あれはローンだから別だろ", "time": "21:25"},
+    {"side": "right", "text": "子どものご飯代より車なんだ", "time": "21:26", "kidoku": true},
+    {"side": "left", "text": "責めるなよ。払う気はあるって", "time": "21:27"},
+    {"side": "narr", "text": "「払う気」では、子は育たない。", "hold": 2.8}
+  ],
+  "end_question": ["養育費より新車の元夫、", "あなたなら法的手段？"]
+}
