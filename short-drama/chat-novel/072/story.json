@@ -1,0 +1,27 @@
+{
+  "theme": "light",
+  "header": "ノリコ（叔母）",
+  "status_time": "19:20",
+  "cover": ["祖母の遺品から", "へそくり100万。", "叔母が持ち帰った。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "先週"},
+    {"side": "narr", "text": "祖母の遺品整理を、親族でした。", "hold": 2.4},
+    {"side": "narr", "text": "タンスの奥から、100万円。", "hold": 2.4},
+    {"side": "pill", "text": "今日"},
+    {"side": "right", "text": "タンスの100万、どうなった？", "time": "19:20", "kidoku": true},
+    {"side": "left", "text": "ああ、あれは私がもらったよ", "time": "19:23"},
+    {"side": "right", "text": "え、勝手に？", "time": "19:24", "kidoku": true},
+    {"side": "left", "text": "見つけたのは私だし", "time": "19:25"},
+    {"side": "left", "text": "長年お世話したのも私だから", "time": "19:25"},
+    {"side": "right", "text": "へそくりも相続財産だよ", "time": "19:27", "kidoku": true},
+    {"side": "left", "text": "細かいこと言わないの", "time": "19:28"},
+    {"side": "narr", "text": "現金も、法律上は遺産分割の対象。", "hold": 2.6},
+    {"side": "right", "text": "相続人みんなのものだよ", "time": "19:30", "kidoku": true},
+    {"side": "left", "text": "じゃあ訴えれば？笑", "time": "19:31"},
+    {"side": "right", "text": "皆にもこのやり取り共有するね", "time": "19:33", "kidoku": true},
+    {"side": "left", "text": "ちょっと待って", "time": "19:34"},
+    {"side": "narr", "text": "祖母の100万が、火種になった。", "hold": 2.8}
+  ],
+  "end_question": ["持ち帰られた100万、", "取り戻せると思う？"]
+}
