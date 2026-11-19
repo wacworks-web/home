@@ -1,0 +1,25 @@
+{
+  "theme": "dark",
+  "header": "ツヨシ",
+  "status_time": "20:45",
+  "cover": ["夫の父の葬儀代、", "「嫁が出すのが筋」", "と言われた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "夫の父が、亡くなった。", "hold": 2.2},
+    {"side": "narr", "text": "葬儀費用は、約100万円。", "hold": 2.4},
+    {"side": "left", "text": "葬儀代の件、親族で話した", "time": "20:45"},
+    {"side": "left", "text": "うちが出すことになった", "time": "20:45"},
+    {"side": "right", "text": "うちって、誰のお金で？", "time": "20:47", "kidoku": true},
+    {"side": "left", "text": "お前の貯金から頼む", "time": "20:48"},
+    {"side": "right", "text": "え、私の貯金？", "time": "20:49", "kidoku": true},
+    {"side": "left", "text": "長男の嫁が出すのが筋だって", "time": "20:50"},
+    {"side": "right", "text": "筋って誰が決めたの？", "time": "20:51", "kidoku": true},
+    {"side": "left", "text": "親戚みんなそう言ってる", "time": "20:52"},
+    {"side": "narr", "text": "喪主は夫。相続人も、夫。", "hold": 2.4},
+    {"side": "right", "text": "香典と遺産から出すものだよ", "time": "20:54", "kidoku": true},
+    {"side": "left", "text": "細かい嫁だと思われるぞ", "time": "20:55"},
+    {"side": "narr", "text": "「筋」という言葉は、便利らしい。", "hold": 2.8}
+  ],
+  "end_question": ["嫁の貯金から葬儀代100万、", "出すべき？"]
+}
