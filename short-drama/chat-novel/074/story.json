@@ -1,0 +1,27 @@
+{
+  "theme": "warm",
+  "header": "ケンゴ",
+  "status_time": "13:10",
+  "cover": ["入院当日、", "私の医療保険が", "解約されていた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "手術のため、入院した。", "hold": 2.2},
+    {"side": "narr", "text": "保険会社から、まさかの通知。", "hold": 2.4},
+    {"side": "right", "text": "私の医療保険、解約されてるって", "time": "13:10", "kidoku": true},
+    {"side": "right", "text": "どういうこと？", "time": "13:10", "kidoku": true},
+    {"side": "left", "text": "あー…それな", "time": "13:14"},
+    {"side": "left", "text": "先月、家計が苦しくて解約した", "time": "13:15"},
+    {"side": "right", "text": "私の保険だよ？なんで勝手に", "time": "13:16", "kidoku": true},
+    {"side": "left", "text": "掛け捨てはもったいないだろ", "time": "13:17"},
+    {"side": "narr", "text": "手術費用は、約60万円。", "hold": 2.4},
+    {"side": "right", "text": "手術代60万、実費になったよ", "time": "13:19", "kidoku": true},
+    {"side": "left", "text": "そんなにかかるのか…", "time": "13:21"},
+    {"side": "right", "text": "解約返戻金はどこ？", "time": "13:22", "kidoku": true},
+    {"side": "left", "text": "…飲み代とかで使った", "time": "13:24"},
+    {"side": "right", "text": "退院したら話し合いだからね", "time": "13:25", "kidoku": true},
+    {"side": "left", "text": "ごめんって。悪気はなかった", "time": "13:27"},
+    {"side": "narr", "text": "病室で、血の気が引いた。", "hold": 2.8}
+  ],
+  "end_question": ["無断解約で実費60万、", "あなたなら許せる？"]
+}
