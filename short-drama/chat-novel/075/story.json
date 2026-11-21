@@ -1,0 +1,26 @@
+{
+  "theme": "light",
+  "header": "リョウタ",
+  "status_time": "20:30",
+  "cover": ["パート代8万は全額", "家計へ。夫の給料は", "ブラックボックス。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "パート代は月8万。全額家計へ。", "hold": 2.4},
+    {"side": "right", "text": "家計のことで相談があるの", "time": "20:30", "kidoku": true},
+    {"side": "right", "text": "あなたの給料の内訳、教えて", "time": "20:30", "kidoku": true},
+    {"side": "left", "text": "は？なんで", "time": "20:33"},
+    {"side": "right", "text": "私のパート代は全部見せてるよ", "time": "20:34", "kidoku": true},
+    {"side": "left", "text": "俺が稼いだ金は俺が管理する", "time": "20:35"},
+    {"side": "right", "text": "生活費、毎月ギリギリだよ", "time": "20:36", "kidoku": true},
+    {"side": "left", "text": "だからお前も働いてるんだろ", "time": "20:37"},
+    {"side": "narr", "text": "夫の給料は、推定35万円。", "hold": 2.4},
+    {"side": "narr", "text": "家計に入るのは、12万円。", "hold": 2.4},
+    {"side": "right", "text": "残りの23万、何に使ってるの", "time": "20:39", "kidoku": true},
+    {"side": "left", "text": "詮索するなよ。気分悪い", "time": "20:41"},
+    {"side": "right", "text": "じゃあ私のパート代も私が管理する", "time": "20:42", "kidoku": true},
+    {"side": "left", "text": "それは家族のお金だろ！", "time": "20:43"},
+    {"side": "narr", "text": "「家族の財布」は、私の財布だけ。", "hold": 2.8}
+  ],
+  "end_question": ["給料の使途を隠す夫、", "あなたならどうする？"]
+}
