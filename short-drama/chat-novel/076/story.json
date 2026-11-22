@@ -1,0 +1,25 @@
+{
+  "theme": "dark",
+  "header": "コウジ",
+  "status_time": "21:40",
+  "cover": ["結婚式の援助300万、", "式が終わったら", "「貸しただけ」と。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "結婚式の費用、総額400万円。", "hold": 2.4},
+    {"side": "narr", "text": "夫の親が300万、援助してくれた。", "hold": 2.6},
+    {"side": "left", "text": "親から連絡来たんだけど", "time": "21:40"},
+    {"side": "left", "text": "あの300万、返してほしいって", "time": "21:40"},
+    {"side": "right", "text": "え？援助って言ってたよね", "time": "21:42", "kidoku": true},
+    {"side": "left", "text": "言い方の問題で、貸したつもりだと", "time": "21:43"},
+    {"side": "right", "text": "借用書もないのに？", "time": "21:44", "kidoku": true},
+    {"side": "left", "text": "親子に借用書はいらないだろ", "time": "21:45"},
+    {"side": "narr", "text": "月5万×60回の返済案が届いた。", "hold": 2.6},
+    {"side": "right", "text": "新婚で月5万は無理だよ", "time": "21:47", "kidoku": true},
+    {"side": "left", "text": "親に恥かかせるなよ", "time": "21:48"},
+    {"side": "right", "text": "援助のお礼も内祝いも渡したよね", "time": "21:50", "kidoku": true},
+    {"side": "left", "text": "それとこれとは別の話だって", "time": "21:51"},
+    {"side": "narr", "text": "「援助」は式が終わると「貸付」になる。", "hold": 2.8}
+  ],
+  "end_question": ["式後に返せの300万、", "返す義務あると思う？"]
+}
