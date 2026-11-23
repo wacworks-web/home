@@ -1,0 +1,26 @@
+{
+  "theme": "warm",
+  "header": "アキラ",
+  "status_time": "17:45",
+  "cover": ["離婚協議中、", "共有口座から200万が", "消えた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "離婚協議が、始まった。", "hold": 2.2},
+    {"side": "narr", "text": "記帳したら、残高がほぼゼロ。", "hold": 2.4},
+    {"side": "right", "text": "口座の200万、引き出したよね", "time": "17:45", "kidoku": true},
+    {"side": "left", "text": "俺の稼いだ金だけど？", "time": "17:48"},
+    {"side": "right", "text": "生活費用の共有口座だよ", "time": "17:49", "kidoku": true},
+    {"side": "left", "text": "離婚するなら財産は守らないと", "time": "17:50"},
+    {"side": "right", "text": "それ、財産隠しだよ", "time": "17:51", "kidoku": true},
+    {"side": "left", "text": "証拠あるの？", "time": "17:52"},
+    {"side": "narr", "text": "通帳の記録は、全部コピー済み。", "hold": 2.4},
+    {"side": "right", "text": "記帳履歴、全部残ってるよ", "time": "17:54", "kidoku": true},
+    {"side": "left", "text": "…", "time": "17:57"},
+    {"side": "left", "text": "弁護士に相談してから話す", "time": "17:58"},
+    {"side": "right", "text": "私ももう相談してあるよ", "time": "17:59", "kidoku": true},
+    {"side": "left", "text": "は？いつの間に", "time": "18:01"},
+    {"side": "narr", "text": "隠しても、財産分与の対象。", "hold": 2.8}
+  ],
+  "end_question": ["引き出された200万、", "取り戻せると思う？"]
+}
