@@ -1,0 +1,25 @@
+{
+  "theme": "light",
+  "header": "チカ",
+  "status_time": "16:30",
+  "cover": ["ママ友4人の", "旅行積立48万を", "幹事が使い込んだ。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "ママ友4人で、旅行積立をしてた。", "hold": 2.4},
+    {"side": "narr", "text": "月1万ずつ、総額48万円。", "hold": 2.4},
+    {"side": "right", "text": "来月の沖縄、予約どうなってる？", "time": "16:30", "kidoku": true},
+    {"side": "left", "text": "それなんだけど…", "time": "16:34"},
+    {"side": "left", "text": "実はまだ予約してなくて", "time": "16:34"},
+    {"side": "right", "text": "え、積立金は口座にあるよね？", "time": "16:35", "kidoku": true},
+    {"side": "left", "text": "…少し借りてる", "time": "16:38"},
+    {"side": "right", "text": "少しって、いくら？", "time": "16:38", "kidoku": true},
+    {"side": "left", "text": "ほぼ全部。ごめん", "time": "16:40"},
+    {"side": "narr", "text": "48万は、塾代と生活費に消えていた。", "hold": 2.6},
+    {"side": "right", "text": "みんなには言ったの？", "time": "16:42", "kidoku": true},
+    {"side": "left", "text": "言わないで。必ず返すから", "time": "16:43"},
+    {"side": "left", "text": "月1万ずつなら払える", "time": "16:43"},
+    {"side": "narr", "text": "返済に、4年かかる計算。", "hold": 2.8}
+  ],
+  "end_question": ["使い込まれた48万、", "どう回収する？"]
+}
