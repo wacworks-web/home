@@ -1,0 +1,26 @@
+{
+  "theme": "dark",
+  "header": "母",
+  "status_time": "19:15",
+  "cover": ["弟の結婚式に", "親が援助300万。", "私の時はゼロ。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "弟の結婚式が、決まった。", "hold": 2.2},
+    {"side": "narr", "text": "親から300万の援助が出るらしい。", "hold": 2.6},
+    {"side": "right", "text": "弟に300万援助するって本当？", "time": "19:15", "kidoku": true},
+    {"side": "left", "text": "ええ、長男だもの", "time": "19:18"},
+    {"side": "right", "text": "私の結婚式はゼロだったよね", "time": "19:19", "kidoku": true},
+    {"side": "left", "text": "あなたは嫁に行った側でしょ", "time": "19:21"},
+    {"side": "right", "text": "同じ子どもじゃないの？", "time": "19:22", "kidoku": true},
+    {"side": "left", "text": "女の子は嫁ぎ先に頼るものよ", "time": "19:23"},
+    {"side": "narr", "text": "私の式は、全額自分たちで払った。", "hold": 2.6},
+    {"side": "right", "text": "うちは夫婦で400万工面したよ", "time": "19:25", "kidoku": true},
+    {"side": "left", "text": "それはあなたたちの選択でしょ", "time": "19:27"},
+    {"side": "left", "text": "文句を言うなんてみっともない", "time": "19:27"},
+    {"side": "right", "text": "じゃあ介護も長男にお願いするね", "time": "19:29", "kidoku": true},
+    {"side": "left", "text": "それとこれとは別の話よ！", "time": "19:30"},
+    {"side": "narr", "text": "同じ「子ども」のはずだった。", "hold": 2.8}
+  ],
+  "end_question": ["兄弟で援助300万の差、", "あなたなら許せる？"]
+}
