@@ -1,0 +1,25 @@
+{
+  "theme": "warm",
+  "header": "ヨシキ",
+  "status_time": "22:20",
+  "cover": ["子どもの修学旅行費が", "夫の浮気旅行に", "消えていた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "子ども名義の積立から、20万円。", "hold": 2.4},
+    {"side": "narr", "text": "引き出したのは、夫だった。", "hold": 2.4},
+    {"side": "right", "text": "積立の20万、引き出した？", "time": "22:20", "kidoku": true},
+    {"side": "left", "text": "ああ、ちょっと入り用で", "time": "22:23"},
+    {"side": "right", "text": "修学旅行の積立だよ？", "time": "22:24", "kidoku": true},
+    {"side": "left", "text": "来月には戻すから問題ない", "time": "22:25"},
+    {"side": "narr", "text": "同じ週、夫は「出張」していた。", "hold": 2.4},
+    {"side": "right", "text": "先週の出張、どこだったの", "time": "22:27", "kidoku": true},
+    {"side": "left", "text": "大阪だけど。なんで", "time": "22:28"},
+    {"side": "right", "text": "温泉宿の領収書、車にあったよ", "time": "22:29", "kidoku": true},
+    {"side": "left", "text": "…それは接待で", "time": "22:31"},
+    {"side": "right", "text": "宿泊者名、2名になってた", "time": "22:32", "kidoku": true},
+    {"side": "left", "text": "違う、これは説明できる", "time": "22:33"},
+    {"side": "narr", "text": "説明は、3日経っても来ない。", "hold": 2.8}
+  ],
+  "end_question": ["子どものお金で浮気旅行、", "あなたならどうする？"]
+}
