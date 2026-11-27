@@ -1,0 +1,27 @@
+{
+  "theme": "light",
+  "header": "マサト",
+  "status_time": "21:10",
+  "cover": ["マイホーム頭金500万が", "夫の兄に", "貸されていた。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "住宅購入の頭金、目標500万。", "hold": 2.4},
+    {"side": "narr", "text": "記帳したら、残高3万円。", "hold": 2.4},
+    {"side": "right", "text": "頭金の500万、どこにいったの？", "time": "21:10", "kidoku": true},
+    {"side": "left", "text": "兄さんに貸した", "time": "21:13"},
+    {"side": "right", "text": "は？私に相談もなく？", "time": "21:14", "kidoku": true},
+    {"side": "left", "text": "兄さんの会社が危なかったんだ", "time": "21:15"},
+    {"side": "right", "text": "家族の家より兄の会社なの？", "time": "21:16", "kidoku": true},
+    {"side": "left", "text": "家はまた貯めればいいだろ", "time": "21:17"},
+    {"side": "narr", "text": "10年かけて、二人で貯めた。", "hold": 2.4},
+    {"side": "right", "text": "私のパート代も入ってるんだよ", "time": "21:19", "kidoku": true},
+    {"side": "left", "text": "兄弟を見捨てられるわけない", "time": "21:20"},
+    {"side": "right", "text": "借用書は？返済はいつ？", "time": "21:21", "kidoku": true},
+    {"side": "left", "text": "兄弟にそんなもの作れるか", "time": "21:23"},
+    {"side": "right", "text": "返ってこなかったらどうするの", "time": "21:24", "kidoku": true},
+    {"side": "left", "text": "兄さんを信じろよ", "time": "21:26"},
+    {"side": "narr", "text": "「家族のため」の貯金が、消えた。", "hold": 2.8}
+  ],
+  "end_question": ["無断で貸された500万、", "あなたなら取り戻す？"]
+}
