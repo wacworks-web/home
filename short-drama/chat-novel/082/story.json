@@ -1,0 +1,27 @@
+{
+  "theme": "dark",
+  "header": "カズキ",
+  "status_time": "20:05",
+  "cover": ["遺産800万は兄へ。", "墓じまい150万は", "私に請求。"],
+  "cover_hold": 2.4,
+  "messages": [
+    {"side": "pill", "text": "今日"},
+    {"side": "narr", "text": "父の遺産800万は、兄が相続した。", "hold": 2.6},
+    {"side": "narr", "text": "三年後、届いた請求は150万。", "hold": 2.4},
+    {"side": "left", "text": "墓じまいすることにした", "time": "20:05"},
+    {"side": "left", "text": "費用は150万かかる", "time": "20:05"},
+    {"side": "right", "text": "大変だね。いくらか手伝うよ", "time": "20:07", "kidoku": true},
+    {"side": "left", "text": "お前が全額出せ", "time": "20:09"},
+    {"side": "right", "text": "は？遺産は全部兄さんでしょ", "time": "20:10", "kidoku": true},
+    {"side": "left", "text": "俺は長男として墓を守ってきた", "time": "20:11"},
+    {"side": "right", "text": "だから800万も相続したよね", "time": "20:12", "kidoku": true},
+    {"side": "left", "text": "墓参りもしないお前が言うな", "time": "20:14"},
+    {"side": "narr", "text": "毎年、お盆もお彼岸も通った。", "hold": 2.4},
+    {"side": "right", "text": "管理費も毎年私が払ってたよ", "time": "20:16", "kidoku": true},
+    {"side": "left", "text": "細かい女だな。家族だろ", "time": "20:18"},
+    {"side": "right", "text": "じゃあ遺産も家族で分けようよ", "time": "20:19", "kidoku": true},
+    {"side": "left", "text": "それはもう終わった話だ", "time": "20:21"},
+    {"side": "narr", "text": "「家族」は、お金の時だけ現れる。", "hold": 2.8}
+  ],
+  "end_question": ["遺産ゼロで墓じまい150万、", "あなたなら払う？"]
+}
